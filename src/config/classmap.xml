@@ -1,0 +1,71 @@
+
+	<config>
+	<!-- VO -->
+	<entry key="MediaFile">/src/vo/MediaFile.php</entry>
+	<entry key="DBConnector">/src/db/DBConnector.php</entry>
+	<entry key="Properties">/src/vo/Properties.php</entry>
+	<entry key="Logger">/src/lib/log4php/Logger.php</entry>
+	<entry key="ItemCatalogo">/src/vo/ItemCatalogo.php</entry>
+	<entry key="Model">/src/vo/Model.php</entry>
+	<entry key="DataInput">/src/vo/DataInput.php</entry>
+	<entry key="App">/src/vo/App.php</entry>
+	<entry key="Uploader">/src/vo/Uploader.php</entry>
+	<entry key="Mailer">/src/vo/Mailer.php</entry>
+	<entry key="Notification">/src/vo/Notification.php</entry>
+	<entry key="Factory">/src/vo/Factory.php</entry>
+	<entry key="CatalogoFactory">/src/vo/CatalogoFactory.php</entry>
+	<entry key="IModel">/src/vo/IModel.php</entry>
+	<entry key="PHPExcel">/src/lib/PHPExcel/PHPExcel.php</entry>
+	<entry key="PHPExcel_IOFactory">/src/lib/PHPExcel/PHPExcel/IOFactory.php</entry>
+
+    <entry key="Bandera">/src/model/Bandera.php</entry>
+	<entry key="BanderaDao">/src/dao/BanderaDao.php</entry>
+	<entry key="BanderaFactory">/src/dao/BanderaFactory.php</entry>
+	<!-- model -->
+	<entry key="Usuario">/src/model/Usuario.php</entry>
+	<entry key="Empresa">/src/model/Empresa.php</entry>
+	<entry key="Periodo">/src/model/Periodo.php</entry>
+	<entry key="Bien">/src/model/Bien.php</entry>
+	<entry key="BienInmueble">/src/model/BienInmueble.php</entry>
+	<entry key="Depreciacion">/src/model/Depreciacion.php</entry>
+	<entry key="Clasificacion">/src/model/Clasificacion.php</entry>
+	<entry key="ClasificacionInmueble">/src/model/ClasificacionInmueble.php</entry>
+	<entry key="Departamento">/src/model/Departamento.php</entry>
+	<entry key="DepartamentoAsignado">/src/model/DepartamentoAsignado.php</entry>
+	<entry key="Persona">/src/model/Persona.php</entry>
+	<entry key="Uma">/src/model/Uma.php</entry>
+	<entry key="Artefacto">/src/model/Artefacto.php</entry>
+	<entry key="Responsable">/src/model/Responsable.php</entry>
+	<entry key="DatosCuenta">/src/model/DatosCuenta.php</entry>
+	<entry key="Color">/src/model/Color.php</entry>
+	<entry key="Permiso">/src/model/Permiso.php</entry>
+	<entry key="ConciliacionFisica">/src/model/ConciliacionFisica.php</entry>
+	<entry key="ItemValuacion">/src/model/ItemValuacion.php</entry>
+
+	<!-- dao -->
+	<entry key="UsuarioDao">/src/dao/UsuarioDao.php</entry>
+	<entry key="EmpresaDao">/src/dao/EmpresaDao.php</entry>
+	<entry key="EmpresaFactory">/src/dao/EmpresaFactory.php</entry>
+	<entry key="PeriodoFactory">/src/dao/PeriodoFactory.php</entry>
+	<entry key="BienDao">/src/dao/BienDao.php</entry>
+	<entry key="BienInmuebleDao">/src/dao/BienInmuebleDao.php</entry>
+	<entry key="DepreciacionDao">/src/dao/DepreciacionDao.php</entry>
+	<entry key="DepartamentoDao">/src/dao/DepartamentoDao.php</entry>
+	<entry key="DepartamentoAsignadoDao">/src/dao/DepartamentoAsignadoDao.php</entry>
+	<entry key="PeriodoDao">/src/dao/PeriodoDao.php</entry>
+	<entry key="ResponsableDao">/src/dao/ResponsableDao.php</entry>
+	<entry key="ClasificacionDao">/src/dao/ClasificacionDao.php</entry>
+	<entry key="ColorDao">/src/dao/ColorDao.php</entry>
+	<entry key="ConciliacionFisicaDao">/src/dao/ConciliacionFisicaDao.php</entry>
+	<entry key="BienFactory">/src/dao/BienFactory.php</entry>
+	<entry key="BienInmuebleFactory">/src/dao/BienInmuebleFactory.php</entry>
+	<entry key="UsuarioFactory">/src/dao/UsuarioFactory.php</entry>
+	<entry key="DepreciacionFactory">/src/dao/DepreciacionFactory.php</entry>
+	<entry key="DepartamentoFactory">/src/dao/DepartamentoFactory.php</entry>
+	<entry key="ResponsableFactory">/src/dao/ResponsableFactory.php</entry>
+	<entry key="ClasificacionFactory">/src/dao/ClasificacionFactory.php</entry>
+	<entry key="DatosCuentaFactory">/src/dao/DatosCuentaFactory.php</entry>
+	<entry key="ColorFactory">/src/dao/ColorFactory.php</entry>
+	<entry key="PermisoFactory">/src/dao/PermisoFactory.php</entry>
+	<entry key="ConciliacionFisicaFactory">/src/dao/ConciliacionFisicaFactor.php</entry>
+	</config>

@@ -1,0 +1,22 @@
+02:16:32 ERROR login.php:45[main.main]: Email/password incorrecto
+02:16:32 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:16:45 ERROR login.php:45[main.main]: Email/password incorrecto
+02:16:45 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:16:56 ERROR login.php:45[main.main]: Email/password incorrecto
+02:16:56 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:17:11 ERROR login.php:45[main.main]: Email/password incorrecto
+02:17:11 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:17:21 ERROR login.php:45[main.main]: Email/password incorrecto
+02:17:21 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:17:36 ERROR login.php:45[main.main]: Email/password incorrecto
+02:17:36 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:17:42 ERROR login.php:45[main.main]: Email/password incorrecto
+02:17:42 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:19:39 ERROR login.php:45[main.main]: Email/password incorrecto
+02:19:39 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:19:48 ERROR login.php:45[main.main]: Email/password incorrecto
+02:19:48 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:19:58 ERROR login.php:45[main.main]: Email/password incorrecto
+02:19:58 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:20:04 ERROR login.php:45[main.main]: Email/password incorrecto
+02:20:04 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos

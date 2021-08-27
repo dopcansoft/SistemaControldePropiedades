@@ -1,0 +1,5 @@
+<config>
+	<entry key="usuario.insert">
+		INSERT INTO usuario(nombre, apellidos, telefono, email, password) VALUES(:nombre, :apellidos, :telefono, :email, sha1(:password))
+	</entry>
+</config>

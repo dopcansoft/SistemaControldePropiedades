@@ -1,0 +1,19 @@
+02:20:27 ERROR BienDao.php:23[BienDao.find]: Falta id y/o id de periodo
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: Periodo
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: ItemCatalogo
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:20:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 20 registro(s)
+02:20:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 20 registros de tipo: ItemCatalogo

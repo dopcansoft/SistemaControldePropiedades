@@ -1,0 +1,2577 @@
+02:35:55 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:35:55 DEBUG login.php:29[main.main]: result: SUCCESS
+02:35:55 DEBUG login.php:30[main.main]: session: ON
+02:35:55 DEBUG login.php:32[main.main]: crea session
+02:35:55 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:35:55 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:35:55 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+02:35:56 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:35:56 DEBUG login.php:29[main.main]: result: SUCCESS
+02:35:56 DEBUG login.php:30[main.main]: session: ON
+02:35:56 DEBUG login.php:32[main.main]: crea session
+02:35:56 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:35:57 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:35:57 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+02:36:06 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:06 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:36:06 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+02:36:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:36:08 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+02:36:11 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:36:11 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+02:36:12 DEBUG inventario.php:21[main.main]: misesion: 
+02:36:12 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:36:12 DEBUG inventario.php:45[main.main]: debugging
+02:36:12 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:36:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:36:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:36:16 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+02:36:16 DEBUG bien.php:53[main.main]: numero: 1003
+02:36:16 DEBUG bien.php:54[main.main]: folio unico: 001003
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:36:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:36:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:36:18 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:36:18 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+02:36:18 DEBUG inventario.php:21[main.main]: misesion: 
+02:36:18 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:36:18 DEBUG inventario.php:45[main.main]: debugging
+02:36:18 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:36:18 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:36:18 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:36:21 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 0
+02:36:21 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 001
+02:36:21 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+02:36:22 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+02:36:22 DEBUG bien.php:53[main.main]: numero: 1003
+02:36:22 DEBUG bien.php:54[main.main]: folio unico: 001003
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:36:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:36:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:36:54 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 0
+02:36:54 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 001
+02:36:54 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+02:36:56 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 1
+02:36:56 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 002
+02:36:56 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+02:37:16 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 0
+02:37:16 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 001
+02:37:16 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+02:41:33 DEBUG altaarticulo.php:18[main.main]: Array
+(
+    [bien] => 
+    [empresa] => 14
+    [periodo] => 11
+    [imagenes] => 0
+    [folio] => 2120-001-002
+    [folioAnterior] => 
+    [consecutivo] => 002
+    [departamento] => 390
+    [tipoClasificacion] => 1
+    [clasificacion] => 4
+    [cuentaContable] => 1.1.5.1.1
+    [cuentaDepreciacion] => 5.1.1
+    [uma] => undefined
+    [valorUma] => NaN
+    [descripcion] => 
+    [notas] => jlkjlkjjlkjjlkjlk
+    [tipoValuacion] => undefined
+    [valuacion] => 
+    [marca] => NO IDENTIFICADO
+    [modelo] => NO IDENTIFICADO
+    [serie] => NO IDENTIFICADO
+    [motor] => NO APLICA
+    [factura] => NO IDENTIFICADO
+    [fechaAdquisicion] => Invalid date
+    [estadoFisico] => undefined
+    [depreciacion] => undefined
+    [aniosUso] => undefined
+    [origen] => 0
+    [inventarioContable] => 0
+    [depreciacionPeriodo] => undefined
+    [depreciacionAcumulada] => undefined
+    [responsable] => 0
+    [color] => 
+    [valorAnterior] => undefined
+    [matricula] => NO APLICA
+    [tipoEtiqueta] => CODIGOQR
+    [v_id] => Array
+        (
+            [0] => 0
+        )
+
+    [v_index] => Array
+        (
+            [0] => 0
+        )
+
+    [v_periodo] => Array
+        (
+            [0] => 0
+        )
+
+    [v_tipoImporte] => Array
+        (
+            [0] => 1
+        )
+
+    [v_valor] => Array
+        (
+            [0] => 8000
+        )
+
+    [v_fechaAdquisicion] => Array
+        (
+            [0] => 01-11-2020
+        )
+
+    [v_edoFisico] => Array
+        (
+            [0] => 1
+        )
+
+    [v_fechaCierre] => Array
+        (
+            [0] => 31-12-2020
+        )
+
+    [v_uma] => Array
+        (
+            [0] => 5
+        )
+
+    [v_tipoDepreciacion] => Array
+        (
+            [0] => 8
+        )
+
+    [v_depPeriodo] => Array
+        (
+            [0] => 66.66666666666667
+        )
+
+    [v_depAcumulada] => Array
+        (
+            [0] => 66.67
+        )
+
+    [v_valorLibros] => Array
+        (
+            [0] => 7933.33
+        )
+
+    [v_valorActual] => Array
+        (
+            [0] => 8000
+        )
+
+    [v_cc] => Array
+        (
+            [0] => 1
+        )
+
+)
+
+02:41:33 DEBUG BienDao.php:358[BienDao.insertBase]: fk_id_empresa: 14
+02:41:33 DEBUG BienDao.php:359[BienDao.insertBase]: fk_id_cat_tipo_clasificacion_bien: 1
+02:41:33 DEBUG BienDao.php:360[BienDao.insertBase]: fk_id_clasificacion_bien: 4
+02:41:33 DEBUG BienDao.php:361[BienDao.insertBase]: fk_id_departamento: 390
+02:41:33 DEBUG BienDao.php:362[BienDao.insertBase]: fk_id_cat_depreciacion: undefined
+02:41:33 DEBUG BienDao.php:363[BienDao.insertBase]: fk_id_cat_origen_fondo_adquisicion: 0
+02:41:33 DEBUG BienDao.php:364[BienDao.insertBase]: imagen: 
+02:41:33 DEBUG BienDao.php:365[BienDao.insertBase]: archivoFactura: 
+02:41:33 DEBUG BienDao.php:366[BienDao.insertBase]: archivoPoliza: 
+02:41:33 DEBUG BienDao.php:367[BienDao.insertBase]: descripcion: 
+02:41:33 DEBUG BienDao.php:368[BienDao.insertBase]: marca: NO IDENTIFICADO
+02:41:33 DEBUG BienDao.php:369[BienDao.insertBase]: modelo: NO IDENTIFICADO
+02:41:33 DEBUG BienDao.php:370[BienDao.insertBase]: serie: NO IDENTIFICADO
+02:41:33 DEBUG BienDao.php:371[BienDao.insertBase]: motor: NO APLICA
+02:41:33 DEBUG BienDao.php:372[BienDao.insertBase]: factura: NO IDENTIFICADO
+02:41:33 DEBUG BienDao.php:373[BienDao.insertBase]: fecha_adquisicion: Invalid date
+02:41:33 DEBUG BienDao.php:374[BienDao.insertBase]: fk_id_cat_tipo_valuacion: undefined
+02:41:33 DEBUG BienDao.php:375[BienDao.insertBase]: valuacion: 
+02:41:33 DEBUG BienDao.php:376[BienDao.insertBase]: numero: 1003
+02:41:33 DEBUG BienDao.php:377[BienDao.insertBase]: folio_unico: 001003
+02:41:33 DEBUG BienDao.php:380[BienDao.insertBase]: result: success
+02:41:33 DEBUG BienDao.php:422[BienDao.insertByPeriodo]: result: SUCCESS
+02:41:33 DEBUG BienDao.php:591[BienDao.insertValuaciones]: inicia
+02:41:33 DEBUG BienDao.php:597[BienDao.insertValuaciones]: fk_id_bien: 16556
+02:41:33 DEBUG BienDao.php:598[BienDao.insertValuaciones]: fk_id_periodo: 0
+02:41:33 DEBUG BienDao.php:599[BienDao.insertValuaciones]: valor: 8000
+02:41:33 DEBUG BienDao.php:600[BienDao.insertValuaciones]: fk_id_cat_tipo_valuacion: 1
+02:41:33 DEBUG BienDao.php:601[BienDao.insertValuaciones]: fecha: 01-11-2020
+02:41:33 DEBUG BienDao.php:602[BienDao.insertValuaciones]: fecha_cierre: 31-12-2020
+02:41:33 DEBUG BienDao.php:603[BienDao.insertValuaciones]: dep_acumulada: 66.67
+02:41:33 DEBUG BienDao.php:604[BienDao.insertValuaciones]: dep_periodo: 66.66666666666667
+02:41:33 DEBUG BienDao.php:605[BienDao.insertValuaciones]: anios_uso: 0
+02:41:33 DEBUG BienDao.php:606[BienDao.insertValuaciones]: fk_id_cat_depreciacion: 8
+02:41:33 DEBUG BienDao.php:607[BienDao.insertValuaciones]: fk_id_cat_uma: 5
+02:41:33 DEBUG BienDao.php:608[BienDao.insertValuaciones]: valor_libros: 7933.33
+02:41:33 DEBUG BienDao.php:609[BienDao.insertValuaciones]: valor_actual: 8000
+02:41:33 DEBUG BienDao.php:610[BienDao.insertValuaciones]: fk_id_cat_estado_fisico: 1
+02:41:33 DEBUG BienDao.php:611[BienDao.insertValuaciones]: orden: 0
+02:41:33 DEBUG BienDao.php:523[BienDao.deleteImgs]: Se eliminaron imagenes anteriores
+02:41:33 DEBUG BienDao.php:558[BienDao.insertImages]: antes de insertar
+02:41:33 DEBUG BienDao.php:559[BienDao.insertImages]: Array
+(
+)
+
+02:41:33 DEBUG BienDao.php:582[BienDao.insertImages]: el arreglo no contenia imagenes para insertar
+02:41:33 DEBUG altaarticulo.php:239[main.main]: Creando codigo de barras
+02:41:34 DEBUG altaarticulo.php:245[main.main]: codigo QR creado satisfactoriamente
+02:41:34 DEBUG altaarticulo.php:268[main.main]: Se almaceno satisfactoriamente su informacion
+02:41:34 DEBUG altaarticulo.php:312[main.main]: Cierra conexion a Base de datos
+02:41:34 DEBUG inventario.php:21[main.main]: misesion: 
+02:41:34 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:41:34 DEBUG inventario.php:45[main.main]: debugging
+02:41:34 DEBUG inventario.php:46[main.main]: Array
+(
+    [result] => SUCCESS
+    [message] => Se almaceno satisfactoriamente su informacion
+)
+
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:41:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:41:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:41:38 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+02:41:38 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+02:41:38 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: BienDao
+02:41:38 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+02:42:00 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2020-07-27/20200727014407_1.jpg
+02:42:00 DEBUG BienDao.php:545[BienDao.getImages]: 1: /files/2020-07-27/20200727014407_2.jpg
+02:42:00 DEBUG BienDao.php:545[BienDao.getImages]: 2: /files/2020-07-27/20200727014407_3.jpg
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:42:00 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:42:00 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:42:36 DEBUG inventario.php:21[main.main]: misesion: 
+02:42:36 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:42:36 DEBUG inventario.php:45[main.main]: debugging
+02:42:36 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+02:42:36 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: BienDao
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:42:36 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:42:36 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:42:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:42:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:42:53 DEBUG inventario.php:21[main.main]: misesion: 
+02:42:53 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:42:53 DEBUG inventario.php:45[main.main]: debugging
+02:42:53 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+02:42:53 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: BienDao
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:42:53 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:42:53 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:43:12 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+02:43:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:43:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: BienDao
+02:43:12 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:43:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:43:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:43:59 DEBUG altaarticulo.php:18[main.main]: Array
+(
+    [bien] => 
+    [empresa] => 14
+    [periodo] => 11
+    [imagenes] => 0
+    [folio] => 5510-001-001
+    [folioAnterior] => 
+    [consecutivo] => 001
+    [departamento] => 390
+    [tipoClasificacion] => 1
+    [clasificacion] => 90
+    [cuentaContable] => 1.2.4.5.01.01
+    [cuentaDepreciacion] => 1.2.6.3.05 - DEPRECIACIÓN ACUMULADA DE DEFENSA Y SEGURIDAD
+    [uma] => undefined
+    [valorUma] => NaN
+    [descripcion] => mesa de acero inox
+    [notas] => 
+    [tipoValuacion] => undefined
+    [valuacion] => 
+    [marca] => NO IDENTIFICADO
+    [modelo] => NO IDENTIFICADO
+    [serie] => NO IDENTIFICADO
+    [motor] => NO APLICA
+    [factura] => NO IDENTIFICADO
+    [fechaAdquisicion] => Invalid date
+    [estadoFisico] => undefined
+    [depreciacion] => undefined
+    [aniosUso] => undefined
+    [origen] => 0
+    [inventarioContable] => 0
+    [depreciacionPeriodo] => undefined
+    [depreciacionAcumulada] => undefined
+    [responsable] => 0
+    [color] => 
+    [valorAnterior] => undefined
+    [matricula] => NO APLICA
+    [tipoEtiqueta] => CODIGOQR
+    [v_id] => Array
+        (
+            [0] => 0
+        )
+
+    [v_index] => Array
+        (
+            [0] => 0
+        )
+
+    [v_periodo] => Array
+        (
+            [0] => 0
+        )
+
+    [v_tipoImporte] => Array
+        (
+            [0] => 1
+        )
+
+    [v_valor] => Array
+        (
+            [0] => 8000
+        )
+
+    [v_fechaAdquisicion] => Array
+        (
+            [0] => 31-12-2020
+        )
+
+    [v_edoFisico] => Array
+        (
+            [0] => null
+        )
+
+    [v_fechaCierre] => Array
+        (
+            [0] => 31-12-2020
+        )
+
+    [v_uma] => Array
+        (
+            [0] => 0
+        )
+
+    [v_tipoDepreciacion] => Array
+        (
+            [0] => null
+        )
+
+    [v_depPeriodo] => Array
+        (
+            [0] => 0
+        )
+
+    [v_depAcumulada] => Array
+        (
+            [0] => 0.00
+        )
+
+    [v_valorLibros] => Array
+        (
+            [0] => 8000.00
+        )
+
+    [v_valorActual] => Array
+        (
+            [0] => 8000
+        )
+
+    [v_cc] => Array
+        (
+            [0] => 0
+        )
+
+)
+
+02:43:59 DEBUG BienDao.php:358[BienDao.insertBase]: fk_id_empresa: 14
+02:43:59 DEBUG BienDao.php:359[BienDao.insertBase]: fk_id_cat_tipo_clasificacion_bien: 1
+02:43:59 DEBUG BienDao.php:360[BienDao.insertBase]: fk_id_clasificacion_bien: 90
+02:43:59 DEBUG BienDao.php:361[BienDao.insertBase]: fk_id_departamento: 390
+02:43:59 DEBUG BienDao.php:362[BienDao.insertBase]: fk_id_cat_depreciacion: undefined
+02:43:59 DEBUG BienDao.php:363[BienDao.insertBase]: fk_id_cat_origen_fondo_adquisicion: 0
+02:43:59 DEBUG BienDao.php:364[BienDao.insertBase]: imagen: 
+02:43:59 DEBUG BienDao.php:365[BienDao.insertBase]: archivoFactura: 
+02:43:59 DEBUG BienDao.php:366[BienDao.insertBase]: archivoPoliza: 
+02:43:59 DEBUG BienDao.php:367[BienDao.insertBase]: descripcion: mesa de acero inox
+02:43:59 DEBUG BienDao.php:368[BienDao.insertBase]: marca: NO IDENTIFICADO
+02:43:59 DEBUG BienDao.php:369[BienDao.insertBase]: modelo: NO IDENTIFICADO
+02:43:59 DEBUG BienDao.php:370[BienDao.insertBase]: serie: NO IDENTIFICADO
+02:43:59 DEBUG BienDao.php:371[BienDao.insertBase]: motor: NO APLICA
+02:43:59 DEBUG BienDao.php:372[BienDao.insertBase]: factura: NO IDENTIFICADO
+02:43:59 DEBUG BienDao.php:373[BienDao.insertBase]: fecha_adquisicion: Invalid date
+02:43:59 DEBUG BienDao.php:374[BienDao.insertBase]: fk_id_cat_tipo_valuacion: undefined
+02:43:59 DEBUG BienDao.php:375[BienDao.insertBase]: valuacion: 
+02:43:59 DEBUG BienDao.php:376[BienDao.insertBase]: numero: 1004
+02:43:59 DEBUG BienDao.php:377[BienDao.insertBase]: folio_unico: 001004
+02:43:59 DEBUG BienDao.php:380[BienDao.insertBase]: result: success
+02:43:59 DEBUG BienDao.php:422[BienDao.insertByPeriodo]: result: SUCCESS
+02:43:59 DEBUG BienDao.php:591[BienDao.insertValuaciones]: inicia
+02:43:59 DEBUG BienDao.php:597[BienDao.insertValuaciones]: fk_id_bien: 16557
+02:43:59 DEBUG BienDao.php:598[BienDao.insertValuaciones]: fk_id_periodo: 0
+02:43:59 DEBUG BienDao.php:599[BienDao.insertValuaciones]: valor: 8000
+02:43:59 DEBUG BienDao.php:600[BienDao.insertValuaciones]: fk_id_cat_tipo_valuacion: 1
+02:43:59 DEBUG BienDao.php:601[BienDao.insertValuaciones]: fecha: 31-12-2020
+02:43:59 DEBUG BienDao.php:602[BienDao.insertValuaciones]: fecha_cierre: 31-12-2020
+02:43:59 DEBUG BienDao.php:603[BienDao.insertValuaciones]: dep_acumulada: 0.00
+02:43:59 DEBUG BienDao.php:604[BienDao.insertValuaciones]: dep_periodo: 0
+02:43:59 DEBUG BienDao.php:605[BienDao.insertValuaciones]: anios_uso: 0
+02:43:59 DEBUG BienDao.php:606[BienDao.insertValuaciones]: fk_id_cat_depreciacion: null
+02:43:59 DEBUG BienDao.php:607[BienDao.insertValuaciones]: fk_id_cat_uma: 0
+02:43:59 DEBUG BienDao.php:608[BienDao.insertValuaciones]: valor_libros: 8000.00
+02:43:59 DEBUG BienDao.php:609[BienDao.insertValuaciones]: valor_actual: 8000
+02:43:59 DEBUG BienDao.php:610[BienDao.insertValuaciones]: fk_id_cat_estado_fisico: null
+02:43:59 DEBUG BienDao.php:611[BienDao.insertValuaciones]: orden: 0
+02:43:59 DEBUG BienDao.php:523[BienDao.deleteImgs]: Se eliminaron imagenes anteriores
+02:43:59 DEBUG BienDao.php:558[BienDao.insertImages]: antes de insertar
+02:43:59 DEBUG BienDao.php:559[BienDao.insertImages]: Array
+(
+)
+
+02:43:59 DEBUG BienDao.php:582[BienDao.insertImages]: el arreglo no contenia imagenes para insertar
+02:43:59 DEBUG altaarticulo.php:239[main.main]: Creando codigo de barras
+02:43:59 DEBUG altaarticulo.php:245[main.main]: codigo QR creado satisfactoriamente
+02:43:59 DEBUG altaarticulo.php:268[main.main]: Se almaceno satisfactoriamente su informacion
+02:43:59 DEBUG altaarticulo.php:312[main.main]: Cierra conexion a Base de datos
+02:43:59 DEBUG inventario.php:21[main.main]: misesion: 
+02:43:59 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:43:59 DEBUG inventario.php:45[main.main]: debugging
+02:43:59 DEBUG inventario.php:46[main.main]: Array
+(
+    [result] => SUCCESS
+    [message] => Se almaceno satisfactoriamente su informacion
+)
+
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:43:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:43:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:45:29 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:29 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:29 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:29 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:29 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:30 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:30 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:30 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:30 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:30 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:30 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:31 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:31 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:31 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:31 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:31 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:32 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:32 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:32 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:32 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:33 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:34 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:34 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:34 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:34 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:35 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:35 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:35 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:35 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:35 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:36 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:36 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:36 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:36 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:36 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:37 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:37 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:37 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:37 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:37 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:43 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:43 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:43 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:43 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:43 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:43 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:44 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:44 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:44 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:44 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:45 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:45 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:45 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:45 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:45 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:45 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:46 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:46 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:46 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:45:46 ERROR BienDao.php:22[BienDao.find]: Falta id y/o id de periodo
+02:46:03 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:46:03 DEBUG login.php:29[main.main]: result: SUCCESS
+02:46:03 DEBUG login.php:30[main.main]: session: ON
+02:46:03 DEBUG login.php:32[main.main]: crea session
+02:46:03 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+02:46:03 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:46:03 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+02:46:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:46:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+02:46:07 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+02:46:10 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:46:10 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+02:46:10 DEBUG inventario.php:21[main.main]: misesion: 
+02:46:10 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:46:10 DEBUG inventario.php:45[main.main]: debugging
+02:46:10 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:46:10 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:46:10 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:46:18 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+02:46:18 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+02:46:18 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+02:46:18 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+02:48:12 DEBUG inventario.php:21[main.main]: misesion: 
+02:48:12 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+02:48:12 DEBUG inventario.php:45[main.main]: debugging
+02:48:12 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+02:48:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:48:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+02:48:16 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+02:48:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+02:48:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: BienDao
+02:48:16 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+02:48:17 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+02:48:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 16 registro(s)
+02:48:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 16 registros de tipo: BienDao
+02:48:17 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+02:48:31 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+02:48:31 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+02:48:31 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+02:48:31 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+02:48:38 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+02:48:38 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+02:48:38 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+02:48:38 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+03:04:05 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+03:04:05 DEBUG bien.php:53[main.main]: numero: 1005
+03:04:05 DEBUG bien.php:54[main.main]: folio unico: 001005
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+03:04:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:04:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+21:34:04 DEBUG inventario.php:21[main.main]: misesion: 
+21:34:04 DEBUG inventario.php:22[main.main]: 
+21:34:04 DEBUG inventario.php:45[main.main]: debugging
+21:34:04 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: ItemCatalogo
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+21:34:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+21:34:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:08:04 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:08:04 DEBUG login.php:29[main.main]: result: SUCCESS
+23:08:04 DEBUG login.php:30[main.main]: session: ON
+23:08:04 DEBUG login.php:32[main.main]: crea session
+23:08:04 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+23:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+23:08:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+23:08:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+23:08:12 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+23:08:15 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:08:15 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+23:08:15 DEBUG inventario.php:21[main.main]: misesion: 
+23:08:15 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:08:15 DEBUG inventario.php:45[main.main]: debugging
+23:08:15 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:08:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:08:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:08:27 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 15
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 12
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 464
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+23:08:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 37 registro(s)
+23:08:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 37 registros de tipo: BienDao
+23:08:27 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+23:09:15 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2021-01-04/20210104051823_017_1.jpg
+23:09:15 DEBUG BienDao.php:545[BienDao.getImages]: 1: /files/2021-01-04/20210104051823_930_2.jpg
+23:09:15 DEBUG BienDao.php:545[BienDao.getImages]: 2: /files/2021-01-04/20210104051823_719_3.jpg
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:09:15 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:09:15 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:09:47 DEBUG inventario.php:21[main.main]: misesion: 
+23:09:47 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:09:47 DEBUG inventario.php:45[main.main]: debugging
+23:09:47 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+23:09:47 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 15
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 12
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 464
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 37 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 37 registros de tipo: BienDao
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:09:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:09:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:10:07 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2021-01-04/20210104051708_517_1.jpg
+23:10:07 DEBUG BienDao.php:545[BienDao.getImages]: 1: /files/2021-01-04/20210104051708_298_2.jpg
+23:10:07 DEBUG BienDao.php:545[BienDao.getImages]: 2: /files/2021-01-04/20210104051708_697_3.jpg
+23:10:07 DEBUG BienDao.php:545[BienDao.getImages]: 3: /files/2021-01-04/20210104051708_455_4.jpg
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:10:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:10:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:10:16 DEBUG inventario.php:21[main.main]: misesion: 
+23:10:16 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:10:16 DEBUG inventario.php:45[main.main]: debugging
+23:10:16 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+23:10:16 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 15
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 12
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 464
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 37 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 37 registros de tipo: BienDao
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:10:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:10:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:11:08 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2021-01-04/20210104054421_602_1.jpg
+23:11:08 DEBUG BienDao.php:545[BienDao.getImages]: 1: /files/2021-01-04/20210104054421_326_2.jpg
+23:11:08 DEBUG BienDao.php:545[BienDao.getImages]: 2: /files/2021-01-04/20210104054421_475_3.jpg
+23:11:08 DEBUG BienDao.php:545[BienDao.getImages]: 3: /files/2021-01-04/20210104054421_401_4.jpg
+23:11:08 DEBUG BienDao.php:545[BienDao.getImages]: 4: /files/2021-01-04/20210104054421_062_5.jpg
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:11:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:11:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:11:49 DEBUG inventario.php:21[main.main]: misesion: 
+23:11:49 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:11:49 DEBUG inventario.php:45[main.main]: debugging
+23:11:49 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+23:11:49 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 15
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 12
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 464
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 37 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 37 registros de tipo: BienDao
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:11:49 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:11:49 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:12:08 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2020-12-29/20201229010436_474_1.jpg
+23:12:08 DEBUG BienDao.php:545[BienDao.getImages]: 1: /files/2020-12-29/20201229010436_669_2.jpg
+23:12:08 DEBUG BienDao.php:545[BienDao.getImages]: 2: /files/2020-12-29/20201229010436_081_3.jpg
+23:12:08 DEBUG BienDao.php:545[BienDao.getImages]: 3: /files/2020-12-29/20201229010436_989_4.jpg
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:12:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:12:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:12:47 DEBUG inventario.php:21[main.main]: misesion: 
+23:12:47 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:12:47 DEBUG inventario.php:45[main.main]: debugging
+23:12:47 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+23:12:47 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 15
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 12
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 464
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 37 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 37 registros de tipo: BienDao
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 40 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 40 registros de tipo: ItemCatalogo
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:12:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:12:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo

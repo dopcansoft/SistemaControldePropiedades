@@ -1,0 +1,2867 @@
+<queries>
+	<entry key="usuario.login">
+		SELECT
+			u.id, 
+			u.nombre, 
+			u.apellidos, 
+			u.email, 
+			u.avatar,
+			u.fk_id_cat_estatus_usuario 'estatus.id',
+			ceu.descr 'estatus.descr',
+			u.fecha_insert
+		FROM
+			usuario u
+		LEFT JOIN
+			cat_estatus_usuario ceu
+		ON
+			u.fk_id_cat_estatus_usuario = ceu.id
+		WHERE
+			u.email = :email
+			AND u.password = sha1(:password)
+	</entry>
+	<entry key="usuario.find">
+		SELECT
+			u.id, 
+			u.nombre, 
+			u.apellidos, 
+			u.email, 
+			u.avatar,
+			u.fk_id_cat_estatus_usuario 'estatus.id',
+			ceu.descr 'estatus.descr',
+			u.fecha_insert
+		FROM
+			usuario u
+		LEFT JOIN
+			cat_estatus_usuario ceu
+		ON
+			u.fk_id_cat_estatus_usuario = ceu.id
+		WHERE
+			u.id = :id
+	</entry>
+	<entry key="usuario.permiso.empresa">
+		SELECT 
+			fk_id_cat_rol_usuario 'perfil.id',
+			cru.descr 'perfil.descr'	
+		FROM
+			usuario_empresa ue
+		LEFT JOIN
+			cat_rol_usuario cru
+		ON
+			ue.fk_id_cat_rol_usuario = cru.id
+		WHERE
+			ue.fk_id_usuario = :fk_id_usuario
+			AND ue.fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="usuarios.list">
+		SELECT
+			u.id, 
+			u.nombre, 
+			u.apellidos, 
+			u.email, 
+			u.avatar, 
+			u.fecha_insert 'fechaInsert', 
+			u.fk_id_cat_estatus_usuario 'estatus.id', 
+			ceu.descr 'estatus.descr',
+			ctu.id 'tipo.id',
+			ctu.descr 'tipo.descr' 
+		FROM
+			usuario u
+		LEFT JOIN
+			cat_estatus_usuario ceu
+		ON
+			u.fk_id_cat_estatus_usuario = ceu.id
+		LEFT JOIN
+			cat_tipo_usuario ctu
+		ON
+			u.fk_id_cat_tipo_usuario = ctu.id
+		ORDER BY 
+			u.fecha_insert
+	</entry>
+	<entry key="empresa.insert.short">
+		INSERT INTO empresa(nombre, descr) 
+		VALUES(:nombre, :descr)
+	</entry>
+	<entry key="empresa.insertusuario">
+		INSERT INTO usuario_empresa(fk_id_usuario, fk_id_empresa, fk_id_cat_rol_usuario) VALUES(:fk_id_usuario, :fk_id_empresa, :fk_id_cat_rol_usuario)
+	</entry>
+	<entry key="empresa.update">
+		UPDATE
+			empresa
+		SET 
+			nombre=:nombre, 
+			descr=:descr, 
+			direccion=:direccion, 
+			logo=:logo 
+		WHERE
+			id=:id
+	</entry>
+	<entry key="empresa.list">
+		SELECT
+			e.id,
+			e.nombre,
+			e.descr,
+			e.periodoDescr
+			e.direccion,
+			e.logo_mpio 'logoMpio',
+			e.logo_ayuto 'logoAyuto',
+			e.logo_periodo 'logoPeriodo',
+			e.fk_id_cat_estatus 'estatus.id',
+			cee.descr 'estatus.descr',
+			e.tipo_etiqueta 'tipoEtiqueta',
+			e.fecha_insert,
+			COUNT(b.id) 'bienes'
+		FROM 
+			empresa e
+		LEFT JOIN
+			cat_estatus_empresa cee
+		ON
+			e.fk_id_cat_estatus = cee.id
+		LEFT JOIN
+			bien b
+		ON
+			b.fk_id_empresa = e.id
+		GROUP BY 
+			e.id
+		ORDER BY 
+			e.fecha_insert
+	</entry>
+	<entry key="empresa.unico.find.max">
+		SELECT
+			IF(MAX(b.numero)>=e.inicial,MAX(b.numero)+1,e.inicial) AS 'numero',
+			LPAD(IF(MAX(b.numero)>=e.inicial,MAX(b.numero)+1,e.inicial),e.digitos,'0') AS 'folioUnico',
+			e.inicial,
+			e.digitos
+		FROM
+			bien b
+		LEFT JOIN
+			empresa e
+		ON
+			b.fk_id_empresa = e.id
+		WHERE
+			e.id = :fk_id_empresa
+	</entry>
+	<entry key="usuario.empresas.list">
+		SELECT
+			e.id,
+			e.nombre,
+			e.descr,
+			e.direccion,
+			e.logo_mpio 'logoMpio',
+			e.logo_ayuto 'logoAyuto',
+			e.logo_periodo 'logoPeriodo',
+			e.fk_id_cat_estatus 'estatus.id',
+			cee.descr 'estatus.descr',
+			e.fecha_insert,
+			e.tipo_etiqueta 'tipoEtiqueta',
+			COUNT(b.id) 'bienes'		
+		FROM 
+			usuario_empresa ue
+		LEFT JOIN
+			empresa e
+		ON
+			ue.fk_id_empresa = e.id
+		LEFT JOIN
+			cat_estatus_empresa cee
+		ON
+			e.fk_id_cat_estatus = cee.id
+		LEFT JOIN
+			bien b
+		ON
+			b.fk_id_empresa = e.id
+		WHERE
+			ue.fk_id_usuario = :fk_id_usuario
+		GROUP BY 
+			e.id
+		ORDER BY 
+			e.fecha_insert
+	</entry>
+	<entry key="usuario.list.permisos">
+		SELECT
+			ue.id,
+			ue.fecha_insert 'fechaInsert',
+			ue.fk_id_usuario 'usuario.id',
+			ue.fk_id_cat_rol_usuario 'rol.id',
+			cru.descr 'rol.descr',
+			e.id 'empresa.id',
+			e.nombre 'empresa.nombre',
+			e.descr 'empresa.descr',
+			e.direccion 'empresa.direccion',
+			e.logo_mpio 'empresa.logoMpio',
+			e.logo_ayuto 'empresa.logoAyuto',
+			e.logo_periodo 'empresa.logoPeriodo',
+			e.fk_id_cat_estatus 'empresa.estatus.id',
+			e.tipo_etiqueta 'tipoEtiqueta',
+			cee.descr 'empresa.estatus.descr',
+			e.fecha_insert 'empresa.fechaInsert',
+			COUNT(b.id) 'bienes'		
+		FROM 
+			usuario_empresa ue
+		LEFT JOIN
+			cat_rol_usuario cru
+		ON
+			ue.fk_id_cat_rol_usuario = cru.id
+		LEFT JOIN
+			empresa e
+		ON
+			ue.fk_id_empresa = e.id
+		LEFT JOIN
+			cat_estatus_empresa cee
+		ON
+			e.fk_id_cat_estatus = cee.id
+		LEFT JOIN
+			bien b
+		ON
+			b.fk_id_empresa = e.id
+		WHERE
+			ue.fk_id_usuario = :fk_id_usuario
+		GROUP BY 
+			e.id
+		ORDER BY 
+			e.fecha_insert
+	</entry>
+	<entry key="empresa.find">
+		SELECT
+			e.id,
+			e.nombre,
+			e.descr,
+			e.direccion,
+			e.logo_mpio 'logoMpio',
+			e.logo_ayuto 'logoAyuto',
+			e.logo_periodo 'logoPeriodo',
+			e.logo_etiqueta 'logoEtiqueta',
+			e.fk_id_cat_estatus 'estatus.id',
+			e.tipo_etiqueta 'tipoEtiqueta',
+			cee.descr 'estatus.descr',
+			e.fecha_insert
+		FROM 
+			empresa e
+		LEFT JOIN
+			cat_estatus_empresa cee
+		ON
+			e.fk_id_cat_estatus = cee.id
+		WHERE e.id = :id
+	</entry>
+	<entry key="bien.find">
+		SELECT 	
+			bn.id, 	 
+			bn.imagen,
+			bn.folio_unico 'folioUnico',
+			bn.numero,
+			bp.folio,
+			bn.folio_anterior 'folioAnterior',
+			bp.consecutivo,
+			bp.valor_anterior 'valorAnterior',
+			bp.matricula,
+			bn.archivo_factura 'archivoFactura',
+			bn.archivo_poliza 'archivoPoliza',
+			bn.descripcion, 
+			bn.notas,
+			bn.marca, 
+			bn.modelo, 
+			bn.serie, 
+			bn.motor, 
+			bn.factura, 
+			bn.fecha_adquisicion 'fechaAdquisicion',
+			bp.fecha_cierre 'fechaCierre', 
+			bn.fk_id_cat_tipo_valuacion 'tipoValuacion.id',
+			ctv.descr 'tipoValuacion.descr',
+			bn.valuacion 'valor', 
+			bn.fecha_insert 'fechaInsert',
+			-- empresa
+			bn.fk_id_empresa 'empresa.id',	
+			e.nombre 'empresa.nombre',
+			e.descr 'empresa.descr',
+			e.direccion 'empresa.direccion',
+			-- e.logo 'empresa.logo',
+			e.logo_mpio 'logoMpio',
+			e.logo_ayuto 'logoAyuto',
+			e.logo_periodo 'logoPeriodo',
+			e.fk_id_cat_estatus 'empresa.status.id',
+			e.tipo_etiqueta 'empresa.tipoEtiqueta',
+			-- tipoClasificacion
+			bn.fk_id_cat_tipo_clasificacion_bien 'tipoClasificacion.id', 
+			ctcb.descr 'tipoClasificacion.descr',		
+			-- clasificacion
+			bn.fk_id_clasificacion_bien 'clasificacion.id',	
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.descr WHEN 2 THEN cbm.descr ELSE 'Desconocido' END 'clasificacion.descr',	 
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.grupo ELSE cbm.grupo END 'clasificacion.grupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.subgrupo ELSE cbm.subgrupo END 'clasificacion.subgrupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.clase ELSE cbm.clase END 'clasificacion.clase',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.subclase ELSE cbm.subclase END 'clasificacion.subclase',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.consecutivo END 'clasificacion.consecutivo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_contable ELSE cbm.cuenta_contable END 'clasificacion.cuentaContable',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_depreciacion ELSE cbm.cuenta_depreciacion END 'clasificacion.cuentaDepreciacion',
+			-- departamento
+			bn.fk_id_departamento 'departamento.id',
+			d.descr 'departamento.descr',
+			d.clave 'departamento.folio',
+			-- depreciacion
+			bn.fk_id_cat_depreciacion 'depreciacion.id', 
+			cd.cuenta 'depreciacion.cuenta',	
+			cd.descr 'depreciacion.descr',
+			cd.vida_util 'depreciacion.vidaUtil',
+			cd.depreciacion_anual 'depreciacion.depreciacionAnual',
+			cd.fecha_insert 'depreciacion.fechaInsert',
+			-- origen
+			bn.fk_id_cat_origen_fondo_adquisicion 'origen.id',
+			cofa.descr 'origen.descr',
+			bp.fk_id_periodo 'periodo.id',
+			per.descr 'periodo.descr',
+			per.fecha_inicio 'periodo.fechaInicio',
+			per.fecha_fin 'periodo.fechaFin',
+			per.fecha_insert 'periodo.fechaInsert',
+			bp.fk_id_cat_estado_fisico 'estadoFisico.id',
+			cef.descr 'estadoFisico.descr',
+			bp.depreciacion_acumulada 'depreciacionAcumulada',
+			bp.depreciacion_periodo 'depreciacionPeriodo',
+			bp.anios_uso 'aniosUso',
+			bp.fk_id_cat_uma 'uma.id',
+			cu.anio 'uma.anio',
+			cu.valor_diario 'uma.valorDiario',
+			cu.valor_mensual 'uma.valorMensual',
+			cu.valor_anual 'uma.valorAnual',
+			cu.factor 'uma.factor',
+			bp.valor_uma 'valorUma',
+			bp.inventario_contable 'inventarioContable',
+			bp.fk_id_responsable 'responsable.id',
+			resp.titulo 'responsable.titulo',
+			resp.nombre 'responsable.nombre',
+			resp.apellido 'responsable.apellido',
+			resp.email 'responsable.email',
+			bp.fk_id_cat_color 'color.id',
+			cc.descr 'color.descr'
+		FROM 
+			bien bn
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			bn.id = bp.fk_id_bien
+		-- empresa
+		LEFT JOIN
+			empresa e
+		ON
+			bn.fk_id_empresa = e.id
+		-- tipoClasificacion
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			bn.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+		-- tipoValuacion
+		LEFT JOIN
+			cat_tipo_valuacion ctv
+		ON
+			ctv.id = bn.fk_id_cat_tipo_valuacion
+		-- bien_mueble
+		LEFT JOIN
+			cat_bien_mueble cbm
+		ON
+			cbm.id = bn.fk_id_clasificacion_bien
+		-- bien_inmueble
+		#LEFT JOIN
+		#	cat_bien_inmueble cbi
+		#ON
+		#	cbi.id = bn.fk_id_clasificacion_bien	
+		-- departamento
+		LEFT JOIN
+			departamento d
+		ON
+			bn.fk_id_departamento = d.id
+		-- depreciacion
+		LEFT JOIN
+			cat_depreciacion cd
+		ON
+			bn.fk_id_cat_depreciacion = cd.id
+		-- origen
+		LEFT JOIN
+			cat_origen_fondo_adquisicion cofa
+		ON
+			bn.fk_id_cat_origen_fondo_adquisicion = cofa.id	
+		LEFT JOIN
+			periodo per
+		ON
+			per.id = bp.fk_id_periodo
+		LEFT JOIN
+			cat_estado_fisico cef
+		ON
+			cef.id = bp.fk_id_cat_estado_fisico
+		LEFT JOIN
+			cat_uma cu
+		ON
+			cu.id = bp.fk_id_cat_uma
+		LEFT JOIN
+			responsable resp
+		ON
+			bp.fk_id_responsable = resp.id
+		LEFT JOIN
+			cat_color cc
+		ON
+			bp.fk_id_cat_color = cc.id
+		WHERE	
+			bn.id = :id
+			AND bp.fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="bien.find.folio">
+		SELECT 	
+			bn.id, 	 
+			bn.imagen,
+			bp.folio,
+			bp.consecutivo,
+			bp.valor_anterior 'valorAnterior',
+			bp.matricula,
+			bn.archivo_factura 'archivoFactura',
+			bn.archivo_poliza 'archivoPoliza',
+			bn.descripcion, 
+			bn.notas,
+			bn.marca, 
+			bn.modelo, 
+			bn.serie, 
+			bn.motor, 
+			bn.factura, 
+			bn.fecha_adquisicion 'fechaAdquisicion',
+			bp.fecha_cierre 'fechaCierre', 
+			bn.fk_id_cat_tipo_valuacion 'tipoValuacion.id',
+			ctv.descr 'tipoValuacion.descr',
+			bn.valuacion 'valor', 
+			bn.fecha_insert 'fechaInsert',
+			-- empresa
+			bn.fk_id_empresa 'empresa.id',	
+			e.nombre 'empresa.nombre',
+			e.descr 'empresa.descr',
+			e.direccion 'empresa.direccion',
+			e.tipo_etiqueta 'empresa.tipoEtiqueta',
+			-- e.logo 'empresa.logo',
+			e.logo_mpio 'logoMpio',
+			e.logo_ayuto 'logoAyuto',
+			e.logo_periodo 'logoPeriodo',
+			e.fk_id_cat_estatus 'empresa.status.id',
+			-- tipoClasificacion
+			bn.fk_id_cat_tipo_clasificacion_bien 'tipoClasificacion.id', 
+			ctcb.descr 'tipoClasificacion.descr',		
+			-- clasificacion
+			bn.fk_id_clasificacion_bien 'clasificacion.id',	
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.descr WHEN 2 THEN cbm.descr ELSE 'Desconocido' END 'clasificacion.descr',	 
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.grupo ELSE cbm.grupo END 'clasificacion.grupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.subgrupo ELSE cbm.subgrupo END 'clasificacion.subgrupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.clase ELSE cbm.clase END 'clasificacion.clase',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.subclase ELSE cbm.subclase END 'clasificacion.subclase',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.consecutivo END 'clasificacion.consecutivo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_contable ELSE cbm.cuenta_contable END 'clasificacion.cuentaContable',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_depreciacion ELSE cbm.cuenta_depreciacion END 'clasificacion.cuentaDepreciacion',
+			-- departamento
+			bn.fk_id_departamento 'departamento.id',
+			d.descr 'departamento.descr',
+			d.clave 'departamento.folio',
+			-- depreciacion
+			bn.fk_id_cat_depreciacion 'depreciacion.id', 
+			cd.cuenta 'depreciacion.cuenta',	
+			cd.descr 'depreciacion.descr',
+			cd.vida_util 'depreciacion.vidaUtil',
+			cd.depreciacion_anual 'depreciacion.depreciacionAnual',
+			cd.fecha_insert 'depreciacion.fechaInsert',
+			-- origen
+			bn.fk_id_cat_origen_fondo_adquisicion 'origen.id',
+			cofa.descr 'origen.descr',
+			bp.fk_id_periodo 'periodo.id',
+			per.descr 'periodo.descr',
+			per.fecha_inicio 'periodo.fechaInicio',
+			per.fecha_fin 'periodo.fechaFin',
+			per.fecha_insert 'periodo.fechaInsert',
+			bp.fk_id_cat_estado_fisico 'estadoFisico.id',
+			cef.descr 'estadoFisico.descr',
+			bp.depreciacion_acumulada 'depreciacionAcumulada',
+			bp.depreciacion_periodo 'depreciacionPeriodo',
+			bp.anios_uso 'aniosUso',
+			bp.fk_id_cat_uma 'uma.id',
+			cu.anio 'uma.anio',
+			cu.valor_diario 'uma.valorDiario',
+			cu.valor_mensual 'uma.valorMensual',
+			cu.valor_anual 'uma.valorAnual',
+			cu.factor 'uma.factor',
+			bp.valor_uma 'valorUma',
+			bp.inventario_contable 'inventarioContable',
+			bp.fk_id_responsable 'responsable.id',
+			resp.titulo 'responsable.titulo',
+			resp.nombre 'responsable.nombre',
+			resp.apellido 'responsable.apellido',
+			resp.email 'responsable.email',
+			bp.fk_id_cat_color 'color.id',
+			cc.descr 'color.descr',
+			cb.id,
+			cb.bandera
+		FROM 
+			bien bn
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			bn.id = bp.fk_id_bien
+		-- empresa
+		LEFT JOIN
+			empresa e
+		ON
+			bn.fk_id_empresa = e.id
+		-- tipoClasificacion
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			bn.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+		-- tipoValuacion
+		LEFT JOIN
+			cat_tipo_valuacion ctv
+		ON
+			ctv.id = bn.fk_id_cat_tipo_valuacion
+		-- bien_mueble
+		LEFT JOIN
+			cat_bien_mueble cbm
+		ON
+			cbm.id = bn.fk_id_clasificacion_bien
+		-- bien_inmueble
+		#LEFT JOIN
+		#	cat_bien_inmueble cbi
+		#ON
+		#	cbi.id = bn.fk_id_clasificacion_bien	
+		-- departamento
+		LEFT JOIN
+			departamento d
+		ON
+			bn.fk_id_departamento = d.id
+		-- depreciacion
+		LEFT JOIN
+			cat_depreciacion cd
+		ON
+			bn.fk_id_cat_depreciacion = cd.id
+		-- origen
+		LEFT JOIN
+			cat_origen_fondo_adquisicion cofa
+		ON
+			bn.fk_id_cat_origen_fondo_adquisicion = cofa.id	
+		LEFT JOIN
+			periodo per
+		ON
+			per.id = bp.fk_id_periodo
+		LEFT JOIN
+			cat_estado_fisico cef
+		ON
+			cef.id = bp.fk_id_cat_estado_fisico
+		LEFT JOIN
+			cat_uma cu
+		ON
+			cu.id = bp.fk_id_cat_uma
+		LEFT JOIN
+			responsable resp
+		ON
+			bp.fk_id_responsable = resp.id
+		LEFT JOIN
+			cat_color cc
+		ON
+			bp.fk_id_cat_color = cc.id
+		LEFT JOIN
+		    cat_bandera cb
+		ON
+		    bp.bandera = cb.id
+		WHERE	
+			bp.folio = :folio
+	</entry>
+	<entry key="bien.listimages">
+		SELECT
+			path,
+			orden
+		FROM
+			bien_imagen
+		WHERE
+			fk_id_bien = :fk_id_bien
+		ORDER BY
+			orden ASC
+	</entry>
+	<entry key="bien.insert">
+		INSERT INTO bien 
+			(fk_id_empresa, 
+			fk_id_cat_tipo_clasificacion_bien, 
+			fk_id_clasificacion_bien, 
+			fk_id_departamento, 
+			fk_id_cat_depreciacion, 
+			fk_id_cat_origen_fondo_adquisicion, 
+			imagen,
+			archivo_factura,
+			archivo_poliza, 
+			descripcion,
+			folio_anterior,
+			notas, 
+			marca, 
+			modelo, 
+			serie, 
+			motor, 
+			factura, 
+			fecha_adquisicion, 
+			fk_id_cat_tipo_valuacion, 
+			valuacion,
+			numero,
+			folio_unico)
+		VALUES
+			(:fk_id_empresa, 
+			:fk_id_cat_tipo_clasificacion_bien, 
+			:fk_id_clasificacion_bien, 
+			:fk_id_departamento, 
+			:fk_id_cat_depreciacion, 
+			:fk_id_cat_origen_fondo_adquisicion, 
+			:imagen,
+			:archivo_factura,
+			:archivo_poliza, 
+			:descripcion,
+			:folio_anterior,
+			:notas, 
+			:marca, 
+			:modelo, 
+			:serie, 
+			:motor, 
+			:factura, 
+			:fecha_adquisicion, 
+			:fk_id_cat_tipo_valuacion, 
+			:valuacion,
+			:numero,
+			:folio_unico)
+	</entry>
+	<entry key="bien.update">
+		UPDATE
+			bien 
+		SET
+			fk_id_cat_tipo_clasificacion_bien=:fk_id_cat_tipo_clasificacion_bien, 
+			fk_id_clasificacion_bien=:fk_id_clasificacion_bien, 
+			fk_id_departamento=:fk_id_departamento, 
+			fk_id_cat_depreciacion=:fk_id_cat_depreciacion, 
+			fk_id_cat_origen_fondo_adquisicion=:fk_id_cat_origen_fondo_adquisicion, 
+			descripcion=:descripcion, 
+			notas=:notas,
+			folio_anterior=:folio_anterior,
+			imagen=:imagen,
+			marca=:marca, 
+			modelo=:modelo, 
+			serie=:serie, 
+			motor=:motor, 
+			factura=:factura, 
+			fecha_adquisicion=:fecha_adquisicion, 
+			fk_id_cat_tipo_valuacion=:fk_id_cat_tipo_valuacion, 
+			valuacion=:valuacion
+		WHERE
+			id=:id
+	</entry>
+	<entry key="bien.updatemin">
+		UPDATE
+			bien b,
+			bien_periodo bp
+		SET
+			b.fk_id_cat_tipo_clasificacion_bien=:fk_id_cat_tipo_clasificacion_bien, 
+			b.fk_id_clasificacion_bien=:fk_id_clasificacion_bien, 
+			b.fk_id_departamento=:fk_id_departamento, 
+			b.fk_id_cat_depreciacion=:fk_id_cat_depreciacion, 
+			bp.folio = :folio,
+			bp.consecutivo = :consecutivo, 
+			b.descripcion=:descripcion, 
+			b.fk_id_cat_tipo_valuacion=:fk_id_cat_tipo_valuacion, 
+			b.valuacion=:valuacion,
+			bp.fk_id_cat_color=:fk_id_cat_color,
+			bp.valor_anterior=:valorAnterior,	
+			bp.fk_id_cat_estado_fisico = :fk_id_cat_estado_fisico, 
+			bp.depreciacion_acumulada = :depreciacion_acumulada, 
+			bp.depreciacion_periodo = :depreciacion_periodo, 
+			bp.valor_uma = :valor_uma,
+			bp.fk_id_cat_uma = :fk_id_cat_uma,
+			bp.inventario_contable = :inventario_contable,
+			b.fk_id_cat_origen_fondo_adquisicion = :fk_id_cat_origen_fondo_adquisicion,
+			b.fecha_adquisicion = :fecha_adquisicion,
+			bp.fecha_cierre = :fecha_cierre
+		WHERE
+			b.id = bp.fk_id_bien
+			AND bp.fk_id_periodo = :fk_id_periodo
+			AND b.id=:id
+	</entry>
+	<entry key="bien.imagen.update">
+		UPDATE 
+			bien
+		SET
+			imagen=:imagen
+		WHERE
+			id = :id
+	</entry>
+	<entry key="bien.imagenes.insert">
+		INSERT INTO bien_imagen(fk_id_bien, orden, path) VALUES(:fk_id_bien, :orden, :path)	
+	</entry>
+	<entry key="bien.imagenes.delete">
+		DELETE FROM 
+			bien_imagen
+		WHERE
+			fk_id_bien = :fk_id_bien	
+	</entry>
+	<entry key="bien.archivofactura.update">
+		UPDATE 
+			bien
+		SET
+			archivo_factura = :archivo_factura
+		WHERE
+			id = :id
+	</entry>
+	<entry key="bien.archivopoliza.update">
+		UPDATE 
+			bien
+		SET
+			archivo_poliza=:archivo_poliza
+		WHERE
+			id = :id
+	</entry>
+	<entry key="bien.periodo.insert">
+		INSERT INTO bien_periodo 
+			(fk_id_bien, 
+			fk_id_periodo, 
+			folio,
+			consecutivo,
+			fk_id_cat_estado_fisico, 
+			depreciacion_acumulada, 
+			depreciacion_periodo,
+			anios_uso,
+			valor_uma,
+			fk_id_cat_uma,
+			inventario_contable,
+			fk_id_responsable,
+			fk_id_cat_color,
+			valor_anterior,
+			matricula,
+			bandera)
+		VALUES
+			(:fk_id_bien, 
+			:fk_id_periodo, 
+			:folio,
+			:consecutivo,
+			:fk_id_cat_estado_fisico, 
+			:depreciacion_acumulada, 
+			:depreciacion_periodo, 
+			:anios_uso, 
+			:valor_uma,
+			:fk_id_cat_uma,
+			:inventario_contable,
+			:fk_id_responsable,
+			:fk_id_cat_color,
+			:valor_anterior,
+			:matricula,
+			:fk_id_bandera)
+	</entry>
+	<entry key="bien.periodo.insert.new">
+		INSERT INTO bien_periodo 
+			(fk_id_bien, 
+			fk_id_periodo, 
+			folio,
+			consecutivo,
+			fk_id_cat_estado_fisico, 
+			depreciacion_acumulada, 
+			depreciacion_periodo,
+			depreciacion_acumulada_final, 
+			depreciacion_periodo_final,
+			fk_id_cat_depreciacion_final,
+			anios_uso,
+			valor_uma,
+			fk_id_cat_uma,
+			fk_id_cat_tipo_valuacion_final,
+			valuacion_final,
+			inventario_contable)
+		VALUES
+			(:fk_id_bien, 
+			:fk_id_periodo, 
+			:folio,
+			:consecutivo,
+			:fk_id_cat_estado_fisico, 
+			:depreciacion_acumulada, 
+			:depreciacion_periodo, 
+			:depreciacion_acumulada_final, 
+			:depreciacion_periodo_final,
+			:fk_id_cat_depreciacion_final,
+			:anios_uso, 
+			:valor_uma,
+			:fk_id_cat_uma,
+			:fk_id_cat_tipo_valuacion_final,
+			:valuacion_final,
+			:inventario_contable)
+	</entry>
+	<entry key="bien.periodo.update">
+		UPDATE
+			bien_periodo 
+		SET	
+			fk_id_cat_estado_fisico = :fk_id_cat_estado_fisico, 
+			depreciacion_acumulada = :depreciacion_acumulada, 
+			depreciacion_periodo = :depreciacion_periodo, 
+			folio = :folio,
+			consecutivo = :consecutivo,
+			anios_uso = :anios_uso,
+			valor_uma = :valor_uma,
+			fk_id_cat_uma = :fk_id_cat_uma,
+			inventario_contable = :inventario_contable,
+			fk_id_responsable = :fk_id_responsable,
+			fk_id_bandera = :fk_id_bandera,
+			fk_id_cat_color = :fk_id_cat_color,
+			valor_anterior = :valor_anterior,
+			matricula = :matricula
+		WHERE	
+			fk_id_bien = :fk_id_bien
+			AND fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="bien.periodo.update.new">
+		UPDATE
+			bien_periodo 
+		SET	
+			fk_id_cat_estado_fisico = :fk_id_cat_estado_fisico, 
+			depreciacion_acumulada = :depreciacion_acumulada, 
+			depreciacion_periodo = :depreciacion_periodo, 
+			folio = :folio,
+			consecutivo = :consecutivo,
+			anios_uso = :anios_uso,
+			valor_uma = :valor_uma,
+			fk_id_cat_uma = :fk_id_cat_uma,
+			inventario_contable = :inventario_contable,
+			depreciacion_acumulada_final = :depreciacion_acumulada_final,
+			depreciacion_periodo_final = :depreciacion_periodo_final,
+			fk_id_cat_depreciacion_final = :fk_id_cat_depreciacion_final,
+			fk_id_cat_tipo_valuacion_final = fk_id_cat_tipo_valuacion_final,
+			valuacion_final = :valuacion_final 
+		WHERE	
+			fk_id_bien = :fk_id_bien
+			AND fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="bien.update.min">
+		UPDATE
+			bien b,
+			bien_periodo bp
+		SET
+			b.fk_id_cat_tipo_clasificacion_bien=:fk_id_cat_tipo_clasificacion_bien, 
+			b.fk_id_clasificacion_bien=:fk_id_clasificacion_bien, 
+			b.fk_id_departamento=:fk_id_departamento, 
+			b.fk_id_cat_depreciacion=:fk_id_cat_depreciacion, 
+			b.descripcion=:descripcion, 
+			b.notas=:notas, 
+			b.fk_id_cat_tipo_valuacion=:fk_id_cat_tipo_valuacion, 
+			b.valuacion=:valuacion,	
+			bp.fk_id_cat_estado_fisico = :fk_id_cat_estado_fisico, 
+			bp.depreciacion_acumulada = :depreciacion_acumulada, 
+			bp.depreciacion_periodo = :depreciacion_periodo, 
+			bp.valor_uma = :valor_uma,
+			bp.fk_id_cat_uma = :fk_id_cat_uma,
+			bp.inventario_contable = :inventario_contable
+		WHERE
+			b.id = bp.fk_id_bien
+			AND bp.fk_id_periodo = :fk_id_periodo
+			AND b.id=:id
+	</entry>
+	<entry key="bien.ultimoxdepto">
+		SELECT IFNULL(MAX(bp.consecutivo), 0) 'ultimo' FROM 
+			bien b
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			b.id = bp.fk_id_bien
+		AND
+			b.fk_id_empresa = :fk_id_empresa
+		AND
+			bp.fk_id_periodo = :fk_id_periodo
+		WHERE
+			b.fk_id_clasificacion_bien = :fk_id_clasificacion_bien
+			AND b.fk_id_departamento = :fk_id_departamento
+	</entry>
+	<entry key="periodo.list">
+		SELECT
+			p.id,
+			p.fk_id_empresa 'idEmpresa',
+			p.descr,
+			p.fecha_cierre 'fechaCierre',
+			p.fecha_inicio 'fechaInicio',
+			p.fecha_fin 'fechaFin',
+			p.fecha_insert 'fechaInsert'
+		FROM
+			periodo p
+		WHERE
+			fk_id_empresa = :fk_id_empresa 
+		ORDER BY	
+			fecha_insert
+	</entry>
+	<entry key="periodo.find">
+		SELECT
+			p.id,
+			p.fk_id_empresa 'idEmpresa',
+			p.descr,
+			p.fecha_cierre 'fechaCierre',
+			p.fecha_inicio 'fechaInicio',
+			p.fecha_fin 'fechaFin',
+			p.fk_id_cat_uma 'uma.id',
+			cu.anio 'uma.anio',
+			cu.valor_diario 'uma.valorDiario',
+			cu.valor_mensual 'uma.valorMensual',
+			cu.valor_anual 'uma.valorAnual',
+			cu.factor 'uma.factor',
+			p.fecha_insert 'fechaInsert'
+		FROM
+			periodo p
+		LEFT JOIN
+			cat_uma cu
+		ON
+			p.fk_id_cat_uma = cu.id
+		WHERE
+			p.id = :id
+			AND p.fk_id_empresa = :fk_id_empresa 			
+	</entry>
+	<entry key="catbienesinmuebles.list">
+		SELECT
+			cbi.id,
+			cbi.clasificador,
+			cbi.consecutivo,
+			cbi.descr,
+			cbi.cuenta_contable 'cuentaContable',
+			cbi.fk_id_cat_tipo_clasificacion_bien 'tipo.id',
+			ctcb.descr 'tipo.descr'
+		FROM 
+			cat_bien_inmueble cbi
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			cbi.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+	</entry>
+	<entry key="catbienesmuebles.list">
+		SELECT
+			cbi.id,
+			cbi.grupo,
+			cbi.subgrupo,
+			cbi.clase,
+			cbi.subclase,
+			cbi.descr,
+			cbi.cuenta_contable 'cuentaContable',
+			cbi.cuenta_depreciacion 'cuentaDepreciacion',
+			cbi.fk_id_cat_tipo_clasificacion_bien 'tipo.id',
+			ctcb.descr 'tipo.descr'
+		FROM 
+			cat_bien_mueble cbi
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			cbi.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+	</entry>
+	<entry key="catbienesmuebles.listbyfilter">
+		SELECT
+			cbi.id,
+			cbi.grupo,
+			cbi.subgrupo,
+			cbi.clase,
+			cbi.subclase,
+			cbi.descr,
+			cbi.cuenta_contable 'cuentaContable',
+			cbi.cuenta_depreciacion 'cuentaDepreciacion',
+			cbi.fk_id_cat_tipo_clasificacion_bien 'tipo.id',
+			ctcb.descr 'tipo.descr',
+			IFNULL(cbme.estatus, '1') 'enabled'
+		FROM 
+			cat_bien_mueble cbi
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			cbi.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+		LEFT JOIN
+			cat_bien_mueble_estatus cbme
+		ON
+			cbi.id = cbme.fk_id_clasificacion_bien
+			AND cbme.fk_id_empresa = :fk_id_empresa
+			AND cbme.fk_id_periodo = :fk_id_periodo
+		ORDER BY
+			cbi.grupo,
+			cbi.subgrupo,
+			cbi.clase,
+			cbi.subclase
+	</entry>
+	<entry key="catcuentacontable.headers.list">
+		SELECT
+			cbm.id,
+			cbm.grupo,
+			cbm.subgrupo,
+			cbm.clase,
+			cbm.descr,
+			cbm.cuenta_contable 'cuentaContable'
+		FROM 
+			cat_bien_mueble cbm
+		WHERE
+			LENGTH(cbm.cuenta_contable)=7
+		ORDER BY 
+			cbm.cuenta_contable	
+	</entry>
+	<entry key="catcuentacontable.list">
+		SELECT
+			cbm.id,
+			cbm.grupo,
+			cbm.subgrupo,
+			cbm.clase,
+			cbm.descr,
+			cbm.cuenta_contable 'cuentaContable'
+		FROM 
+			cat_bien_mueble cbm
+		WHERE
+			LENGTH(cbm.cuenta_contable)>7
+		ORDER BY 
+			cbm.cuenta_contable
+	</entry>
+	<entry key="inmuebles.catcuentacontable.headers.list">
+		SELECT
+			cbm.id,
+			cbm.clasificador,
+			cbm.consecutivo,
+			cbm.descr,
+			cbm.cuenta_contable 'cuentaContable'
+		FROM 
+			cat_bien_inmueble cbm
+		WHERE
+			LENGTH(cbm.cuenta_contable)=7
+		ORDER BY 
+			cbm.cuenta_contable	
+	</entry>
+	<entry key="inmuebles.catcuentacontable.list">
+		SELECT
+			cbm.id,
+			cbm.clasificador,
+			cbm.consecutivo,
+			cbm.descr,
+			cbm.cuenta_contable 'cuentaContable'
+		FROM 
+			cat_bien_inmueble cbm
+		WHERE
+			LENGTH(cbm.cuenta_contable)>7
+		ORDER BY 
+			cbm.cuenta_contable
+	</entry>
+	<entry key="departamentos.list">
+		SELECT
+			id,
+			descr,
+			fecha_insert 'fechaInsert'
+		FROM departamento
+	</entry>
+	<entry key="departamento.insert">
+		INSERT INTO departamento(descr, clave, fk_id_empresa) VALUES(:descr, :clave, :fk_id_empresa)		
+	</entry>
+	<entry key="departamento.find">
+		SELECT
+			d.id,
+			d.descr,
+			da.fk_id_empresa 'idEmpresa',
+			da.fk_id_periodo 'idPeriodo',
+			da.fk_id_responsable 'idResponsable',
+			d.clave 'folio',
+			d.fecha_insert 'fechaInsert'
+		FROM
+			departamento d
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			d.id = da.fk_id_departamento
+			AND da.fk_id_empresa = :fk_id_empresa
+			AND da.fk_id_periodo = :fk_id_periodo
+		WHERE
+			d.id=:id
+	</entry>
+	<entry key="departamentoasignado.find">
+		SELECT
+			d.id,
+			d.descr,
+			d.fecha_insert 'fechaInsert',
+			r.id 'responsable.id',
+			r.titulo 'responsable.titulo',
+			r.nombre 'responsable.nombre',
+			r.apellido 'responsable.apellido',
+			r.email 'responsable.email',
+			r.fk_id_cat_cargo 'responsable.cargo.id',
+			cc.descr 'responsable.cargo.descr',
+			r.fecha_insert 'responsable.fechaInsert'
+		FROM
+			departamento d
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_departamento = d.id
+		LEFT JOIN
+			responsable r
+		ON
+			da.fk_id_responsable = r.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			cc.id = r.fk_id_cat_Cargo
+		WHERE
+			da.fk_id_empresa = :fk_id_empresa
+			AND da.fk_id_periodo = :fk_id_periodo	
+			AND d.id=:id
+	</entry>
+	<entry key="catuma.list">
+		SELECT
+			id,
+			anio,
+			valor_diario 'valorDiario',
+			valor_mensual 'valorMensual',
+			valor_anual 'valorAnual',
+			factor,
+			fecha_insert 'fechaInsert'
+		FROM cat_uma
+	</entry>
+	<entry key="cattipovaluacion.list">
+		SELECT
+			id,
+			descr
+		FROM cat_tipo_valuacion
+	</entry>	
+	<entry key="catdepreciacion.list">
+		SELECT
+			cd.id,
+			cd.cuenta,
+			cd.descr,
+			cd.vida_util 'vidaUtil',
+			cd.depreciacion_anual 'depreciacionAnual',
+			cd.fk_id_tipo_bien 'tipo.id',
+			ctb.descr 'tipo.descr',
+			cd.seleccionable,
+			cd.fecha_insert 'fechaInsert'
+		FROM 
+			cat_depreciacion cd
+		LEFT JOIN
+			cat_tipo_bien ctb
+		ON
+			cd.fk_id_tipo_bien = ctb.id
+		WHERE
+			cd.fk_id_tipo_bien = 1
+		ORDER BY 
+			cd.orden ASC
+	</entry>
+	<entry key="catedofisico.list">
+		SELECT
+			cef.id,
+			cef.descr
+		FROM 
+			cat_estado_fisico cef
+	</entry>
+	<entry key="inventario.list">
+		SELECT 	
+			bn.id, 	 
+			bn.imagen, 
+			bn.descripcion, 
+			bn.marca, 
+			bn.modelo, 
+			bn.serie, 
+			bn.motor, 
+			bn.factura, 
+			bn.fecha_adquisicion 'fechaAdquisicion', 
+			bp.fecha_cierre 'fechaCierre', 
+			bn.fk_id_cat_tipo_valuacion 'tipoValuacion.id',
+			ctv.descr 'tipoValuacion.descr',
+			bn.valuacion 'valor', 
+			bn.fecha_insert 'fechaInsert',
+			-- empresa
+			bn.fk_id_empresa 'empresa.id',	
+			e.nombre 'empresa.nombre',
+			e.descr 'empresa.descr',
+			e.direccion 'empresa.direccion',
+			e.tipo_etiqueta 'empresa.tipoEtiqueta',
+			-- e.logo 'empresa.logo',
+			e.logo_mpio 'logoMpio',
+			e.logo_ayuto 'logoAyuto',
+			e.logo_periodo 'logoPeriodo',
+			e.fk_id_cat_estatus 'empresa.status.id',
+			-- tipoClasificacion
+			bn.fk_id_cat_tipo_clasificacion_bien 'tipoClasificacion.id', 
+			ctcb.descr 'tipoClasificacion.descr',		
+			-- clasificacion
+			bn.fk_id_clasificacion_bien 'clasificacion.id',	
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.descr WHEN 2 THEN cbm.descr ELSE 'Desconocido' END 'clasificacion.descr',	 
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.grupo ELSE cbm.grupo END 'clasificacion.grupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.subgrupo ELSE cbm.subgrupo END 'clasificacion.subgrupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.clase ELSE cbm.clase END 'clasificacion.clase',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.subclase END 'clasificacion.subclase',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.consecutivo END 'clasificacion.consecutivo',
+			-- departamento
+			bn.fk_id_departamento 'departamento.id',
+			d.descr 'departamento.descr',
+			-- depreciacion
+			bn.fk_id_cat_depreciacion 'depreciacion.id', 
+			cd.cuenta 'depreciacion.cuenta',	
+			cd.descr 'depreciacion.descr',
+			cd.vida_util 'depreciacion.vidaUtil',
+			cd.depreciacion_anual 'depreciacion.depreciacionAnual',
+			cd.fecha_insert 'depreciacion.fechaInsert',
+			-- origen
+			bn.fk_id_cat_origen_fondo_adquisicion 'origen.id',
+			cofa.descr 'origen.descr',
+			bp.fk_id_periodo 'periodo.id',
+			per.descr 'periodo.descr',
+			per.fecha_inicio 'periodo.fechaInicio',
+			per.fecha_fin 'periodo.fechaFin',
+			per.fecha_insert 'periodo.fechaInsert',
+			bp.fk_id_cat_estado_fisico 'estadoFisico.id',
+			cef.descr 'estadoFisico.descr',
+			bp.depreciacion_acumulada 'depreciacionAcumulada',
+			bp.depreciacion_periodo 'depreciacionPeriodo',
+			bp.anios_uso 'aniosUso',
+			bp.fk_id_cat_uma 'uma.id',
+			cu.anio 'uma.anio',
+			cu.valor_diario 'uma.valorDiario',
+			cu.valor_mensual 'uma.valorMensual',
+			cu.valor_anual 'uma.valorAnual',
+			cu.factor 'uma.factor',
+			bp.valor_uma 'valorUma',
+			bp.inventario_contable 'inventarioContable'
+		FROM 
+			bien bn
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			bn.id = bp.fk_id_bien
+		-- empresa
+		LEFT JOIN
+			empresa e
+		ON
+			bn.fk_id_empresa = e.id
+		-- tipoClasificacion
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			bn.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+		-- tipoValuacion
+		LEFT JOIN
+			cat_tipo_valuacion ctv
+		ON
+			ctv.id = bn.fk_id_cat_tipo_valuacion
+		-- bien_mueble
+		LEFT JOIN
+			cat_bien_mueble cbm
+		ON
+			cbm.id = bn.fk_id_clasificacion_bien
+		-- bien_inmueble
+		#LEFT JOIN
+		#	cat_bien_inmueble cbi
+		#ON
+		#	cbi.id = bn.fk_id_clasificacion_bien	
+		-- departamento
+		LEFT JOIN
+			departamento d
+		ON
+			bn.fk_id_departamento = d.id
+		-- depreciacion
+		LEFT JOIN
+			cat_depreciacion cd
+		ON
+			bn.fk_id_cat_depreciacion = cd.id
+		-- origen
+		LEFT JOIN
+			cat_origen_fondo_adquisicion cofa
+		ON
+			bn.fk_id_cat_origen_fondo_adquisicion = cofa.id	
+		LEFT JOIN
+			periodo per
+		ON
+			per.id = bp.fk_id_periodo
+		LEFT JOIN
+			cat_estado_fisico cef
+		ON
+			cef.id = bp.fk_id_cat_estado_fisico
+		LEFT JOIN
+			cat_uma cu
+		ON
+			cu.id = bp.fk_id_cat_uma
+		WHERE
+			bn.fk_id_empresa = :fk_id_empresa
+			AND bp.fk_id_periodo = :fk_id_periodo
+		ORDER BY
+			bn.fecha_insert
+		LIMIT 0,20
+	</entry>
+	<entry key="inventario.filtrado">
+		SELECT 	
+			bn.id, 	 
+			bn.imagen, 
+			bn.folio_unico 'folioUnico',
+			bn.descripcion, 
+			bn.marca, 
+			bn.modelo, 
+			bp.folio,
+			bp.consecutivo,
+			bn.serie, 
+			bn.motor, 
+			bn.factura, 
+			bn.notas,
+			bn.fecha_adquisicion 'fechaAdquisicion', 
+			bp.fecha_cierre 'fechaCierre', 
+			bn.fk_id_cat_tipo_valuacion 'tipoValuacion.id',
+			ctv.descr 'tipoValuacion.descr',
+			bn.valuacion 'valor',
+			bp.valor_anterior 'valorAnterior', 
+			bn.fecha_insert 'fechaInsert',
+			-- empresa
+			bn.fk_id_empresa 'empresa.id',	
+			e.nombre 'empresa.nombre',
+			e.descr 'empresa.descr',
+			e.direccion 'empresa.direccion',
+			e.logo_mpio 'empresa.logoMpio',
+			e.logo_ayuto 'empresa.logoAyuto',
+			e.logo_periodo 'empresa.logoPeriodo',
+			e.fk_id_cat_estatus 'empresa.status.id',
+			e.tipo_etiqueta 'empresa.tipoEtiqueta',
+			-- tipoClasificacion
+			bn.fk_id_cat_tipo_clasificacion_bien 'tipoClasificacion.id', 
+			ctcb.descr 'tipoClasificacion.descr',		
+			-- clasificacion
+			bn.fk_id_clasificacion_bien 'clasificacion.id',	
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.descr WHEN 2 THEN cbm.descr ELSE 'Desconocido' END 'clasificacion.descr',	 
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.grupo ELSE cbm.grupo END 'clasificacion.grupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.subgrupo ELSE cbm.subgrupo END 'clasificacion.subgrupo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.clase ELSE cbm.clase END 'clasificacion.clase',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.subclase END 'clasificacion.subclase',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.consecutivo END 'clasificacion.consecutivo',
+			#CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN '' ELSE cbm.consecutivo END 'clasificacion.consecutivo',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_contable ELSE cbm.cuenta_contable END 'clasificacion.cuentaContable',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_depreciacion ELSE cbm.cuenta_depreciacion END 'clasificacion.cuentaDepreciacion',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_contable ELSE cbm.cuenta_contable END 'cuentaContable',
+			CASE bn.fk_id_cat_tipo_clasificacion_bien WHEN 1 THEN cbm.cuenta_depreciacion ELSE cbm.cuenta_depreciacion END 'cuentaDepreciacion',
+			-- departamento
+			bn.fk_id_departamento 'departamento.id',
+			d.descr 'departamento.descr',
+			-- depreciacion
+			bn.fk_id_cat_depreciacion 'depreciacion.id', 
+			cd.cuenta 'depreciacion.cuenta',	
+			cd.descr 'depreciacion.descr',
+			cd.vida_util 'depreciacion.vidaUtil',
+			cd.depreciacion_anual 'depreciacion.depreciacionAnual',
+			cd.fecha_insert 'depreciacion.fechaInsert',
+			-- origen
+			bn.fk_id_cat_origen_fondo_adquisicion 'origen.id',
+			cofa.descr 'origen.descr',
+			bp.fk_id_periodo 'periodo.id',
+			per.descr 'periodo.descr',
+			per.fecha_inicio 'periodo.fechaInicio',
+			per.fecha_fin 'periodo.fechaFin',
+			per.fecha_insert 'periodo.fechaInsert',
+			bp.fk_id_cat_estado_fisico 'estadoFisico.id',
+			cef.descr 'estadoFisico.descr',
+			bp.depreciacion_acumulada 'depreciacionAcumulada',
+			bp.depreciacion_periodo 'depreciacionPeriodo',
+			bp.anios_uso 'aniosUso',
+			bp.fk_id_cat_uma 'uma.id',
+			cu.anio 'uma.anio',
+			cu.valor_diario 'uma.valorDiario',
+			cu.valor_mensual 'uma.valorMensual',
+			cu.valor_anual 'uma.valorAnual',
+			cu.factor 'uma.factor',
+			(cu.valor_diario*cu.factor) 'valorUma',
+			#bp.valor_uma 'valorUma',
+			bp.fk_id_cat_estatus_inventario 'estatusInventario.id',
+			cei.descr 'estatusInventario.descr',
+			bp.inventario_contable 'inventarioContable',
+			bp.fk_id_responsable 'responsable.id',
+			resp.titulo 'responsable.titulo',
+			resp.nombre 'responsable.nombre',
+			resp.apellido 'responsable.apellido',
+			resp.email 'responsable.email',
+			# color 
+			bp.fk_id_cat_color 'color.id',
+			cc.descr 'color.descr',
+			bb.bandera 'bandera.id',
+			cb.descr 'bandera.descr',
+			-- imagenes 
+			GROUP_CONCAT(bi.path) 'images'
+		FROM 
+			bien bn
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			bn.id = bp.fk_id_bien
+		-- empresa
+		LEFT JOIN
+			empresa e
+		ON
+			bn.fk_id_empresa = e.id
+		-- tipoClasificacion
+		LEFT JOIN
+			cat_tipo_clasificacion_bien ctcb
+		ON
+			bn.fk_id_cat_tipo_clasificacion_bien = ctcb.id
+		-- tipoValuacion
+		LEFT JOIN
+			cat_tipo_valuacion ctv
+		ON
+			ctv.id = bn.fk_id_cat_tipo_valuacion
+		-- bien_mueble
+		LEFT JOIN
+			cat_bien_mueble cbm
+		ON
+			cbm.id = bn.fk_id_clasificacion_bien
+		-- bien_inmueble
+		#LEFT JOIN
+		#	cat_bien_inmueble cbi
+		#ON
+		#	cbi.id = bn.fk_id_clasificacion_bien	
+		-- departamento
+		LEFT JOIN
+			departamento d
+		ON
+			bn.fk_id_departamento = d.id
+		-- depreciacion
+		LEFT JOIN
+			cat_depreciacion cd
+		ON
+			bn.fk_id_cat_depreciacion = cd.id
+		-- origen
+		LEFT JOIN
+			cat_origen_fondo_adquisicion cofa
+		ON
+			bn.fk_id_cat_origen_fondo_adquisicion = cofa.id	
+		LEFT JOIN
+			periodo per
+		ON
+			per.id = bp.fk_id_periodo
+		LEFT JOIN
+			cat_estado_fisico cef
+		ON
+			cef.id = bp.fk_id_cat_estado_fisico
+		LEFT JOIN
+			cat_uma cu
+		ON
+			cu.id = bp.fk_id_cat_uma
+		LEFT JOIN
+			cat_estatus_inventario cei
+		ON
+			bp.fk_id_cat_estatus_inventario = cei.id
+		LEFT JOIN
+			bien_imagen bi
+		ON
+			bn.id = bi.fk_id_bien
+		LEFT JOIN
+			responsable resp
+		ON
+			bp.fk_id_responsable = resp.id
+		LEFT JOIN
+			cat_color cc
+		ON
+			bp.fk_id_cat_color = cc.id
+		LEFT JOIN
+			bien_bandera bb
+		ON
+			bn.id = bb.fk_id_bien
+		LEFT JOIN
+			cat_bandera cb
+		ON
+			bp.bandera = cb.id
+		WHERE
+			bn.fk_id_empresa = :fk_id_empresa
+			AND bp.fk_id_periodo = :fk_id_periodo
+			AND IF(LENGTH(TRIM(:tipo_inventario))>0 AND :tipo_inventario = 'CONTABLE', bn.valuacion >= (cu.valor_diario*cu.factor), TRUE)
+			AND IF(LENGTH(TRIM(:tipo_inventario))>0 AND :tipo_inventario = 'UTILITARIO', bn.valuacion <![CDATA[ < ]]> (cu.valor_diario*cu.factor), TRUE)
+			AND IF(LENGTH(TRIM(:fecha_inicio))>0 AND LENGTH(TRIM(:fecha_fin))>0 AND TRIM(:tipo_fecha) = 'FECHA_INSERT', bn.fecha_insert BETWEEN :fecha_inicio AND :fecha_fin, true)
+			AND IF(LENGTH(TRIM(:fecha_inicio))>0 AND LENGTH(TRIM(:fecha_fin))>0 AND TRIM(:tipo_fecha) = 'FECHA_ADQUISICION', bn.fecha_adquisicion BETWEEN :fecha_inicio AND :fecha_fin, true)
+			#AND IF(LENGTH(TRIM(:clasificacion_bi))>0, cbi.id = :clasificacion_bi, true)
+			AND IF(LENGTH(TRIM(:clasificacion_bm))>0, cbm.id = :clasificacion_bm, true)
+			AND IF(LENGTH(TRIM(:fk_id_departamento))>0, bn.fk_id_departamento = :fk_id_departamento, true)
+			AND IF(LENGTH(TRIM(:fk_id_cat_estado_fisico))>0, bp.fk_id_cat_estado_fisico  = :fk_id_cat_estado_fisico, true)
+			#AND IF(LENGTH(TRIM(:fk_id_cat_estatus_inventario))>0, bp.fk_id_cat_estatus_inventario  = :fk_id_cat_estatus_inventario, true)
+			AND IF(LENGTH(TRIM(:fk_id_cat_estatus_inventario))>0, FIND_IN_SET(bp.fk_id_cat_estatus_inventario, :fk_id_cat_estatus_inventario), true)
+			AND IF(LENGTH(TRIM(:bandera))>0, bb.bandera = :bandera, TRUE)
+			#AND bp.bandera > 0
+		GROUP BY
+			bn.id
+		ORDER BY
+			#cbi.grupo, cbi.subgrupo, cbi.clase, d.clave, bp.consecutivo, bn.fecha_insert
+			bp.folio ASC
+	</entry>
+	<entry key="articulo.find">
+		SELECT
+			a.id,
+			a.fk_id_empresa 'empresa.id',
+			a.fk_id_cat_rubro 'rubro.id',
+			cba.grupo 'rubro.grupo', 
+			cba.subgrupo 'rubro.subgrupo', 
+			cba.clase 'rubro.clase', 
+			cba.descr 'rubro.descr',
+			a.fk_id_cat_origen 'departamento.id',
+			d.descr 'departamento.descr',
+			a.imagen,
+			a.descripcion,
+			a.marca,
+			a.modelo,
+			a.serie,
+			a.motor,
+			a.factura,
+			a.fecha_adquisicion 'fechaAdquisicion',
+			a.importe,
+			a.fk_id_cat_depreciacion 'depreciacion.id',
+			a.fecha_insert 'fechaInsert',
+			ap.fk_id_periodo 'periodo.id',
+			ap.fk_id_cat_estado_fisico 'estadoFisico.id',
+			cef.descr 'estadoFisico.descr',
+			ap.valor_reposicion 'valorReposicion',
+			ap.valor_reemplazo 'valorReemplazo',
+			ap.depreciacion_acumulada 'depreciacionAcumulada',
+			ap.depreciacion_periodo 'depreciacionPeriodo',
+			ap.anios_uso 'aniosUso'	
+		FROM
+			articulo a
+		LEFT JOIN
+			articulo_periodo ap
+		ON
+			a.id = ap.fk_id_articulo
+		LEFT JOIN
+			cat_bienes_armonizados cba
+		ON
+			a.fk_id_cat_rubro = cba.id
+		LEFT JOIN
+			departamento d
+		ON
+			a.fk_id_cat_origen = d.id
+		LEFT JOIN
+			cat_estado_fisico cef
+		ON	
+			ap.fk_id_cat_estado_fisico = cef.id
+		WHERE
+			a.id = :id
+	</entry>
+	<entry key="catorigen.list">
+		SELECT
+			id,
+			descr
+		FROM 
+			cat_origen_fondo_adquisicion
+	</entry>
+	<entry key="cattipobien.list">
+		SELECT
+			id,
+			descr
+		FROM 
+			cat_tipo_bien
+	</entry>
+	<entry key="bien.delete">
+		DELETE FROM 
+			bien
+		WHERE
+			id = :id
+	</entry>
+	<entry key="bien.periodo.delete">
+		DELETE FROM 
+			bien_periodo
+		WHERE
+			fk_id_bien = :fk_id_bien
+	</entry>
+	<entry key="departamento.listresponsable">
+		SELECT
+			d.id 'departamento.id',
+			d.descr 'departamento.descr',
+			r.id 'responsable.id',
+			r.titulo 'responsable.titulo',
+			r.nombre 'responsable.nombre',
+			r.apellido 'responsable.apellido',
+			r.email 'responsable.email',
+			cc.id 'responsable.cargo.id',
+			cc.descr 'responsable.cargo.descr'	
+		FROM
+			departamento d
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			d.id = da.fk_id_departamento
+		LEFT JOIN
+			responsable r
+		ON
+			da.fk_id_responsable = r.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			r.fk_id_cat_cargo = cc.id 
+		WHERE
+			da.fk_id_empresa = :fk_id_empresa
+			AND da.fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="departamento.listall">
+		SELECT
+			d.id,
+			d.descr,
+			d.clave 'folio'			
+		FROM
+			departamento d
+		WHERE
+			d.fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="responsable.insert">
+		INSERT INTO responsable(fk_id_empresa, titulo, nombre, apellido, fk_id_cat_cargo)
+		VALUES(:fk_id_empresa, :titulo, :nombre, :apellido, 1)
+	</entry>
+	<entry key="responsable.update">
+		UPDATE 
+			responsable
+		SET
+			titulo = :titulo, 
+			nombre = :nombre, 
+			apellido = :apellido
+		WHERE
+			id = :id
+			AND fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="responsable.cargo.update">
+		UPDATE 
+			responsable
+		SET
+			fk_id_cat_cargo = :fk_id_cat_cargo
+		WHERE
+			id = :id
+	</entry>
+	<entry key="responsable.cargo.reset">
+		UPDATE 
+			responsable
+		SET
+			fk_id_cat_cargo = 1
+		WHERE
+			fk_id_empresa = :fk_id_empresa 
+			AND fk_id_cat_cargo = :fk_id_cat_cargo
+	</entry>
+	<entry key="responsable.eliminar">
+		DELETE FROM 
+			responsable
+		WHERE
+			id = :id
+			AND fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="responsable.find.old">
+		SELECT
+			r.id,
+			r.fk_id_empresa 'empresa.id',
+			r.titulo,
+			r.nombre,
+			r.apellido,
+			r.email,
+			r.fk_id_cat_cargo 'cargo.id',
+			cc.descr 'cargo.descr'	
+		FROM 
+			reponsable r
+		LEFT JOIN
+			empresa e
+		ON
+			r.fk_id_empresa = e.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			r.fk_id_cat_cargo = cc.id
+		WHERE 
+			r.id = :id
+	</entry>
+	<entry key="responsable.find">
+		SELECT
+			r.id,
+			r.fk_id_empresa 'empresa.id',
+			r.titulo,
+			r.nombre,
+			r.apellido,
+			r.email,
+			r.fk_id_cat_cargo 'cargo.id',
+			cc.descr 'cargo.descr',
+			d.id 'departamento.id',
+			d.descr 'departamento.descr'
+		FROM 
+			responsable r
+		LEFT JOIN
+			empresa e
+		ON
+			r.fk_id_empresa = e.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			r.fk_id_cat_cargo = cc.id
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_responsable = r.id
+		LEFT JOIN
+			departamento d
+		ON
+			d.id = da.fk_id_departamento
+		WHERE 
+			r.id = :id
+	</entry>
+	<entry key="responsable.find.bycargo">
+		SELECT
+			r.id,
+			r.fk_id_empresa 'empresa.id',
+			r.titulo,
+			r.nombre,
+			r.apellido,
+			r.email,
+			r.fk_id_cat_cargo 'cargo.id',
+			cc.descr 'cargo.descr',
+			d.id 'departamento.id',
+			d.descr 'departamento.descr'
+		FROM 
+			responsable r
+		LEFT JOIN
+			empresa e
+		ON
+			r.fk_id_empresa = e.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			r.fk_id_cat_cargo = cc.id
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_responsable = r.id
+		LEFT JOIN
+			departamento d
+		ON
+			d.id = da.fk_id_departamento
+		WHERE 
+			r.fk_id_cat_cargo = :fk_id_cat_cargo
+			AND r.fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="responsable.findbydepartamento">
+		SELECT
+			r.id,
+			r.fk_id_empresa 'empresa.id',
+			r.titulo,
+			r.nombre,
+			r.apellido,
+			r.email,
+			r.fk_id_cat_cargo 'cargo.id',
+			cc.descr 'cargo.descr',
+			d.id 'departamento.id',
+			d.descr 'departamento.descr'
+		FROM
+			departamento d
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_departamento = d.id
+		LEFT JOIN
+			empresa e
+		ON
+			da.fk_id_empresa = e.id
+		LEFT JOIN
+			responsable r
+		ON
+			da.fk_id_responsable = r.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			r.fk_id_cat_cargo = cc.id
+		WHERE 
+			da.fk_id_periodo = :fk_id_periodo
+			AND d.id = :fk_id_departamento
+	</entry>
+	<entry key="responsable.asignacion.delete">
+		DELETE FROM
+			departamento_asignacion
+		WHERE
+			fk_id_departamento = :fk_id_departamento
+			AND fk_id_empresa = :fk_id_empresa
+			AND fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="responsable.asignacion.insert">
+		INSERT INTO departamento_asignacion(fk_id_departamento, fk_id_empresa, fk_id_periodo, fk_id_responsable, folio) VALUES(:fk_id_departamento, :fk_id_empresa, :fk_id_periodo, :fk_id_responsable, :folio)
+	</entry>
+	<entry key="responsable.findbydepartamento.old">
+		SELECT
+			r.id,
+			r.fk_id_empresa 'empresa.id',
+			r.titulo,
+			r.nombre,
+			r.apellido,
+			r.email,
+			r.fk_id_cat_cargo 'cargo.id',
+			cc.descr 'cargo.descr',
+			d.id 'departamento.id',
+			d.descr 'departamento.descr'
+		FROM 
+			responsable r
+		LEFT JOIN
+			empresa e
+		ON
+			r.fk_id_empresa = e.id
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			r.fk_id_cat_cargo = cc.id
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_responsable = r.id
+		LEFT JOIN
+			departamento d
+		ON
+			d.id = da.fk_id_departamento
+		WHERE 
+			d.id = :fk_id_departamento
+	</entry>
+	<entry key="bien.estatusinventario.update">
+		UPDATE 
+			bien_periodo
+		SET
+			fk_id_cat_estatus_inventario = :fk_id_cat_estatus_inventario
+		WHERE
+			fk_id_bien = :fk_id_bien
+			AND fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="departamento.list.detalles">
+		SELECT
+			d.id 'departamento.id',
+			d.descr 'departamento.descr',
+			d.clave 'departamento.folio',
+			COUNT(b.id) 'bienes',
+			r.id 'responsable.id',
+			r.fk_id_empresa 'responsable.empresa.id',
+			r.titulo 'responsable.titulo',
+			r.nombre 'responsable.nombre',
+			r.apellido 'responsable.apellido',
+			r.email 'responsable.email',
+			r.fk_id_cat_cargo 'resposable.cargo.id',
+			r.fecha_insert 'responsable.fechaInsert'		
+		FROM
+			departamento d
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_departamento = d.id
+			AND da.fk_id_periodo = :fk_id_periodo
+			AND da.fk_id_empresa = :fk_id_empresa	
+		LEFT JOIN
+			responsable r
+		ON
+			r.id = da.fk_id_responsable
+		LEFT JOIN
+			bien b
+		ON
+			d.id = b.fk_id_departamento
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			b.id = bp.fk_id_bien
+			AND bp.fk_id_periodo = :fk_id_periodo
+		WHERE
+			d.fk_id_empresa = :fk_id_empresa
+			#AND bp.fk_id_periodo = 6
+			#AND d.fk_id_empresa = 9;
+			#AND d.id IS NOT NULL
+		GROUP BY 
+			d.id
+	</entry>
+	<entry key="departamento.list.detalles.old">
+		SELECT
+			d.id 'departamento.id',
+			d.descr 'departamento.descr',
+			d.clave 'departamento.folio',
+			COUNT(d.id) 'bienes',
+			r.id 'responsable.id',
+			r.fk_id_empresa 'responsable.empresa.id',
+			r.titulo 'responsable.titulo',
+			r.nombre 'responsable.nombre',
+			r.apellido 'responsable.apellido',
+			r.email 'responsable.email',
+			r.fk_id_cat_cargo 'resposable.cargo.id',
+			r.fecha_insert 'responsable.fechaInsert'		
+		FROM
+			bien b
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			b.id = bp.fk_id_bien
+		LEFT JOIN
+			departamento d
+		ON
+			b.fk_id_departamento = d.id
+		LEFT JOIN
+			departamento_asignacion da
+		ON
+			da.fk_id_departamento = d.id
+			AND da.fk_id_periodo = bp.fk_id_periodo
+			AND da.fk_id_empresa = b.fk_id_empresa	
+		LEFT JOIN
+			responsable r
+		ON
+			r.id = da.fk_id_responsable
+		WHERE
+			b.fk_id_empresa = :fk_id_empresa
+			AND bp.fk_id_periodo = :fk_id_periodo
+			AND d.fk_id_empresa = :fk_id_empresa
+			AND d.id IS NOT NULL
+		GROUP BY 
+			d.id
+	</entry>
+	<entry key="departamento.getmaxfolio">
+		SELECT IFNULL(LPAD(MAX(CAST(clave AS UNSIGNED))+1,3, 0),'001') 'maxfolio' FROM 
+			departamento 
+		WHERE 
+			fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="responsable.list">
+		SELECT
+			r.id,
+			r.fk_id_empresa 'empresa.id',
+			r.titulo,
+			r.nombre,
+			r.apellido,
+			r.email,
+			r.fk_id_cat_cargo 'cargo.id',
+			cc.descr 'cargo.descr',
+			r.fecha_insert 'fechaInsert'
+		FROM
+			responsable r
+		LEFT JOIN
+			cat_cargo cc
+		ON
+			cc.id = r.fk_id_cat_cargo
+		WHERE
+			r.fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="departamento.update">
+		UPDATE departamento SET descr = :descr WHERE id = :id
+	</entry>
+	<entry key="departamento.asignacion.insert">
+		INSERT INTO departamento_asignacion(fk_id_departamento, fk_id_empresa, fk_id_periodo, fk_id_responsable, folio) 
+		VALUES(:fk_id_departamento, :fk_id_empresa, :fk_id_periodo, :fk_id_responsable, :folio)
+	</entry>
+	<entry key="departamento.asignacion.update">
+		UPDATE 
+			departamento_asignacion 
+		SET 
+			fk_id_responsable = :fk_id_responsable 
+		WHERE 
+			fk_id_departamento = :fk_id_departamento
+			AND fk_id_empresa = :fk_id_empresa
+			AND fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="clasificacion.find">
+		SELECT 
+			id, grupo, subgrupo, clase, descr, cuenta_contable 'cuentaContable', cuenta_depreciacion 'cuentaDepreciacion', fk_id_cat_tipo_clasificacion_bien 'tipo.id'
+		FROM
+			cat_bien_mueble
+		WHERE
+			id = :id
+	</entry>
+	<entry key="clasificacion.updateestatus">
+		INSERT INTO cat_bien_mueble_estatus(fk_id_empresa, fk_id_periodo, fk_id_clasificacion_bien, estatus) VALUES(:fk_id_empresa, :fk_id_periodo, :fk_id_clasificacion_bien, :estatus)
+	</entry>
+	<entry key="clasificacion.reset">
+		DELETE FROM 
+			cat_bien_mueble_estatus
+		WHERE
+			fk_id_empresa = :fk_id_empresa
+			AND fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="reporte.cuenta.list">
+		SELECT*FROM
+		(
+			(SELECT 
+				cbm.cuenta_contable 'cuenta', cbm.descr, ROUND(SUM(b.valuacion),2) 'valorHistorico', ROUND(SUM(bp.valor_anterior),2) 'valorAnterior', ROUND(SUM(bp.depreciacion_acumulada),2) 'depreciacionAcumulada', ROUND(SUM(b.valuacion)-SUM(bp.depreciacion_acumulada),2) 'valorActualizado', COUNT(b.id) 'cantidad'
+			FROM
+				bien b
+			LEFT JOIN
+				cat_bien_mueble cbm
+			ON
+				b.fk_id_clasificacion_bien = cbm.id
+			LEFT JOIN
+				bien_periodo bp
+			ON
+				b.id = bp.fk_id_bien
+			LEFT JOIN
+				periodo p
+			ON
+				bp.fk_id_periodo = p.id
+			LEFT JOIN
+				cat_uma cu
+			ON
+				bp.fk_id_cat_uma = cu.id
+			WHERE
+				b.fk_id_empresa = :fk_id_empresa
+				AND bp.fk_id_periodo = :fk_id_periodo 
+				AND bp.fk_id_cat_estatus_inventario <![CDATA[ <> ]]> '3'
+				AND b.valuacion >= (cu.valor_diario*cu.factor)
+			GROUP BY 
+				cbm.cuenta_contable
+			)
+		UNION
+			(
+			SELECT
+				cbi.cuenta_contable,
+				cbi.descr,
+				ROUND(SUM(IF(bi.valor_capitalizable>0,bi.valor_capitalizable,bi.valor)),2) 'valorHistorico',
+				'0' AS 'depreciacionAcumulada',
+				ROUND(SUM(bi.valor),2) 'valorActualizado',
+				0 'valorAnterior',
+				COUNT(bi.id) 'cantidad'
+			FROM	
+				bien_inmueble bi
+			LEFT JOIN
+				cat_bien_inmueble cbi
+			ON
+				bi.fk_id_clasificacion_inmueble = cbi.id
+			WHERE
+				bi.fk_id_empresa = :fk_id_empresa
+			GROUP BY
+				cbi.cuenta_contable
+			)
+		UNION
+			(SELECT
+				cbi.cuenta_contable,
+				cbi.descr,
+				ROUND(SUM(IF(bi.valor_capitalizable>0,bi.valor_capitalizable,bi.valor)),2) 'valorHistorico',
+				'0' AS 'depreciacionAcumulada',
+				'0' AS 'valorAnterior',
+				ROUND(SUM(bi.valor),2) 'valorActualizado',
+				COUNT(bi.id) 'cantidad'
+			FROM	
+				bien_inmueble bi
+			LEFT JOIN
+				cat_bien_inmueble cbi
+			ON
+				bi.fk_id_cat_tipo_inmueble = cbi.id
+			WHERE
+				bi.fk_id_empresa = :fk_id_empresa
+			GROUP BY
+				cbi.cuenta_contable)	 
+		UNION
+			(
+			SELECT
+				res1.cuenta,
+				cbmx.descr,
+				res1.valorHistorico,
+				res1.valorAnterior,
+				res1.depreciacionAcumulada,
+				res1.valorActualizado,
+				res1.cantidad
+			FROM
+				(SELECT 
+					SUBSTR(cbm.cuenta_contable,1,7) 'cuenta', cbm.descr, ROUND(SUM(b.valuacion),2) 'valorHistorico', ROUND(SUM(bp.valor_anterior),2) 'valorAnterior', ROUND(SUM(bp.depreciacion_acumulada),2) 'depreciacionAcumulada', ROUND(SUM(b.valuacion)-SUM(bp.depreciacion_acumulada),2) 'valorActualizado', COUNT(b.id) 'cantidad'
+				FROM
+					bien b
+				LEFT JOIN
+					cat_bien_mueble cbm
+				ON
+					b.fk_id_clasificacion_bien = cbm.id
+				LEFT JOIN
+					bien_periodo bp
+				ON
+					b.id = bp.fk_id_bien
+				LEFT JOIN
+					periodo p
+				ON
+					bp.fk_id_periodo = p.id
+				LEFT JOIN
+					cat_uma cu
+				ON
+					bp.fk_id_cat_uma = cu.id
+				WHERE
+					b.fk_id_empresa = :fk_id_empresa
+					AND bp.fk_id_periodo = :fk_id_periodo 
+					AND bp.fk_id_cat_estatus_inventario <![CDATA[ <> ]]> '3'
+					AND b.valuacion >= (cu.valor_diario*cu.factor)
+				GROUP BY
+					SUBSTR(cbm.cuenta_contable,1,7)
+				)res1
+			LEFT JOIN
+				cat_bien_mueble	cbmx
+			ON
+				res1.cuenta = cbmx.cuenta_contable)
+		) a
+		ORDER BY
+			a.cuenta
+	</entry>
+	<entry key="reporte.cuenta.bienes.muebles.list">
+		SELECT*FROM
+		(
+			(SELECT 
+				cbm.cuenta_contable 'cuenta', cbm.descr, ROUND(SUM(b.valuacion),2) 'valorHistorico', ROUND(SUM(bp.valor_anterior),2) 'valorAnterior', ROUND(SUM(bp.depreciacion_acumulada),2) 'depreciacionAcumulada', ROUND(SUM(b.valuacion)-SUM(bp.depreciacion_acumulada),2) 'valorActualizado', COUNT(b.id) 'cantidad'
+			FROM
+				bien b
+			LEFT JOIN
+				cat_bien_mueble cbm
+			ON
+				b.fk_id_clasificacion_bien = cbm.id
+			LEFT JOIN
+				bien_periodo bp
+			ON
+				b.id = bp.fk_id_bien
+			LEFT JOIN
+				periodo p
+			ON
+				bp.fk_id_periodo = p.id
+			LEFT JOIN
+				cat_uma cu
+			ON
+				bp.fk_id_cat_uma = cu.id
+			WHERE
+				b.fk_id_empresa = :fk_id_empresa
+				AND bp.fk_id_periodo = :fk_id_periodo 
+				AND bp.fk_id_cat_estatus_inventario <![CDATA[ <> ]]> '3'
+				AND b.valuacion >= (cu.valor_diario*cu.factor)
+			GROUP BY 
+				cbm.cuenta_contable
+			)
+		UNION
+			(
+			SELECT
+				res1.cuenta,
+				cbmx.descr,
+				res1.valorHistorico,
+				res1.valorAnterior,
+				res1.depreciacionAcumulada,
+				res1.valorActualizado,
+				res1.cantidad
+			FROM
+				(SELECT 
+					SUBSTR(cbm.cuenta_contable,1,7) 'cuenta', cbm.descr, ROUND(SUM(b.valuacion),2) 'valorHistorico', ROUND(SUM(bp.valor_anterior),2) 'valorAnterior', ROUND(SUM(bp.depreciacion_acumulada),2) 'depreciacionAcumulada', ROUND(SUM(b.valuacion)-SUM(bp.depreciacion_acumulada),2) 'valorActualizado', COUNT(b.id) 'cantidad'
+				FROM
+					bien b
+				LEFT JOIN
+					cat_bien_mueble cbm
+				ON
+					b.fk_id_clasificacion_bien = cbm.id
+				LEFT JOIN
+					bien_periodo bp
+				ON
+					b.id = bp.fk_id_bien
+				LEFT JOIN
+					periodo p
+				ON
+					bp.fk_id_periodo = p.id
+				LEFT JOIN
+					cat_uma cu
+				ON
+					bp.fk_id_cat_uma = cu.id
+				WHERE
+					b.fk_id_empresa = :fk_id_empresa
+					AND bp.fk_id_periodo = :fk_id_periodo 
+					AND bp.fk_id_cat_estatus_inventario <![CDATA[ <> ]]> '3'
+					AND b.valuacion >= (cu.valor_diario*cu.factor)
+				GROUP BY
+					SUBSTR(cbm.cuenta_contable,1,7)
+				)res1
+			LEFT JOIN
+				cat_bien_mueble	cbmx
+			ON
+				res1.cuenta = cbmx.cuenta_contable)
+		) a
+		ORDER BY
+			a.cuenta
+	</entry>
+	<entry key="reporte.cuenta.bienes.inmuebles.list">
+		SELECT*FROM
+		(
+			(SELECT
+				cbi.cuenta_contable 'cuenta',
+				cbi.descr,
+				ROUND(SUM(IF(bi.valor_capitalizable>0,bi.valor_capitalizable,bi.valor)),2) 'valorHistorico',
+				'0' AS 'depreciacionAcumulada',
+				0 'valorAnterior',
+				ROUND(SUM(bi.valor),2) 'valorActualizado',
+				COUNT(bi.id) 'cantidad'
+			FROM	
+				bien_inmueble bi
+			LEFT JOIN
+				cat_bien_inmueble cbi
+			ON
+				bi.fk_id_clasificacion_inmueble = cbi.id
+			WHERE
+				bi.fk_id_empresa = :fk_id_empresa
+			GROUP BY
+				cbi.cuenta_contable
+			)
+			UNION
+			(SELECT
+				cbi.cuenta_contable 'cuenta',
+				cbi.descr,
+				ROUND(SUM(IF(bi.valor_capitalizable>0,bi.valor_capitalizable,bi.valor)),2) 'valorHistorico',
+				'0' AS 'depreciacionAcumulada',
+				'0' AS 'valorAnterior',
+				ROUND(SUM(bi.valor),2) 'valorActualizado',
+				COUNT(bi.id) 'cantidad'
+			FROM	
+				bien_inmueble bi
+			LEFT JOIN
+				cat_bien_inmueble cbi
+			ON
+				bi.fk_id_cat_tipo_inmueble = cbi.id
+			WHERE
+				bi.fk_id_empresa = :fk_id_empresa
+			GROUP BY
+				cbi.cuenta_contable)	
+		) a
+		ORDER BY
+			a.cuenta
+	</entry>
+	<entry key="reporte.cuenta.instrumental.list">
+		SELECT*FROM
+		(
+			(SELECT 
+				cbm.cuenta_contable 'cuenta', 
+				cbm.descr, 
+				ROUND(SUM(b.valuacion),2) 'valorHistorico', 
+				ROUND(SUM(bp.valor_anterior),2) 'valorAnterior', 
+				ROUND(SUM(bp.depreciacion_acumulada),2) 'depreciacionAcumulada', 
+				ROUND(SUM(b.valuacion)-SUM(bp.depreciacion_acumulada),2) 'valorActualizado', 
+				COUNT(b.id) 'cantidad'
+			FROM
+				bien b
+			LEFT JOIN
+				cat_bien_mueble cbm
+			ON
+				b.fk_id_clasificacion_bien = cbm.id
+			LEFT JOIN
+				bien_periodo bp
+			ON
+				b.id = bp.fk_id_bien
+			LEFT JOIN
+				periodo p
+			ON
+				bp.fk_id_periodo = p.id
+			LEFT JOIN
+				cat_uma cu
+			ON
+				bp.fk_id_cat_uma = cu.id
+			WHERE
+				b.fk_id_empresa = :fk_id_empresa
+				AND bp.fk_id_periodo = :fk_id_periodo 
+				AND bp.fk_id_cat_estatus_inventario <![CDATA[ <> ]]> '3'
+				AND b.valuacion <![CDATA[ < ]]> (cu.valor_diario*cu.factor)
+			GROUP BY 
+				cbm.cuenta_contable
+			) 
+		#UNION
+		#	(
+		#	SELECT
+		#		cbi.cuenta_contable,
+		#		cbi.descr,
+		#		ROUND(SUM(bi.valor),2) 'valorHistorico',
+		#		'0' 'depreciacionAcumulada',
+		#		ROUND(SUM(bi.valor),2) 'valorActualizado',
+		#		COUNT(bi.id) 'cantidad'
+		#	FROM	
+		#		bien_inmueble bi
+		#	LEFT JOIN
+		#		cat_bien_inmueble cbi
+		#	ON
+		#		bi.fk_id_clasificacion_inmueble = cbi.id
+		#	WHERE
+		#		bi.fk_id_empresa = :fk_id_empresa
+		#	GROUP BY
+		#		cbi.cuenta_contable
+		#	)
+		#UNION
+		#	(SELECT
+		#		cbi.cuenta_contable,
+		#		cbi.descr,
+		#		ROUND(SUM(bi.valor),2) 'valorHistorico',
+		#		'0' 'depreciacionAcumulada',
+		#		ROUND(SUM(bi.valor),2) 'valorActualizado',
+		#		COUNT(bi.id) 'cantidad'
+		#	FROM	
+		#		bien_inmueble bi
+		#	LEFT JOIN
+		#		cat_bien_inmueble cbi
+		#	ON
+		#		bi.fk_id_cat_tipo_inmueble = cbi.id
+		#	WHERE
+		#		bi.fk_id_empresa = :fk_id_empresa
+		#	GROUP BY
+		#		cbi.cuenta_contable)
+		UNION
+			(
+			SELECT
+				res1.cuenta,
+				cbmx.descr,
+				res1.valorHistorico,
+				res1.valorAnterior,
+				res1.depreciacionAcumulada,
+				res1.valorActualizado,
+				res1.cantidad
+			FROM
+				(SELECT 
+					SUBSTR(cbm.cuenta_contable,1,7) 'cuenta', cbm.descr, ROUND(SUM(b.valuacion),2) 'valorHistorico', ROUND(SUM(bp.depreciacion_acumulada),2) 'depreciacionAcumulada', ROUND(SUM(b.valuacion)-SUM(bp.depreciacion_acumulada),2) 'valorActualizado', COUNT(b.id) 'cantidad', ROUND(SUM(bp.valor_anterior),2) 'valorAnterior'
+				FROM
+					bien b
+				LEFT JOIN
+					cat_bien_mueble cbm
+				ON
+					b.fk_id_clasificacion_bien = cbm.id
+				LEFT JOIN
+					bien_periodo bp
+				ON
+					b.id = bp.fk_id_bien
+				LEFT JOIN
+					periodo p
+				ON
+					bp.fk_id_periodo = p.id
+				LEFT JOIN
+					cat_uma cu
+				ON
+					bp.fk_id_cat_uma = cu.id
+				WHERE
+					b.fk_id_empresa = :fk_id_empresa
+					AND bp.fk_id_periodo = :fk_id_periodo 
+					AND bp.fk_id_cat_estatus_inventario <![CDATA[ <> ]]> '3'
+					AND b.valuacion <![CDATA[ < ]]> (cu.valor_diario*cu.factor)
+				GROUP BY
+					SUBSTR(cbm.cuenta_contable,1,7)
+				)res1
+			LEFT JOIN
+				cat_bien_mueble	cbmx
+			ON
+				res1.cuenta = cbmx.cuenta_contable)
+		) a
+		ORDER BY
+			a.cuenta
+	</entry>
+	<entry key="departamento.getlastcounter">
+		SELECT LPAD(MAX(clave)+1, 3, '0') 'COUNTER' FROM
+			departamento
+		WHERE
+			fk_id_empresa = :fk_id_empresa
+	</entry>
+	<entry key="color.insert">
+		INSERT INTO cat_color(descr, fk_id_empresa) VALUES(:descr, :fk_id_empresa)
+	</entry>
+	<entry key="color.list">
+		SELECT 
+			id,
+			descr,
+			fk_id_empresa
+		FROM
+			cat_color
+		WHERE
+			fk_id_empresa = :fk_id_empresa 
+	</entry>
+	<entry key="inmueble.insert">
+		INSERT INTO
+		    bien_inmueble(
+		    	folio, 
+		    	consecutivo,
+		    	fk_id_empresa, 
+		    	fk_id_cat_tipo_inmueble,
+		    	fk_id_clasificacion_inmueble, 
+		    	descr, 
+		    	ubicacion, 
+		    	imagen, 
+		    	med_norte, 
+		    	med_sur, 
+		    	med_este, 		    	
+		    	med_oeste, 
+		    	col_norte, 
+		    	col_sur, 
+		    	col_este, 
+		    	col_oeste, 		    	
+		    	superficie_terreno, 
+		    	superficie_construccion, 
+		    	fk_id_cat_uso_inmueble, 
+		    	fk_id_cat_aprovechamiento, 
+		    	fk_id_cat_tipo_adquisicion,		    	
+		    	serv_agua, 
+		    	serv_drenaje, 
+		    	serv_luz, 
+		    	serv_telefonia, 
+		    	serv_internet, 		    	
+		    	serv_gas_estacionario, 
+		    	escritura_convenio, 
+		    	num_registro_propiedad, 
+		    	cuenta_catastral, 
+		    	gravamen_pendiente, 		    	
+		    	fecha_avaluo, 
+		    	valor_terreno,
+		    	valor_construccion,
+		    	valor,
+		    	valor_capitalizable, 
+		    	observaciones) 
+		VALUES(
+			:folio, 
+			:consecutivo,
+			:fk_id_empresa, 
+			:fk_id_cat_tipo_inmueble, 
+			:fk_id_clasificacion_inmueble, 
+			:descr, 
+			:ubicacion, 
+			:imagen, 
+			:med_norte, 
+			:med_sur, 
+			:med_este, 
+			:med_oeste, 
+			:col_norte, 
+			:col_sur, 
+			:col_este, 
+			:col_oeste, 
+			:superficie_terreno, 
+			:superficie_construccion, 
+			:fk_id_cat_uso_inmueble, 
+			:fk_id_cat_aprovechamiento, 
+			:fk_id_cat_tipo_adquisicion, 
+			:serv_agua, 
+			:serv_drenaje, 
+			:serv_luz, 
+			:serv_telefonia, 
+			:serv_internet, 
+			:serv_gas_estacionario, 
+			:escritura_convenio, 
+			:num_registro_propiedad, 
+			:cuenta_catastral, 
+			:gravamen_pendiente, 
+			:fecha_avaluo, 
+			:valor_terreno,
+			:valor_construccion,
+			:valor,
+			:valor_capitalizable,
+			:observaciones
+		)
+	</entry>
+	<entry key="inmueble.update">
+		UPDATE
+		    bien_inmueble
+		SET
+			folio = :folio,
+			consecutivo = :consecutivo,
+			fk_id_cat_tipo_inmueble = :fk_id_cat_tipo_inmueble, 
+			fk_id_clasificacion_inmueble = :fk_id_clasificacion_inmueble,
+			descr = :descr, 
+			ubicacion = :ubicacion, 
+			imagen = :imagen,
+			med_norte = :med_norte, 
+			med_sur = :med_sur, 
+			med_este = :med_este, 
+			med_oeste = :med_oeste, 
+			col_norte = :col_norte, 
+			col_sur = :col_sur, 
+			col_este = :col_este, 
+			col_oeste = :col_oeste, 
+			superficie_terreno = :superficie_terreno, 
+			superficie_construccion = :superficie_construccion, 
+			fk_id_cat_uso_inmueble = :fk_id_cat_uso_inmueble, 
+			fk_id_cat_aprovechamiento = :fk_id_cat_aprovechamiento, 
+			fk_id_cat_tipo_adquisicion = :fk_id_cat_tipo_adquisicion, 
+			serv_agua = :serv_agua, 
+			serv_drenaje =:serv_drenaje, 
+			serv_luz = :serv_luz, 
+			serv_telefonia = :serv_telefonia, 
+			serv_internet = :serv_internet, 
+			serv_gas_estacionario = :serv_gas_estacionario,
+			escritura_convenio = :escritura_convenio, 
+			num_registro_propiedad = :num_registro_propiedad, 
+			cuenta_catastral = :cuenta_catastral, 
+			gravamen_pendiente = :gravamen_pendiente, 
+			fecha_avaluo = :fecha_avaluo,
+			valor_terreno = :valor_terreno,
+		    valor_construccion = :valor_construccion,
+			valor = :valor, 
+			valor_capitalizable = :valor_capitalizable, 
+			observaciones = :observaciones 
+		WHERE
+			id = :id
+	</entry>
+	<entry key="inmueble.find">
+		SELECT
+			bi.id,
+			bi.folio,
+			bi.consecutivo,
+			bi.fk_id_empresa 'empresa.id',
+			bi.fk_id_cat_tipo_inmueble 'tipo.id',
+			cbt.clasificador 'tipo.clasificador',
+			cbt.consecutivo 'tipo.consecutivo',
+			cbt.descr 'tipo.descr',
+			cbt.cuenta_contable 'tipo.cuentaContable',
+			bi.fk_id_clasificacion_inmueble 'clasificacion.id',
+			cbi.clasificador 'clasificacion.clasificador',
+			cbi.consecutivo 'clasificacion.consecutivo',
+			cbi.descr 'clasificacion.descr',
+			cbi.cuenta_contable 'clasificacion.cuentaContable',
+			bi.descr,
+			bi.ubicacion,
+			bi.imagen,
+			bi.med_norte 'medNorte',
+			bi.med_sur 'medSur',
+			bi.med_este 'medEste',
+			bi.med_oeste 'medOeste',
+			bi.col_norte 'colNorte',
+			bi.col_sur 'colSur',
+			bi.col_este 'colEste',
+			bi.col_oeste 'colOeste',
+			bi.superficie_terreno 'superficieTerreno',
+			bi.superficie_construccion 'superficieConstruccion',
+			bi.fk_id_cat_uso_inmueble 'uso.id',
+			cui.descr 'uso.descr',
+			bi.serv_agua 'servAgua',
+			bi.serv_drenaje 'servDrenaje',
+			bi.serv_luz 'servLuz',
+			bi.serv_telefonia 'servTelefonia',
+			bi.serv_internet 'servInternet',
+			bi.serv_gas_estacionario 'servGasEstacionario',
+			bi.fk_id_cat_tipo_adquisicion 'modoAdquisicion.id',
+			cofa.descr 'modoAdquisicion.descr',
+			bi.fk_id_cat_aprovechamiento 'aprovechamiento.id',
+			cai.descr 'aprovechamiento.descr',
+			bi.escritura_convenio 'numeroEscrituraConvenio',
+			bi.num_registro_propiedad 'numRegistroPropiedad',
+			bi.cuenta_catastral 'cuentaCatastral',
+			bi.fecha_avaluo 'fechaUltimoAvaluo',
+			bi.gravamen_pendiente 'gravamenPendiente',
+			bi.valor_terreno 'valorTerreno',
+			bi.valor_construccion 'valorConstruccion',
+			bi.valor_capitalizable 'valorCapitalizable',
+			bi.valor,
+			bi.observaciones
+		FROM
+			bien_inmueble bi	
+		LEFT JOIN
+			cat_bien_inmueble cbt
+		ON
+			bi.fk_id_cat_tipo_inmueble = cbt.id
+		LEFT JOIN
+			cat_bien_inmueble cbi
+		ON
+			bi.fk_id_clasificacion_inmueble = cbi.id
+		LEFT JOIN
+			cat_uso_inmueble cui
+		ON
+			cui.id = bi.fk_id_cat_uso_inmueble 
+		LEFT JOIN
+			cat_aprovechamiento_inmueble cai
+		ON
+			cai.id = bi.fk_id_cat_aprovechamiento
+		LEFT JOIN
+			cat_origen_fondo_adquisicion cofa
+		ON
+			cofa.id = bi.fk_id_cat_tipo_adquisicion
+		WHERE
+			bi.id = :id
+	</entry>
+	<entry key="inmueble.filtrado">
+		SELECT
+			bi.id,
+			bi.folio,
+			bi.consecutivo,
+			bi.fk_id_empresa 'empresa.id',
+			bi.fk_id_cat_tipo_inmueble 'tipo.id',
+			cbt.clasificador 'tipo.clasificador',
+			cbt.consecutivo 'tipo.consecutivo',
+			cbt.descr 'tipo.descr',
+			cbt.cuenta_contable 'tipo.cuentaContable',
+			bi.fk_id_clasificacion_inmueble 'clasificacion.id',
+			cbi.clasificador 'clasificacion.clasificador',
+			cbi.consecutivo 'clasificacion.consecutivo',
+			cbi.descr 'clasificacion.descr',
+			cbi.cuenta_contable 'clasificacion.cuentaContable',
+			bi.descr,
+			bi.ubicacion,
+			bi.imagen,
+			bi.med_norte 'medNorte',
+			bi.med_sur 'medSur',
+			bi.med_este 'medEste',
+			bi.med_oeste 'medOeste',
+			bi.col_norte 'colNorte',
+			bi.col_sur 'colSur',
+			bi.col_este 'colEste',
+			bi.col_oeste 'colOeste',
+			bi.superficie_terreno 'superficieTerreno',
+			bi.superficie_construccion 'superficieConstruccion',
+			bi.fk_id_cat_uso_inmueble 'uso.id',
+			bi.serv_agua 'servAgua',
+			bi.serv_drenaje 'servDrenaje',
+			bi.serv_luz 'servLuz',
+			bi.serv_telefonia 'servTelefonia',
+			bi.serv_internet 'servInternet',
+			bi.serv_gas_estacionario 'servGasEstacionario',
+			bi.fk_id_cat_tipo_adquisicion 'modoAdquisicion.id',
+			bi.fk_id_cat_aprovechamiento 'aprovechamiento.id',
+			bi.escritura_convenio 'numeroEscrituraConvenio',
+			bi.num_registro_propiedad 'numRegistroPropiedad',
+			bi.cuenta_catastral 'cuentaCatastral',
+			bi.fecha_avaluo 'fechaUltimoAvaluo',
+			bi.gravamen_pendiente 'gravamenPendiente',
+			bi.valor_terreno 'valorTerreno',
+			bi.valor_construccion 'valorConstruccion',
+			bi.valor,
+			bi.valor_capitalizable 'valorCapitalizable',
+			bi.observaciones,
+			cbi.cuenta_contable 'cuentaContable'
+		FROM
+			bien_inmueble bi	
+		LEFT JOIN
+			cat_bien_inmueble cbt
+		ON
+			bi.fk_id_cat_tipo_inmueble = cbt.id
+		LEFT JOIN
+			cat_bien_inmueble cbi
+		ON
+			bi.fk_id_clasificacion_inmueble = cbi.id
+		WHERE
+			bi.fk_id_empresa = :fk_id_empresa
+			AND IF(LENGTH(TRIM(:fk_id_cat_tipo_inmueble))>0, fk_id_cat_tipo_inmueble = :fk_id_cat_tipo_inmueble, TRUE)
+			AND IF(LENGTH(TRIM(:fk_id_clasificacion_inmueble))>0, fk_id_clasificacion_inmueble = :fk_id_clasificacion_inmueble, TRUE)
+		ORDER BY
+			folio
+	</entry>
+	<entry key="inmueble.maxconsecutivo">
+		SELECT
+			(IFNULL(MAX(bi.consecutivo),0)+1) 'consecutivo'
+		FROM	
+			bien_inmueble bi
+		WHERE
+			bi.fk_id_empresa = :fk_id_empresa
+			AND bi.fk_id_clasificacion_inmueble = :fk_id_clasificacion_inmueble
+	</entry>
+	<entry key="inmueble.delete">
+		DELETE FROM 
+			bien_inmueble
+		WHERE
+			id = :id
+			AND fk_id_empresa = :fk_id_empresa
+	</entry>
+
+	<entry key="cat.tipoinmueble">
+		SELECT
+			id,
+			clasificador,
+			consecutivo,
+			descr,
+			cuenta_contable 'cuentaContable',
+			fk_id_cat_tipo_clasificacion_bien,
+			fecha_insert 'fechaInsert'
+		FROM
+			cat_bien_inmueble cbi
+		WHERE
+			LENGTH(cbi.cuenta_contable)=7
+	</entry>
+	<entry key="cat.tipoinmueble.all">
+		SELECT
+			id,
+			clasificador,
+			consecutivo,
+			descr,
+			cuenta_contable 'cuentaContable',
+			fk_id_cat_tipo_clasificacion_bien,
+			fecha_insert 'fechaInsert'
+		FROM
+			cat_bien_inmueble cbi
+		WHERE
+			LENGTH(cbi.cuenta_contable)>7
+	</entry>
+	<entry key="conciliacion.insert">
+		INSERT INTO conciliacion_fisica(fk_id_empresa, fk_id_usuario, fk_id_periodo, fk_id_departamento, fecha_insert, time_insert) 
+		VALUES(:fk_id_empresa, :fk_id_usuario, :fk_id_periodo, :fk_id_departamento, CURRENT_DATE(), CURRENT_TIME())
+	</entry>
+	<entry key="conciliacion.detalle.insert">
+		INSERT INTO conciliacion_fisica_detalle(fk_id_conciliacion_fisica, fk_id_bien, fecha_insert, time_insert) 
+		VALUES(:fk_id_conciliacion_fisica, :fk_id_bien, CURRENT_DATE(), CURRENT_TIME())
+	</entry>
+	<entry key="conciliacion.find">
+		SELECT
+			cf.id,
+			cf.fk_id_empresa 'empresa.id',
+			cf.fk_id_usuario 'usuario.id',
+			cf.fk_id_periodo 'periodo.id',
+			cf.fk_id_departamento 'departamento.id',
+			d.descr 'departamento.descr',
+			d.clave 'departamento.clave',
+			cf.fecha_insert 'fechaInsert',
+			cf.time_insert 'timeInsert'		
+		FROM
+			conciliacion_fisica cf
+		LEFT JOIN
+			departamento d
+		ON
+			cf.fk_id_departamento = d.id
+		WHERE
+			cf.id = :id
+	</entry>
+	<entry key="conciliacion.list">
+		SELECT
+			cfd.id,
+			cfd.fk_id_conciliacion_fisica 'idConciliacion',
+			cfd.fk_id_bien 'bien.id',
+			b.descripcion 'bien.descripcion',
+			bp.folio 'bien.folio',
+			bp.consecutivo 'bien.consecutivo',
+			bp.fk_id_periodo 'bien.periodo.id',
+			b.marca 'bien.marca',
+			b.modelo 'bien.modelo',
+			b.serie 'bien.serie',
+			b.motor 'bien.motor',
+			b.factura 'bien.factura',
+			b.fk_id_departamento 'bien.departamento.id',
+			d.descr 'bien.departamento.descr',
+			cfd.fecha_insert 'fecha',
+			cfd.time_insert 'hora'
+		FROM
+			conciliacion_fisica_detalle cfd
+		LEFT JOIN
+			bien b
+		ON
+			cfd.fk_id_bien = b.id
+		LEFT JOIN
+			bien_periodo bp
+		ON
+			b.id = bp.fk_id_bien
+		LEFT JOIN
+			departamento d
+		ON
+			b.fk_id_departamento = d.id
+		WHERE
+			cfd.fk_id_conciliacion_fisica = :fk_id_conciliacion_fisica
+		ORDER BY
+			cfd.fecha_insert, cfd.time_insert
+	</entry>
+	<entry key="conciliacionfisica.filter">
+		SELECT
+			cf.id,
+			cf.fk_id_empresa 'empresa.id',
+			cf.fk_id_usuario 'usuario.id',
+			cf.fk_id_periodo 'periodo.id',
+			cf.fk_id_departamento 'departamento.id',
+			d.descr 'departamento.descr',
+			d.clave 'departamento.clave',
+			cf.fecha_insert 'fechaInsert',
+			cf.time_insert 'timeInsert'		
+		FROM
+			conciliacion_fisica cf
+		LEFT JOIN
+			departamento d
+		ON
+			cf.fk_id_departamento = d.id
+		WHERE
+			cf.fk_id_empresa = :fk_id_empresa
+			AND cf.fk_id_periodo = :fk_id_periodo
+	</entry>
+	<entry key="inmueble.imagen.update">
+		UPDATE 
+			bien_inmueble
+		SET
+			imagen=:imagen
+		WHERE
+			id = :id
+	</entry>
+	<entry key="inmueble.imagenes.insert">
+		INSERT INTO bien_inmueble_imagen(fk_id_bien_inmueble, path) VALUES(:fk_id_bien_inmueble, :path)	
+	</entry>
+	<entry key="inmueble.imagenes.delete">
+		DELETE FROM 
+			bien_inmueble_imagen
+		WHERE
+			fk_id_bien_inmueble = :fk_id_bien_inmueble	
+	</entry>
+	<entry key="inmueble.listimages">
+		SELECT
+			path
+		FROM
+			bien_inmueble_imagen
+		WHERE
+			fk_id_bien_inmueble = :fk_id_bien_inmueble
+	</entry>
+	<entry key="list.empresa.disponibles">
+	SELECT
+		e.id, e.nombre, e.descr, e.periodo_descr, e.direccion, e.logo_mpio, e.logo_periodo, e.logo_ayuto, e.logo_etiqueta, e.fk_id_cat_estatus, e.fecha_insert
+	FROM 
+		empresa e
+	LEFT JOIN
+		usuario_empresa ue
+	ON
+		e.id = ue.fk_id_empresa
+		AND ue.fk_id_usuario = :fk_id_usuario
+	WHERE
+		ue.id IS NULL	
+	</entry>
+	<entry key="rol.list">
+		SELECT id, descr FROM
+			cat_rol_usuario
+	</entry>
+	<entry key="bien.valuacion.insert">
+		INSERT INTO
+			bien_valor(fk_id_bien, fk_id_periodo, valor, fk_id_cat_tipo_valuacion, fecha, fecha_cierre, dep_acumulada, dep_periodo, anios_uso, fk_id_cat_depreciacion, fk_id_cat_uma, valor_libros, valor_actual, fk_id_cat_estado_fisico, orden)
+		VALUES
+			(:fk_id_bien, :fk_id_periodo, :valor, :fk_id_cat_tipo_valuacion, :fecha, :fecha_cierre, :dep_acumulada, :dep_periodo, :anios_uso, :fk_id_cat_depreciacion, :fk_id_cat_uma, :valor_libros, :valor_actual, :fk_id_cat_estado_fisico, :orden)
+	</entry>
+	<entry key="bien.valuacion.delete">
+		DELETE FROM
+			bien_valor
+		WHERE
+			fk_id_bien = :fk_id_bien
+	</entry>
+	<entry key="bien.valuaciones.find">
+		SELECT
+			v.id,
+			v.fk_id_bien 'bien.id',
+			v.fk_id_periodo 'periodo.id',
+			v.orden,
+			v.valor,
+			v.fk_id_cat_tipo_valuacion 'tipo.id',
+			ctv.descr 'tipo.descr',
+			v.fecha,
+			v.fecha_cierre 'fechaCierre',
+			v.dep_acumulada 'depAcumulada',
+			v.dep_periodo 'depPeriodo',
+			v.anios_uso 'aniosUso',
+			v.fk_id_cat_depreciacion 'depreciacion.id',
+			cd.descr 'depreciacion.descr',
+			cd.cuenta 'depreciacion.cuenta',
+			cd.vida_util 'depreciacion.vidaUtil',
+			cd.depreciacion_anual 'depreciacion.depreciacionAnual',
+			v.fk_id_cat_uma 'uma.id',
+			cu.anio 'uma.anio',
+			cu.valor_diario 'uma.valorDiario',
+			cu.valor_mensual 'uma.valorMensual',
+			cu.valor_anual 'uma.valorAnual',
+			cu.factor 'uma.factor',
+			v.valor_libros 'valorLibros',
+			v.valor_actual 'valorActual',
+			v.fk_id_cat_estado_fisico 'estadoFisico.id',
+			cef.descr 'estadoFisico.descr',
+			v.fecha_insert 'fechaInsert'
+		FROM
+			bien_valor v
+		LEFT JOIN
+			cat_tipo_valuacion ctv
+		ON
+			v.fk_id_cat_tipo_valuacion = ctv.id
+		LEFT JOIN
+			cat_depreciacion cd
+		ON
+			v.fk_id_cat_depreciacion = cd.id
+		LEFT JOIN
+			cat_uma cu
+		ON
+			cu.id = v.fk_id_cat_uma 
+		LEFT JOIN
+			cat_estado_fisico cef
+		ON
+			cef.id = v.fk_id_cat_estado_fisico
+		WHERE
+			v.fk_id_bien =  :fk_id_bien
+		ORDER BY
+			orden ASC
+	</entry>
+	<entry key="bandera.mostrar">
+	    		SELECT
+			cb.id,
+			cb.descr,
+			cb.status 			
+		FROM
+			cat_bandera cb
+	    ORDER BY id ASC
+	</entry>
+		<entry key="bandera.find">
+	    		SELECT
+			cb.id,
+			cb.descr,
+			cb.status 			
+		FROM
+			cat_bandera cb
+			
+		WHERE 
+		    cb.id   =  :id
+	    ORDER BY id ASC
+	</entry>
+	<entry key="bandera.update">
+		UPDATE 
+		    cat_bandera 
+		SET 
+		    descr = :descr,
+		    status = :status,
+		    fk_id_empresa = :empresa
+		WHERE id = :id
+		
+	</entry>
+	
+	<entry key="bandera.insert">
+		INSERT INTO cat_bandera (descr, status) VALUES(:descr, :status)		
+	</entry>
+	
+</queries>

@@ -1,0 +1,104 @@
+@page{
+	body{
+		margin-bottom: 20px;
+		border-bottom:1px solid #336699;	
+	}
+}
+
+@page:first{
+	counter-reset: page;
+	counter-reset: paginas;
+}
+
+table.table-reporte > thead{
+	counter-increment: paginas;
+	counter-increment: page;
+}
+
+/*table.table-reporte-cuentas > thead{
+	counter-increment: paginas;
+	counter-increment: page;
+}*/
+
+@page{
+	margin:9pt 15pt 9pt 15pt;
+	
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	min-height: 70px;
+	display:table-header-group;
+}
+
+.content-fluid{
+	position: relative;
+	margin-top: 73px;
+	margin-bottom: 180px;
+	width: 100%;
+	padding:0; 
+}
+
+.content-fluid table{
+	margin:0;
+	padding:0;  
+}
+
+.content-fluid table tbody tr td{
+	border-left:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+	padding: 3px; 
+}
+
+.content-fluid table tbody tr td:last-child{
+	border-right:1px solid #EEE;
+}
+
+.content-fluid table thead tr th{
+	background:#CCC;
+}
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	border-top:1px solid #BBB;
+	vertical-align: bottom !important;
+	padding-top: 5px;
+	display:table-footer-group;
+	background:#336699;
+}
+
+.footer .footer-titulo{
+	position: relative;
+	width: 49%;
+	text-align: left;
+	min-height: 20px;
+}
+
+.footer .paginado{
+	vertical-align: bottom !important;
+	position: relative;
+	width: 49%;
+	text-align: right;
+}
+
+.footer .paginado:after{
+	content: "Página: " counter(page) " de " counter(paginas);
+}
+
+/*td.paginado:before{
+	content: "Página: ";
+}
+
+td.paginado:after{
+	counter-increment: page;
+	content: counter(page) " de " counter(paginas);
+}*/

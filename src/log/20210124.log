@@ -1,0 +1,120 @@
+07:38:42 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+07:38:42 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+07:39:42 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+07:39:42 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+07:43:13 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+07:43:13 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+07:44:13 ERROR login.php:65[main.main]: Request invalido, Faltan parametros
+07:44:23 ERROR login.php:65[main.main]: Request invalido, Faltan parametros
+07:47:37 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+07:47:37 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+07:48:39 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+07:48:39 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+19:12:29 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+19:12:29 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+19:12:49 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+19:12:49 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+23:13:20 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+23:13:20 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+23:32:27 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+23:32:27 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+23:34:31 ERROR login.php:50[main.main]: No se ha podido establecer conexión con base de datos
+23:34:31 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+23:35:31 DEBUG login.php:19[main.main]: Properties Object
+(
+    [data] => Array
+        (
+            [db.schema] => inventariodbv2
+            [db.user] => usrinvdb
+            [db.password] => passInvDB2019
+            [db.url] => ibexpro.com.mx
+        )
+
+)
+
+23:35:31 DEBUG login.php:20[main.main]: 
+23:35:31 ERROR login.php:52[main.main]: No se ha podido establecer conexión con base de datos
+23:35:31 DEBUG login.php:62[main.main]: Cierra conexion a Base de datos
+23:40:31 DEBUG login.php:19[main.main]: Properties Object
+(
+    [data] => Array
+        (
+            [db.schema] => inventariodbv2
+            [db.user] => usrinvdb
+            [db.password] => passInvDB2019
+            [db.url] => ibexpro.com.mx
+        )
+
+)
+
+23:40:31 DEBUG login.php:20[main.main]: 
+23:40:31 ERROR login.php:52[main.main]: No se ha podido establecer conexión con base de datos
+23:40:31 DEBUG login.php:62[main.main]: Cierra conexion a Base de datos
+23:45:33 DEBUG login.php:19[main.main]: Properties Object
+(
+    [data] => Array
+        (
+            [db.schema] => inventariodbv2
+            [db.user] => usrinvdb
+            [db.password] => passInvDB2019
+            [db.url] => ibexpro.com.mx
+        )
+
+)
+
+23:45:33 DEBUG login.php:20[main.main]: 
+23:45:33 ERROR login.php:52[main.main]: No se ha podido establecer conexión con base de datos
+23:45:33 DEBUG login.php:62[main.main]: Cierra conexion a Base de datos
+23:47:27 DEBUG login.php:19[main.main]: Properties Object
+(
+    [data] => Array
+        (
+            [db.schema] => inventariodbv2
+            [db.user] => usrinvdb
+            [db.password] => passInvDB2019
+            [db.url] => localhost
+        )
+
+)
+
+23:47:27 DEBUG login.php:20[main.main]: DBConnector Object
+(
+    [url] => localhost
+    [schema] => inventariodbv2
+    [user] => usrinvdb
+    [password] => passInvDB2019
+)
+
+23:47:27 DEBUG login.php:29[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:47:27 DEBUG login.php:31[main.main]: result: SUCCESS
+23:47:27 DEBUG login.php:32[main.main]: session: ON
+23:47:27 DEBUG login.php:34[main.main]: crea session
+23:47:27 DEBUG login.php:62[main.main]: Cierra conexion a Base de datos

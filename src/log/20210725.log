@@ -1,0 +1,2 @@
+01:48:03 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+01:48:03 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: EmpresaDao

@@ -1,0 +1,240 @@
+20:26:59 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+20:26:59 DEBUG login.php:29[main.main]: result: SUCCESS
+20:26:59 DEBUG login.php:30[main.main]: session: ON
+20:26:59 DEBUG login.php:32[main.main]: crea session
+20:26:59 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+20:26:59 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+20:26:59 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: EmpresaDao
+20:27:03 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+20:27:03 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+20:27:03 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+20:27:05 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+20:27:05 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+20:27:05 DEBUG inventario.php:21[main.main]: misesion: 
+20:27:05 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+20:27:05 DEBUG inventario.php:45[main.main]: debugging
+20:27:05 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 12 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 12 registros de tipo: ItemCatalogo
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 20 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 20 registros de tipo: ItemCatalogo
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 8 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 8 registros de tipo: Uma
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+20:27:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+20:27:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+23:19:06 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:19:06 DEBUG login.php:29[main.main]: result: SUCCESS
+23:19:06 DEBUG login.php:30[main.main]: session: ON
+23:19:06 DEBUG login.php:32[main.main]: crea session
+23:19:06 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+23:19:06 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:19:06 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: EmpresaDao
+23:19:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:19:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: EmpresaDao
+23:20:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+23:20:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+23:20:04 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+23:20:06 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:20:06 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+23:20:06 DEBUG inventario.php:21[main.main]: misesion: 
+23:20:06 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+23:20:06 DEBUG inventario.php:45[main.main]: debugging
+23:20:06 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+23:20:06 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 12 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 12 registros de tipo: ItemCatalogo
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 20 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 20 registros de tipo: ItemCatalogo
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 8 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 8 registros de tipo: Uma
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+23:20:07 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+23:20:07 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo

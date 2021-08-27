@@ -1,0 +1,31 @@
+<settings>
+	<!-- <entry key="system.path">/home/bccpccom/public_html/inv</entry>
+	<entry key="system.url">http://bccpc.com.mx/inv</entry> -->
+	<!-- <entry key="system.path">c:/xampp/htdocs/inv</entry> -->
+	
+	<!-- ibexpro -->
+	<entry key="system.path">/home/k0klpfhww8g0/public_html/v3</entry>
+	<entry key="system.url">http://ibexpro.com.mx/v3</entry>
+	<!-- termina -->
+	
+	<!-- <entry key="system.path">c:/xampp/htdocs/inv</entry>
+	<entry key="system.url">http://localhost/inv</entry>  -->
+
+	<entry key="system.label.default">CODIGOQR</entry>
+	<entry key="system.timezone">America/Mexico_City</entry>
+	<entry key="page.view.name">CODEPAG</entry>
+	<entry key="empresa.nombre">CODEPAG</entry>
+	<entry key="footer.register.label">©2021 todos los derechos reservados</entry>
+	<entry key="usuario.noavatar">/build/images/user.png</entry>
+	<entry key="mpio.path.logos">imgs/</entry>
+	<entry key="index.url">selempre.php</entry>
+	<entry key="main.url">inventario.php</entry>
+	<entry key="url.login">login.php</entry>
+	<entry key="qrcode.link">/fichatecnica/</entry>
+	<entry key="qrcode.path">/files/qrcodes/</entry>
+	<entry key="barcode.path">/files/barcodes/</entry>
+	<entry key="bien.repository.path">/files/</entry>
+	<entry key="bien.img.maxsize">15000000</entry><!-- 5 megas -->
+	<entry key="inmueble.repository.path">/inmuebles/</entry>
+	<entry key="inmueble.img.maxsize">15000000</entry><!-- 5 megas -->
+</settings>

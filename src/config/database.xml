@@ -1,0 +1,20 @@
+<database>
+	<!-- configuracion ibexpro.com.mx -->
+	
+	<entry key="db.schema">inventariodbv2_prod</entry>
+	<entry key="db.user">usrinvdb</entry>
+	<entry key="db.password">passInvDB2019</entry>
+	<entry key="db.url">localhost</entry>
+
+	<!-- configuracion localhost --> 
+	<!-- <entry key="db.schema">ibexpro-27042020</entry>
+	<entry key="db.user">root</entry>
+	<entry key="db.password"></entry>
+	<entry key="db.url">localhost</entry> -->
+
+	<!-- configuracion Server -->
+	<!-- <entry key="db.schema">bccpccom_inv</entry>
+	<entry key="db.user">bccpccom_invuser</entry>
+	<entry key="db.password">invent4rio2018</entry>
+	<entry key="db.url">bccpc.com.mx</entry>  -->
+</database>

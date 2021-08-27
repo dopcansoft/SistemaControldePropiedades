@@ -1,0 +1,698 @@
+[31-Jul-2019 15:01:56 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[31-Jul-2019 15:01:56 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[31-Jul-2019 15:02:23 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[31-Jul-2019 15:02:23 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[31-Jul-2019 15:02:33 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[31-Jul-2019 15:02:33 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[31-Jul-2019 15:02:47 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[31-Jul-2019 15:02:47 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[08-Aug-2019 18:48:04 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:48:49 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:49:13 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:50:11 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:50:28 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:51:19 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:51:32 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:51:53 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:52:25 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[08-Aug-2019 18:52:35 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[15-Aug-2019 04:54:25 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[15-Aug-2019 04:54:25 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[15-Aug-2019 04:54:47 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[15-Aug-2019 04:54:47 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[15-Aug-2019 04:55:38 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[15-Aug-2019 04:55:38 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[15-Aug-2019 11:25:40 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[15-Aug-2019 11:25:40 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[15-Aug-2019 11:40:26 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[15-Aug-2019 11:40:26 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[15-Aug-2019 23:07:55 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[15-Aug-2019 23:07:55 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[16-Aug-2019 01:53:16 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[16-Aug-2019 01:53:16 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[23-Aug-2019 22:40:54 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[04-Nov-2019 22:24:37 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[04-Nov-2019 22:24:37 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[04-Nov-2019 22:24:37 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[04-Nov-2019 22:24:37 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[04-Nov-2019 22:24:53 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[04-Nov-2019 22:24:53 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[04-Nov-2019 22:24:53 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[04-Nov-2019 22:24:53 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[04-Nov-2019 22:25:21 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[04-Nov-2019 22:25:21 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[04-Nov-2019 22:25:21 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[04-Nov-2019 22:25:21 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[04-Nov-2019 22:25:27 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[04-Nov-2019 22:25:27 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[04-Nov-2019 22:25:27 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[04-Nov-2019 22:25:27 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[04-Nov-2019 22:25:40 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[04-Nov-2019 22:25:40 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[04-Nov-2019 22:25:40 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[04-Nov-2019 22:25:40 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[04-Nov-2019 22:25:54 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[04-Nov-2019 22:25:54 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[04-Nov-2019 22:25:54 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[04-Nov-2019 22:25:54 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[25-Nov-2019 01:32:49 UTC] PHP Notice:  Undefined index: usuario in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 27
+[25-Nov-2019 01:32:49 UTC] PHP Fatal error:  Call to a member function getPerfil() on boolean in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 28
+[25-Nov-2019 01:37:32 UTC] PHP Notice:  Undefined index: usuario in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 27
+[25-Nov-2019 01:37:32 UTC] PHP Fatal error:  Call to a member function getPerfil() on boolean in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 28
+[27-Dec-2019 13:37:23 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 13:37:25 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 13:39:00 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 13:39:02 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 13:45:52 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 13:45:58 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 17:05:27 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 17:06:58 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 17:07:15 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 17:07:34 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 17:12:25 UTC] PHP Warning:  include(/home/k0klpfhww8g0/public_html/src/dao/ColorDao.php): failed to open stream: No such file or directory in /home/k0klpfhww8g0/public_html/src/vo/config.php on line 35
+[27-Dec-2019 17:12:25 UTC] PHP Warning:  include(): Failed opening '/home/k0klpfhww8g0/public_html/src/dao/ColorDao.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/k0klpfhww8g0/public_html/src/vo/config.php on line 35
+[27-Dec-2019 17:12:25 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[27-Dec-2019 17:12:56 UTC] PHP Warning:  include(/home/k0klpfhww8g0/public_html/src/dao/ColorDao.php): failed to open stream: No such file or directory in /home/k0klpfhww8g0/public_html/src/vo/config.php on line 35
+[27-Dec-2019 17:12:56 UTC] PHP Warning:  include(): Failed opening '/home/k0klpfhww8g0/public_html/src/dao/ColorDao.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/k0klpfhww8g0/public_html/src/vo/config.php on line 35
+[27-Dec-2019 17:12:56 UTC] PHP Fatal error:  Class 'ColorDao' not found in /home/k0klpfhww8g0/public_html/src/services/altacolor.php on line 15
+[28-Dec-2019 03:01:25 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:02:27 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:03:08 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:03:37 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:04:10 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:05:18 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:06:12 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:07:02 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:08:19 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:08:58 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:09:42 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:10:16 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:11:11 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:11:39 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:12:26 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:13:03 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:13:46 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 03:14:37 UTC] PHP Notice:  Undefined index: color in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 178
+[28-Dec-2019 19:51:13 UTC] PHP Notice:  Undefined index: usuario in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 27
+[28-Dec-2019 19:51:13 UTC] PHP Fatal error:  Call to a member function getPerfil() on boolean in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 28
+[28-Dec-2019 19:52:16 UTC] PHP Notice:  Undefined index: usuario in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 27
+[28-Dec-2019 19:52:16 UTC] PHP Fatal error:  Call to a member function getPerfil() on boolean in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 28
+[16-Jan-2020 17:49:20 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[16-Jan-2020 22:53:52 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[16-Jan-2020 23:12:34 UTC] PHP Notice:  Undefined index: tipoClasificacion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 32
+[24-Jan-2020 04:20:40 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[24-Jan-2020 04:20:40 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[24-Jan-2020 04:20:40 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[24-Jan-2020 04:20:40 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[24-Jan-2020 04:20:50 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[24-Jan-2020 04:20:50 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[24-Jan-2020 04:20:50 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[24-Jan-2020 04:20:50 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[24-Jan-2020 04:20:57 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[24-Jan-2020 04:20:57 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[24-Jan-2020 04:20:57 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[24-Jan-2020 04:20:57 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[24-Jan-2020 04:21:07 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[24-Jan-2020 04:21:07 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[24-Jan-2020 04:21:07 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[24-Jan-2020 04:21:07 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[24-Jan-2020 04:21:15 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[24-Jan-2020 04:21:15 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[24-Jan-2020 04:21:15 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[24-Jan-2020 04:21:15 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[24-Jan-2020 04:21:28 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[24-Jan-2020 04:21:28 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[24-Jan-2020 04:21:28 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[24-Jan-2020 04:21:28 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[10-Feb-2020 02:01:12 UTC] PHP Notice:  Undefined index: folio in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 29
+[10-Feb-2020 02:01:12 UTC] PHP Notice:  Undefined index: consecutivo in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 30
+[10-Feb-2020 02:01:12 UTC] PHP Notice:  Undefined index: origen in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 40
+[10-Feb-2020 02:01:12 UTC] PHP Notice:  Undefined index: fechaAdquisicion in /home/k0klpfhww8g0/public_html/src/services/updarticulomin.php on line 41
+[12-Feb-2020 17:27:50 UTC] PHP Notice:  Undefined index: usuario in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 27
+[12-Feb-2020 17:27:50 UTC] PHP Fatal error:  Call to a member function getPerfil() on boolean in /home/k0klpfhww8g0/public_html/src/services/selempresa.php on line 28
+[17-Feb-2020 18:34:26 UTC] PHP Fatal error:  Call to undefined method ResponsableDao::resetCargo() in /home/k0klpfhww8g0/public_html/src/services/updatecargo.php on line 20
+[01-Jun-2020 20:25:45 UTC] PHP Warning:  imagepng(/home/k0klpfhww8g0/public_html/files/barcodes/): failed to open stream: Is a directory in /home/k0klpfhww8g0/public_html/src/lib/phpbarcode/barcode.php on line 129
+[23-Jun-2020 23:02:53 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:05:39 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:06:39 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:07:20 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:08:07 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:08:51 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:10:08 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:16:27 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:19:23 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:21:44 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:23:50 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:24:28 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:25:12 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:26:07 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:26:44 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:27:46 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:28:28 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:30:36 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:33:51 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:36:10 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:49:12 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:52:46 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:54:43 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:55:47 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[23-Jun-2020 23:58:56 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 00:00:58 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 00:03:42 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 00:05:07 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[24-Jun-2020 00:06:38 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[24-Jun-2020 17:28:42 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[24-Jun-2020 17:30:41 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:36:02 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:41:20 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:43:44 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:44:44 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:46:14 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:47:31 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:48:18 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:49:01 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:50:59 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:51:34 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:52:09 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:54:07 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 17:57:36 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:01:19 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:04:15 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:05:45 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:12:43 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:17:05 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:19:36 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:21:37 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:22:37 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[24-Jun-2020 18:24:41 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 17:39:40 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 17:46:20 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 17:49:39 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:00:01 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:02:00 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:02:42 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:03:28 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:04:08 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:05:01 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:06:12 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:06:48 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:07:12 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:07:35 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:08:01 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:08:52 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:09:18 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:09:39 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:10:57 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:12:21 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:13:17 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:14:37 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:20:28 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:22:12 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:22:48 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:23:55 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:24:37 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:24:37 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:26:06 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:26:06 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:28:49 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:28:49 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:29:51 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 96
+[25-Jun-2020 18:29:51 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/updarticulo.php on line 97
+[25-Jun-2020 18:31:30 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:31:30 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:33:33 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:33:33 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:36:53 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:36:53 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:38:15 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:38:15 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:38:45 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:38:45 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[25-Jun-2020 18:39:54 UTC] PHP Notice:  Undefined index: valorAnterior in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 180
+[25-Jun-2020 18:39:54 UTC] PHP Notice:  Undefined index: matricula in /home/k0klpfhww8g0/public_html/src/services/altaarticulo.php on line 181
+[24-Jun-2021 00:13:40 UTC] DBConnector-49: SQLSTATE[28000] [1045] Access denied for user 'usrinvdb'@'ip-23-229-210-129.ip.secureserver.net' (using password: YES)
+
+[24-Jun-2021 00:15:42 UTC] DBConnector-49: SQLSTATE[28000] [1045] Access denied for user 'usrinvdb'@'ip-23-229-210-129.ip.secureserver.net' (using password: YES)
+
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[06-Jul-2021 21:39:19 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[06-Jul-2021 21:39:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[06-Jul-2021 21:55:11 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[06-Jul-2021 21:55:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[06-Jul-2021 22:21:11 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[06-Jul-2021 22:21:12 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[06-Jul-2021 22:21:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[06-Jul-2021 22:36:06 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[06-Jul-2021 22:36:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[06-Jul-2021 22:54:04 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[06-Jul-2021 22:54:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[14-Jul-2021 16:47:57 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[14-Jul-2021 16:47:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[14-Jul-2021 16:49:11 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[14-Jul-2021 16:49:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[14-Jul-2021 16:53:19 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[14-Jul-2021 16:53:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[14-Jul-2021 16:56:28 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[14-Jul-2021 16:56:28 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[14-Jul-2021 16:56:28 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[14-Jul-2021 16:56:28 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[14-Jul-2021 16:56:29 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[14-Jul-2021 16:56:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[14-Jul-2021 16:56:56 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[14-Jul-2021 16:56:57 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[14-Jul-2021 16:56:57 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[14-Jul-2021 16:56:57 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[14-Jul-2021 16:56:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[14-Jul-2021 16:57:17 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[14-Jul-2021 16:57:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[15-Jul-2021 15:09:12 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[15-Jul-2021 15:09:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[04-Aug-2021 23:22:08 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[04-Aug-2021 23:22:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[04-Aug-2021 23:22:21 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[04-Aug-2021 23:22:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[04-Aug-2021 23:22:53 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[04-Aug-2021 23:22:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[04-Aug-2021 23:23:28 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[04-Aug-2021 23:23:28 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[04-Aug-2021 23:23:28 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[04-Aug-2021 23:23:28 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[04-Aug-2021 23:23:28 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[04-Aug-2021 23:23:28 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[04-Aug-2021 23:23:29 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[04-Aug-2021 23:23:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[04-Aug-2021 23:24:07 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[04-Aug-2021 23:24:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[05-Aug-2021 00:06:02 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[05-Aug-2021 00:06:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[05-Aug-2021 14:28:00 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[05-Aug-2021 14:28:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[05-Aug-2021 14:28:54 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[05-Aug-2021 14:28:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[05-Aug-2021 16:09:13 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[05-Aug-2021 16:09:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[05-Aug-2021 17:48:20 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[05-Aug-2021 17:48:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[05-Aug-2021 18:05:12 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[05-Aug-2021 18:05:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[05-Aug-2021 19:55:48 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[05-Aug-2021 19:55:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[05-Aug-2021 20:04:19 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[05-Aug-2021 20:04:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 193
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 194
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 195
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 196
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 197
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 198
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 199
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 200
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 201
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 203
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 204
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 205
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 206
+[05-Aug-2021 21:10:35 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 207
+[05-Aug-2021 21:10:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/altaarticulo.php on line 210
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[06-Aug-2021 16:12:47 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[06-Aug-2021 16:12:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 194
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 195
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 196
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 197
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 198
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 199
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 200
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 201
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 202
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 204
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 205
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 206
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 207
+[06-Aug-2021 16:13:42 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 208
+[06-Aug-2021 16:13:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v2/src/services/updarticulo.php on line 211
+[07-Aug-2021 16:01:57 UTC] PHP Notice:  Undefined index: usuario in /home/k0klpfhww8g0/public_html/v3/src/services/selempresa.php on line 30
+[07-Aug-2021 16:01:57 UTC] PHP Fatal error:  Call to a member function getPerfil() on boolean in /home/k0klpfhww8g0/public_html/v3/src/services/selempresa.php on line 31
+[09-Aug-2021 19:29:28 UTC] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:30:04 UTC] PHP Notice:  Use of undefined constant descr - assumed 'descr' in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:30:33 UTC] PHP Notice:  Use of undefined constant status - assumed 'status' in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:49:35 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:49:40 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:50:40 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:51:05 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:51:07 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:51:18 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:51:43 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:55:27 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:56:21 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 30
+[09-Aug-2021 19:57:32 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 22
+[09-Aug-2021 20:09:06 UTC] PHP Fatal error:  Cannot use object of type BanderaDao as array in /home/k0klpfhww8g0/public_html/v3/src/services/guarda_cat_bandera.php on line 22
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_index in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 194
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_id in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 195
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_periodo in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 196
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_valor in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 197
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_tipoImporte in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 198
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_fechaAdquisicion in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 199
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_fechaCierre in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 200
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_depAcumulada in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 201
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_depPeriodo in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 202
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_tipoDepreciacion in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 204
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_uma in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 205
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_valorLibros in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 206
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_valorActual in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 207
+[09-Aug-2021 21:45:37 UTC] PHP Notice:  Undefined index: v_edoFisico in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 208
+[09-Aug-2021 21:45:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/k0klpfhww8g0/public_html/v3/src/services/altaarticulo.php on line 211
+[09-Aug-2021 22:09:16 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 22:10:28 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 22:10:46 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 22:14:14 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 22:17:24 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 22:26:46 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 23:30:38 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[09-Aug-2021 23:37:24 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[10-Aug-2021 00:07:13 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[10-Aug-2021 00:11:48 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11
+[10-Aug-2021 00:12:54 UTC] PHP Fatal error:  Can't use function return value in write context in /home/k0klpfhww8g0/public_html/v3/src/services/insert_cat_bandera.php on line 11

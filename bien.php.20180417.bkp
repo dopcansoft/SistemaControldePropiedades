@@ -1,0 +1,650 @@
+<?
+    session_start();
+    session_name("inv");   
+
+    include("src/vo/config.php");
+    Logger::configure("src/config/log4php.xml");
+    $log = Logger::getLogger("cupones");
+    $settings = new Properties("src/config/settings.xml");
+    $database = new Properties("src/config/database.xml");
+    $queries = new Properties("src/config/queries.xml");
+    $response = array("result"=>"", "desc"=>"");
+
+    if(!isset($_SESSION["usuario"])){
+        header("Location: ".$settings->prop("url.login"));
+    }
+
+    $data = strtoupper($_SERVER["REQUEST_METHOD"])=="GET"?$_GET:$_POST;
+
+    $misesion = isset($_SESSION["usuario"])?unserialize($_SESSION["usuario"]):null;
+    $empresa = isset($_SESSION["empresa"])?unserialize($_SESSION["empresa"]):new EmpresaDao();
+    $periodo = isset($_SESSION["periodo"])?unserialize($_SESSION["periodo"]):new PeriodoDao();
+    
+    $list = array();
+    $bien = new BienDao();
+    $catBienesInmuebles = array();
+    $catBienesMuebles = array();
+    $departamentos = array();
+    $catDepreciacion = array();
+    $catEdoFisico = array();
+    $catOrigen = array();
+    $catUma = array();
+    try{
+        $db = new DBConnector($database);
+        if(isset($db)){
+        	if(isset($data["id"])){
+        		$bien->id = isset($data["id"])?$data["id"]:"";
+        		$bien->periodo->id = $periodo->id;
+   	     		$bien->find($db, $queries, $log);
+        	}
+        	$periodoFactory = new PeriodoFactory();
+        	$periodos = $periodoFactory->listAll($empresa, $db, $queries, $log);
+        	$catalogoFactory = new CatalogoFactory();
+        	$catBienesInmuebles = $catalogoFactory->listado($db, $queries->prop("catbienesinmuebles.list"), $settings, $log, "Clasificacion");
+        	$catBienesMuebles = $catalogoFactory->listado($db, $queries->prop("catbienesmuebles.list"), $settings, $log, "Clasificacion");
+			$departamentos = $catalogoFactory->listado($db, $queries->prop("departamentos.list"), $settings, $log, "ItemCatalogo");        	
+			$catUma = $catalogoFactory->listado($db, $queries->prop("catuma.list"), $settings, $log, "Uma");
+			$catOrigen = $catalogoFactory->listado($db, $queries->prop("catorigen.list"), $settings, $log, "ItemCatalogo");
+			$depreciacionFactory = new DepreciacionFactory();
+			$catDepreciacion = $depreciacionFactory->listAll($db, $queries, $log);
+			$catEdoFisico = $catalogoFactory->listado($db, $queries->prop("catedofisico.list"), $settings, $log, "ItemCatalogo");
+        }else{
+            $log->error('No se ha podido establecer conexion con base de datos');
+        }
+    }catch(PDOException $e){
+        $log->error('PDOException: '.$e->getMessage());
+    }
+    $db = null;
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><?=$settings->prop("page.view.name")!=null?$settings->prop("page.view.name"):""?></title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- NOTIFICACIONES -->
+    <link href="vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+    <!-- TERMINA NOTIFICACIONES -->
+
+    <link rel="stylesheet" href="build/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="vendors/cropper/dist/cropper.css">
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+    <link href="css/articulo.css" rel="stylesheet">
+    <style>
+	    .video-capture{
+	    	background:#000;
+	    	display:block;
+	    }
+	</style>
+  </head>
+
+  <body class="nav-md">
+    <input type="hidden" name="id" id="id" value="<?=$bien->id?>">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <? include("logo_principal.php"); ?>
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <? include("quick_info.php"); ?>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <? include("sidebar.php"); ?>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <? include("menu_footer.php"); ?>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <? include("menu_top.php"); ?>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+          	<div class="page-title">
+              <div class="title_left">
+                <!-- <h3>Registro de Bien</h3> -->
+                <small><a href="inventario.php">Inventario</a> > <a href="#"><strong>Detalle</strong></a></small>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 my-form">
+					<div class="x_panel">
+						<div class="x_title">
+							<h3><small>Detalle del Bien</small></h3>
+						</div>
+						<div class="x_content">
+							<!-- CONTENIDO -->
+							<input type="hidden" id="bien" name="bien" value="<?=$bien->id?>">
+							<input type="hidden" id="empresa" name="empresa" value="<?=$empresa->id?>">
+							<input type="hidden" id="periodo" name="periodo" value="<?=$periodo->id?>">
+							<input type="hidden" id="inventarioContable" name="inventarioContable" value="<?=$bien->inventarioContable?>">
+							<div class="row form-group">
+								<div class="col-md-3 col-md-offset-6 col-xs-12">
+									<label>Folio</label>
+									<input type="text" class="form-control" id="txt-id" name="txt-id">
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-xs-12">
+									<label>Departamento</label>
+									<select class="form-control" id="sl-departamento" name="sl-departamento" data-live-search="true">
+										<option value="0">--</option>
+										<?
+										if(isset($departamentos) && count($departamentos)>0){
+											foreach($departamentos as $dep){
+												?><option value="<?=$dep->id?>" <?=$bien->departamento->id==$dep->id?'selected="selected"':''?> ><?=strtoupper($dep->descr)?></option><?
+											}
+										}
+										?>
+									</select>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<label>Clasificación Armonizada</label>
+									<select class="form-control selectpicker show-tick" id="sl-clasificacion" name="sl-clasificacion" data-live-search="true">
+										<option value="0">--</option>
+										<optgroup label="BIENES MUEBLES">
+											<?
+											if(isset($catBienesMuebles)&&count($catBienesMuebles)>0){
+												foreach($catBienesMuebles as $cbm){
+													?><option value="<?=$cbm->id?>" data-tipo="<?=$cbm->tipo->id?>" data-cc="<?=$cbm->cuentaContable?>" data-cd="<?=$cbm->cuentaDepreciacion?>" <?=$bien->clasificacion->id==$cbm->id&&$bien->tipoClasificacion->id==$cbm->tipo->id?'selected="selected"':''?> ><?=$cbm->grupo.$cbm->subgrupo.$cbm->clase.$cbm->subclase.$cbm->consecutivo." - ".strtoupper($cbm->descr)?></option><?
+												}
+											}
+											?>
+										</optgroup>
+										<optgroup label="BIENES INMUEBLES">
+											<?
+											if(isset($catBienesInmuebles)&&count($catBienesInmuebles)>0){
+												foreach($catBienesInmuebles as $cbm){
+													//$log->debug($cbm);
+													?><option value="<?=$cbm->id?>" data-tipo="<?=$cbm->tipo->id?>" data-cc="<?=$cbm->cuentaContable?>" data-cd="<?=$cbm->cuentaDepreciacion?>" <?=$bien->clasificacion->id==$cbm->id&&$bien->tipoClasificacion->id==$cbm->tipo->id?'selected="selected"':''?> ><?=$cbm->grupo.$cbm->subgrupo.$cbm->clase.$cbm->subclase.$cbm->consecutivo." - ".strtoupper($cbm->descr)?></option><?
+												}
+											}
+											?>
+										</optgroup>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-xs-12 datos-depreciacion">
+									<label>Cuenta Contable</label>
+									<input type="text" class="form-control" id="txt-cuenta-contable" name="txt-cuenta-contable" readonly="readonly" value="<?=$bien->clasificacion->cuentaContable?>">
+								</div>
+								<div class="col-md-3 col-xs-12 datos-depreciacion">
+									<label>Cuenta Depreciación</label>
+									<input type="text" class="form-control" id="txt-cuenta-depreciacion" name="txt-cuenta-depreciacion" readonly="readonly" value="<?=$bien->clasificacion->cuentaDepreciacion?>">
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>UMA</label>
+									<select class="form-control" id="sl-uma" name="sl-uma">
+										<option value="0"> -- </option>	
+										<?
+										foreach($catUma as $uma){
+											?><option data-factor="<?=$uma->factor?>" data-valor-diario="<?=$uma->valorDiario?>" value="<?=$uma->id?>" <?=$uma->anio==date("Y")?'selected="selected"':''?> ><?=$uma->anio." (".$uma->valorDiario*$uma->factor.")"?></option><?
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-9 col-xs-12">
+									<label>Descripción</label>
+									<textarea class="form-control" rows="5" id="txt-descripcion" name="txt-descripcion"><?=$bien->descripcion?></textarea>
+									<br>
+									<button class="btn btn-md btn-success" id="btn-descripcion-listen"> <i class="fa fa-microphone"></i> <span>Escuchar</span> </button>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-xs-12">
+									<div class="ln_solid"></div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<h3 class="text-center"><small>Caracteristicas Generales</small></h3>								
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="ln_solid"></div>
+								</div>
+							</div>					
+							<div class="row">&nbsp;</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-xs-12">
+									<label>Marca</label>
+									<div class="input-group"> 
+										<input class="form-control" id="txt-marca" name="txt-marca" value="<?=$bien->marca?>"> 
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+												<span class="caret"></span> 
+												<span class="sr-only">Toggle Dropdown</span> 
+											</button> 
+											<ul class="dropdown-menu dropdown-menu-right"> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO IDENTIFICADO" data-input="txt-marca">NO IDENTIFICADO</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO LEGIBLE" data-input="txt-marca">NO LEGIBLE</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="GENERICO" data-input="txt-marca">GENERICO</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="NO APLICA" data-input="txt-marca">NO APLICA</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="" data-input="txt-marca"><i class="fa fa-edit"></i> EDITAR</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>	
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Modelo</label>
+									<!-- <input type="text" class="form-control" id="txt-modelo" name="txt-modelo" value="<?=$bien->modelo?>"> -->
+									<div class="input-group"> 
+										<input type="text" class="form-control" id="txt-modelo" name="txt-modelo" value="<?=$bien->modelo?>">
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+												<span class="caret"></span> 
+												<span class="sr-only">Toggle Dropdown</span> 
+											</button> 
+											<ul class="dropdown-menu dropdown-menu-right"> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO IDENTIFICADO" data-input="txt-modelo">NO IDENTIFICADO</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO LEGIBLE" data-input="txt-modelo">NO LEGIBLE</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="GENERICO" data-input="txt-modelo">GENERICO</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="NO APLICA" data-input="txt-modelo">NO APLICA</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="" data-input="txt-modelo"><i class="fa fa-edit"></i> EDITAR</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Serie</label>
+									<!-- <input type="text" class="form-control" id="txt-serie" name="txt-serie" value="<?=$bien->serie?>"> -->
+									<div class="input-group"> 
+										<input type="text" class="form-control" id="txt-serie" name="txt-serie" value="<?=$bien->serie?>">
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+												<span class="caret"></span> 
+												<span class="sr-only">Toggle Dropdown</span> 
+											</button> 
+											<ul class="dropdown-menu dropdown-menu-right"> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO IDENTIFICADO" data-input="txt-serie">NO IDENTIFICADO</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO LEGIBLE" data-input="txt-serie">NO LEGIBLE</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="GENERICO" data-input="txt-serie">GENERICO</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="NO APLICA" data-input="txt-serie">NO APLICA</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="" data-input="txt-serie"><i class="fa fa-edit"></i> EDITAR</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>
+								</div>
+							</div>
+							<div class="row form-group">							
+								<div class="col-md-3 col-xs-12">
+									<label>Factura</label>
+									<div class="input-group"> 
+										<input type="text" class="form-control" id="txt-factura" name="txt-factura" value="<?=$bien->factura?>">
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+												<span class="caret"></span> 
+												<span class="sr-only">Toggle Dropdown</span> 
+											</button> 
+											<ul class="dropdown-menu dropdown-menu-right"> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO IDENTIFICADO" data-input="txt-factura">NO IDENTIFICADO</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO LEGIBLE" data-input="txt-factura">NO LEGIBLE</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="GENERICO" data-input="txt-factura">GENERICO</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="NO APLICA" data-input="txt-factura">NO APLICA</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="" data-input="txt-factura"><i class="fa fa-edit"></i> EDITAR</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Motor</label>
+									<!-- <input type="text" class="form-control" id="txt-motor" name="txt-motor" value="<?=$bien->motor?>"> -->
+									<div class="input-group"> 
+										<input type="text" class="form-control" id="txt-motor" name="txt-motor" value="<?=$bien->motor?>">
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+												<span class="caret"></span> 
+												<span class="sr-only">Toggle Dropdown</span> 
+											</button> 
+											<ul class="dropdown-menu dropdown-menu-right"> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO IDENTIFICADO" data-input="txt-motor">NO IDENTIFICADO</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO LEGIBLE" data-input="txt-motor">NO LEGIBLE</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="GENERICO" data-input="txt-motor">GENERICO</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="NO APLICA" data-input="txt-motor">NO APLICA</a>
+												</li>
+												<li>
+													<a href="#" class="opts-input" data-value="" data-input="txt-motor"><i class="fa fa-edit"></i> EDITAR</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Fecha de Adquisición</label>
+									<?
+									$fechaAdquisicion = "NO IDENTIFICADO";
+									$log->debug($bien->fechaAdquisicion);
+									if($bien->fechaAdquisicion!='0000-00-00 00:00:00'){
+										$fechaAdquisicion = new DateTime($bien->fechaAdquisicion);
+									}																		
+									?>
+									<div class="input-group"> 
+										<input type="text" class="form-control input-calendar" id="txt-fecha-adquisicion" name="txt-fecha-adquisicion" placeholder="dd-mm-yyyy" value="<?=$bien->fechaAdquisicion!='0000-00-00 00:00:00'?$fechaAdquisicion->format("d-m-Y"):'NO IDENTIFICADO'?>">
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+												<span class="caret"></span> 
+												<span class="sr-only">Toggle Dropdown</span> 
+											</button> 
+											<ul class="dropdown-menu dropdown-menu-right"> 
+												<li>
+													<a href="#" class="opts-input" data-value="NO IDENTIFICADO" data-input="txt-fecha-adquisicion">NO IDENTIFICADO</a>
+												</li> 
+												<li>
+													<a href="#" class="opts-input" data-value="" data-input="txt-fecha-adquisicion"><i class="fa fa-edit"></i> EDITAR</a>
+												</li> 
+											</ul> 
+										</div> 
+									</div>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-xs-12">
+									<label>Estado Físico</label>
+									<select class="form-control" id="sl-estado" name="sl-estado">
+										<option value="0">--</option>
+										<?
+										if(isset($catEdoFisico) && count($catEdoFisico)>0){
+											foreach($catEdoFisico as $cef){
+												?><option value="<?=$cef->id?>" <?=$bien->estadoFisico->id==$cef->id?'selected="selected"':''?> ><?=$cef->descr?></option><?
+											}
+										}
+										?>
+									</select>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Años de uso</label>
+									<input type="text" class="form-control" id="txt-anios-uso" name="txt-anios-uso" value="<?=$bien->aniosUso?>">
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Fondo de Origen de Adquisición</label>
+									<select class="form-control" id="sl-origen" name="sl-origen">
+										<option value="0">--</option>
+										<?
+										if(isset($catOrigen) && count($catOrigen)>0){
+											foreach($catOrigen as $co){
+												?><option value="<?=$co->id?>" <?=$bien->origen->id==$co->id?'selected="selected"':''?> ><?=$co->descr?></option><?
+											}
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group datos-depreciacion">
+								<div class="col-md-3 col-xs-12">
+									<div class="ln_solid"></div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<h3><small>Datos Referentes al Ejercicio</small></h3>								
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="ln_solid"></div>
+								</div>
+							</div>					
+							<!-- <div class="row">&nbsp;</div> -->
+							<div class="row form-group datos-depreciacion">
+								<div class="col-md-6 col-xs-12">
+									<label>Porcentaje de Depreciación</label>
+									<select class="form-control" id="sl-depreciacion" name="sl-depreciacion" data-live-search="true">
+										<option value="0">--</option>
+										<?
+										if(isset($catDepreciacion)){
+											foreach($catDepreciacion as $dep){
+												?><option value="<?=$dep->id?>" <?=$dep->vidaUtil>0?'':'disabled="disabled"'?> data-vida-util="<?=$dep->vidaUtil?>" data-depreciacion-anual="<?=$dep->depreciacionAnual?>" data-tipo="<?=$dep->tipo->id?>" <?=$bien->depreciacion->id==$dep->id?'selected="selected"':''?> ><?=$dep->cuenta." - ".strtoupper($dep->descr).($dep->depreciacionAnual>0?" (".$dep->depreciacionAnual."%)":'')?></option><?
+											}
+										}
+										?>
+									</select>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<label>Depreciación del Periodo</label>
+									<input type="text" class="form-control" id="txt-depreciacion-periodo" name="txt-depreciacion-periodo" value="<?=$bien->depreciacionPeriodo?>">
+								</div>
+							</div>
+							<div class="row form-group datos-depreciacion">
+								<div class="col-md-3 col-xs-12">
+									<label>Depreciación Acumulada</label>
+									<input type="text" class="form-control" id="txt-depreciacion-acumulada" name="txt-depreciacion-acumulada" value="<?=$bien->depreciacionAcumulada?>">									
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-xs-12">
+									<div class="ln_solid"></div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<h3 class="text-center"><small>Valuación del Bien</small></h3>								
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="ln_solid"></div>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-5 col-md-offset-2">
+									<div class="row">
+										<div class="col-md-6 col-xs-12 form-group">
+											<select class="form-control" id="sl-tipo-valuacion" name="sl-tipo-valuacion">
+												<option value="1" > IMPORTE </option>
+												<option value="2" > VALOR DE REPOSICIÓN </option>
+												<option value="3" > VALOR DE REEMPLAZO </option>
+											</select>
+										</div>
+										<div class="col-md-6 col-xs-12">
+											<input type="text" class="form-control" id="txt-valuacion" name="txt-valuacion" value="<?=$bien->valor?>" placeholder="$ 0.00">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">&nbsp;</div>
+							<div class="row form-group">
+								<div class="col-md-3">
+									<div class="ln_solid"></div>
+								</div>
+								<div class="col-md-3">
+									<h3 class="text-center"><small>Imagen</small></h3>								
+								</div>
+								<div class="col-md-3">
+									<div class="ln_solid"></div>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-3 preview-img <?=isset($bien->imagen)&&trim($bien->imagen)!=""?'':'hidden'?>">
+									<img src="<?=$settings->prop("system.url").$bien->imagen?>">
+									<a id="btn-editar-imagen"><i class="fa fa-edit"></i></a>									
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<input accept="image/*" type="file" id="txt-file" name="txt-file" capture="camera">
+								</div>
+							</div>
+							<!-- <div class="row form-group">
+								<div class="col-md-6">
+									<canvas class="image-capture" style="width: 400px !important; height: 300px !important;"></canvas>
+								</div>
+								<div class="col-md-6">
+									<video class="video-stream" style="width: 400px !important; height: 300px !important;"></video>
+								</div>	
+								<div class="col-md-3 col-md-offset-4">
+									<button class="btn btn-success btn-foto">Foto</button>
+								</div>
+							</div> -->
+							<div class="row">&nbsp;</div>
+							<div class="row form-group">
+								<div class="col-md-3 col-md-offset-3">
+									<button id="btn-guardar" class="btn btn-primary form-control"><i class="fa fa-check"></i> Guardar</button>
+								</div>
+							</div>
+							<!-- TERMINA CONTENIDO -->
+						</div>
+					</div>
+				</div>  
+			</div><!-- termina row -->
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            <?=$settings->prop("page.view.footer.label")!=null?$settings->prop("page.view.footer.label"):""?>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+    <!-- VENTANA MODAL -->
+    <div id="modal-editar-img" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="content-img-modal">
+						<img class="articulo-imagen" id="image-edit" src="<?=$settings->prop("system.url").$bien->imagen?>">
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<button class="btn btn-success btn-rotate-left"><i class="fa fa-rotate-left"></i></button><button class="btn btn-primary btn-save-img">Guardar Cambios</button><button class="btn btn-success btn-rotate-rigth"><i class="fa fa-rotate-right"></i></button>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+    <!-- TERMINA VENTANA MODAL -->
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- moment -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- NOTIFICACIONES -->
+    <script src="vendors/pnotify/dist/pnotify.js"></script>
+    <script src="vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+    <script src="vendors/cropper/dist/cropper.js"></script>
+    <script src="build/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-datepicker-new.js"></script> -->
+    <script src="js/bootstrap-datepicker.es.min.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <!-- <script src="vendors/jquery.camera/jquery.camera_capture.js"></script> -->
+    <!-- <script src="js/webcamjs-1.025.js"></script> -->
+    <script src="build/js/custom.js"></script>
+    <script src="js/properties.js"></script>
+    <script src="bien.js"></script>
+  </body>
+</html>

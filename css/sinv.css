@@ -1,0 +1,54 @@
+tr.dummy{
+	display:none;
+}
+
+
+.articulo-imagen{
+	height: 400px !important;
+	max-height: 400px !important;
+}
+
+select#sl-empresa::-ms-expand {
+    display: none;
+}
+
+img.img-main{
+	min-width: 100%;
+	min-height: 100%;
+	/*max-height:450px !important;
+	max-width:450px !important;*/
+}
+
+.item-dummy{
+	display: none !important;
+}
+
+
+/* Tamaño para tablet en vertical */
+@media screen and (max-width:1024px) and (min-width:768px) {
+	#modal-img-preview .modal-sm{
+		width:45% !important;
+	}	
+}
+
+
+/* Tamaño para tablet en vertical */
+/*@media screen and (max-width:768px) {
+	#modal-img-preview .modal-sm{
+		width:30% !important;
+	}	
+}*/
+
+/* Tamaño para smartphone en landscape/horizonal */
+/*@media screen and (max-width:480px) {
+	#modal-img-preview .modal-sm{
+		width:70% !important;
+	}
+}*/
+
+/* Tamaño para smartphone en vertical */
+/*@media screen and (max-width:320px) {
+	#modal-img-preview .modal-sm{
+		width:95% !important;
+	}
+}*/

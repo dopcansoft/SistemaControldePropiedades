@@ -1,0 +1,144 @@
+21:54:00 ERROR login.php:45[main.main]: Email/password incorrecto
+21:54:00 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+21:54:05 ERROR login.php:45[main.main]: Email/password incorrecto
+21:54:05 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+21:54:12 ERROR login.php:45[main.main]: Email/password incorrecto
+21:54:12 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+21:54:18 ERROR login.php:45[main.main]: Email/password incorrecto
+21:54:18 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+21:54:23 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+21:54:23 DEBUG login.php:29[main.main]: result: SUCCESS
+21:54:23 DEBUG login.php:30[main.main]: session: ON
+21:54:23 DEBUG login.php:32[main.main]: crea session
+21:54:23 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+21:54:24 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+21:54:24 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+21:54:30 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+21:54:30 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: Periodo
+21:54:30 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+21:54:33 DEBUG selempresa.php:29[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+21:54:33 DEBUG selempresa.php:48[main.main]: Cierra conexion a Base de datos
+21:54:33 DEBUG inventario.php:21[main.main]: misesion: 
+21:54:33 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+21:54:33 DEBUG inventario.php:44[main.main]: debugging
+21:54:33 DEBUG inventario.php:45[main.main]: Array
+(
+)
+
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+21:54:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+21:54:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: Periodo
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: ItemCatalogo
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+21:54:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+21:54:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+21:54:56 DEBUG bien.php:521[main.main]: 

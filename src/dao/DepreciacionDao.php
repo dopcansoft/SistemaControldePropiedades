@@ -1,0 +1,4 @@
+<?
+	class DepreciacionDao extends Depreciacion{
+	}
+?>

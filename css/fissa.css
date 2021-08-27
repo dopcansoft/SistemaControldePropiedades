@@ -1,0 +1,63 @@
+.form-control[readonly]{
+	background:#FFF;
+}
+
+.imagen-perfil{
+	width: 30px;
+	height: 30px;
+}
+
+tr.dummy-row{
+	display: none !important;
+}
+
+button.btn-danger-select{
+	background:#FAEDEC;
+	border:1px solid red;
+}
+
+div.panel-cliente{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+div.panel-cliente h3{
+	font-size: 19px;
+	padding-top: 20px; 
+	padding-bottom: 10px;
+}
+
+span.text{
+	font-size: 14px;
+	line-height: 22px;
+}
+
+div.col-calendar{
+	border:1px solid #CCC; 
+	text-align: center;
+	margin-right: 1px;  
+	margin-bottom: 5px; 
+	border-radius: 5px;
+}
+
+div.sub-title{
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 25px;
+	margin-top: 35px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.form-element{
+	margin-bottom:10px;
+}
+
+.input-danger{
+	background:#FAEDEC;
+	border:1px solid red;
+}
+
+.input-calendar{
+	cursor: pointer;
+}

@@ -1,0 +1,40 @@
+01:07:32 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/18
+01:07:32 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/18
+01:07:33 DEBUG BienDao.php:569[BienDao.getImages]: 0: /files/2021-06-11/20210611203950_179_1.jpg
+01:07:33 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+01:07:33 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 604
+01:07:33 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+01:07:33 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+01:07:33 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/vendors/bootstrap/dist/js/bootstrap.min.js
+01:07:33 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/vendors/bootstrap/dist/js/bootstrap.min.js
+01:07:33 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/vendors/jquery/dist/jquery.min.js
+01:07:33 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/vendors/jquery/dist/jquery.min.js
+01:07:33 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/rdt.js
+01:07:33 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/rdt.js
+01:07:33 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/imgs/
+01:07:33 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/imgs/
+01:07:33 ERROR BienDao.php:23[BienDao.find]: Falta id y/o id de periodo
+01:07:34 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/src/lib/phpbarcode/barcode.php?text=19;18;17535&size=20&print=false
+01:07:34 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/src/lib/phpbarcode/barcode.php?text=19;18;17535&size=20&print=false
+01:07:34 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/favicon.ico
+01:07:34 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/favicon.ico
+01:16:09 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/18
+01:16:09 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/18
+01:16:09 DEBUG BienDao.php:569[BienDao.getImages]: 0: /files/2021-06-11/20210611203950_179_1.jpg
+01:16:09 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+01:16:09 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 604
+01:16:09 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+01:16:09 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+01:16:09 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/vendors/bootstrap/dist/js/bootstrap.min.js
+01:16:09 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/vendors/bootstrap/dist/js/bootstrap.min.js
+01:16:09 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/vendors/jquery/dist/jquery.min.js
+01:16:09 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/vendors/jquery/dist/jquery.min.js
+01:16:10 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/rdt.js
+01:16:10 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/rdt.js
+01:16:10 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/src/lib/phpbarcode/barcode.php?text=19;18;17535&size=20&print=false
+01:16:10 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/src/lib/phpbarcode/barcode.php?text=19;18;17535&size=20&print=false
+01:16:10 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/imgs/
+01:16:10 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/imgs/
+01:16:10 ERROR BienDao.php:23[BienDao.find]: Falta id y/o id de periodo
+01:16:10 DEBUG fichatecnica.php:14[main.main]: /v2/fichatecnica/17535/19/favicon.ico
+01:16:10 DEBUG fichatecnica.php:15[main.main]: ibexpro.com.mx/v2/fichatecnica/17535/19/favicon.ico

@@ -1,0 +1,6219 @@
+03:33:51 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+03:33:51 DEBUG login.php:29[main.main]: result: SUCCESS
+03:33:51 DEBUG login.php:30[main.main]: session: ON
+03:33:51 DEBUG login.php:32[main.main]: crea session
+03:33:51 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+03:33:52 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:33:52 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+03:33:56 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:33:56 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+03:33:56 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+03:33:58 DEBUG selempresa.php:29[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+03:33:58 DEBUG selempresa.php:48[main.main]: Cierra conexion a Base de datos
+03:33:58 DEBUG inventario.php:21[main.main]: misesion: 
+03:33:58 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+03:33:58 DEBUG inventario.php:44[main.main]: debugging
+03:33:58 DEBUG inventario.php:45[main.main]: Array
+(
+)
+
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+03:33:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+03:33:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+03:34:02 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 1
+        )
+
+)
+
+03:34:02 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 12 registro(s)
+03:34:02 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 12 registros de tipo: BienDao
+03:34:02 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+03:34:09 DEBUG BienDao.php:517[BienDao.getImages]: 0: /files/2020-07-27/20200727014407_1.jpg
+03:34:09 DEBUG BienDao.php:517[BienDao.getImages]: 1: /files/2020-07-27/20200727014407_2.jpg
+03:34:09 DEBUG BienDao.php:517[BienDao.getImages]: 2: /files/2020-07-27/20200727014407_3.jpg
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+03:34:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:34:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+03:34:09 DEBUG bien.php:521[main.main]: 2019-02-01 00:00:00
+03:53:01 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+03:53:01 DEBUG login.php:29[main.main]: result: SUCCESS
+03:53:01 DEBUG login.php:30[main.main]: session: ON
+03:53:01 DEBUG login.php:32[main.main]: crea session
+03:53:01 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+03:53:02 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:53:02 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+03:53:06 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:53:06 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+03:53:06 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+03:53:08 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+03:53:08 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+03:53:08 DEBUG inventario.php:21[main.main]: misesion: 
+03:53:08 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+03:53:08 DEBUG inventario.php:45[main.main]: debugging
+03:53:08 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+03:53:08 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 12 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 12 registros de tipo: BienDao
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+03:53:08 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+03:53:08 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+03:53:11 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+03:53:11 DEBUG bien.php:53[main.main]: numero: 1002
+03:53:11 DEBUG bien.php:54[main.main]: folio unico: 001002
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+03:53:11 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+03:53:11 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+05:59:45 ERROR login.php:45[main.main]: Email/password incorrecto
+05:59:45 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+05:59:56 ERROR login.php:45[main.main]: Email/password incorrecto
+05:59:56 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:00:13 ERROR login.php:45[main.main]: Email/password incorrecto
+06:00:13 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:00:40 ERROR login.php:45[main.main]: Email/password incorrecto
+06:00:40 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:00:56 ERROR login.php:45[main.main]: Email/password incorrecto
+06:00:56 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:01:07 ERROR login.php:45[main.main]: Email/password incorrecto
+06:01:07 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:01:31 ERROR login.php:45[main.main]: Email/password incorrecto
+06:01:31 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:01:39 ERROR login.php:45[main.main]: Email/password incorrecto
+06:01:39 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:01:47 ERROR login.php:45[main.main]: Email/password incorrecto
+06:01:47 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:02:41 ERROR login.php:45[main.main]: Email/password incorrecto
+06:02:41 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:02:45 ERROR login.php:45[main.main]: Email/password incorrecto
+06:02:45 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:02:52 ERROR login.php:45[main.main]: Email/password incorrecto
+06:02:52 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:02:54 ERROR login.php:45[main.main]: Email/password incorrecto
+06:02:54 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:02:58 ERROR login.php:45[main.main]: Email/password incorrecto
+06:02:58 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:03:18 ERROR login.php:45[main.main]: Email/password incorrecto
+06:03:18 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:03:29 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:03:29 DEBUG login.php:29[main.main]: result: SUCCESS
+06:03:29 DEBUG login.php:30[main.main]: session: ON
+06:03:29 DEBUG login.php:32[main.main]: crea session
+06:03:29 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:03:30 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:03:30 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+06:04:41 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:04:41 DEBUG login.php:29[main.main]: result: SUCCESS
+06:04:41 DEBUG login.php:30[main.main]: session: ON
+06:04:41 DEBUG login.php:32[main.main]: crea session
+06:04:41 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:04:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:04:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+06:05:27 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:05:27 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: Periodo
+06:05:27 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+06:05:32 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:05:32 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+06:05:32 DEBUG inventario.php:21[main.main]: misesion: 
+06:05:32 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:05:32 DEBUG inventario.php:45[main.main]: debugging
+06:05:32 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: ItemCatalogo
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:05:32 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:05:32 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:05:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:05:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: Clasificacion
+06:05:47 DEBUG resumenbajas.php:53[main.main]: Array
+(
+    [0] => Clasificacion Object
+        (
+            [id] => 15
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materias primas y materiales de producción y comercialización
+            [cuentaContable] => 1.1.4.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [1] => Clasificacion Object
+        (
+            [id] => 1
+            [grupo] => 2
+            [subgrupo] => 0
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales y suministros
+            [cuentaContable] => 1.1.5.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [2] => Clasificacion Object
+        (
+            [id] => 66
+            [grupo] => 5
+            [subgrupo] => 0
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Bienes muebles, inmuebles e intangibles
+            [cuentaContable] => 1.2.4.0
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [3] => Clasificacion Object
+        (
+            [id] => 67
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Mobiliario y equipo de administración
+            [cuentaContable] => 1.2.4.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [4] => Clasificacion Object
+        (
+            [id] => 74
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Mobiliario y equipo educacional y recreativo
+            [cuentaContable] => 1.2.4.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [5] => Clasificacion Object
+        (
+            [id] => 79
+            [grupo] => 5
+            [subgrupo] => 3
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo e instrumental médico y de laboratorio
+            [cuentaContable] => 1.2.4.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [6] => Clasificacion Object
+        (
+            [id] => 82
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vehículos y equipo de transporte
+            [cuentaContable] => 1.2.4.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [7] => Clasificacion Object
+        (
+            [id] => 89
+            [grupo] => 5
+            [subgrupo] => 5
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo de defensa y seguridad
+            [cuentaContable] => 1.2.4.5
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [8] => Clasificacion Object
+        (
+            [id] => 91
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria, otros equipos y herramientas
+            [cuentaContable] => 1.2.4.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [9] => Clasificacion Object
+        (
+            [id] => 118
+            [grupo] => 6
+            [subgrupo] => 0
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Colecciones, Obras de Arte y Objetos
+            [cuentaContable] => 1.2.4.7
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [10] => Clasificacion Object
+        (
+            [id] => 100
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Activos biológicos
+            [cuentaContable] => 1.2.4.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [11] => Clasificacion Object
+        (
+            [id] => 110
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Patentes, Marcas y Derechos
+            [cuentaContable] => 1.2.5.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [12] => Clasificacion Object
+        (
+            [id] => 120
+            [grupo] => 6
+            [subgrupo] => 1
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Concesiones y Franquicias
+            [cuentaContable] => 1.2.5.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [13] => Clasificacion Object
+        (
+            [id] => 121
+            [grupo] => 6
+            [subgrupo] => 2
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Licencias
+            [cuentaContable] => 1.2.5.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [14] => Clasificacion Object
+        (
+            [id] => 122
+            [grupo] => 6
+            [subgrupo] => 3
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros Activos Intangibles
+            [cuentaContable] => 1.2.5.9
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+)
+
+06:05:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 130 registro(s)
+06:05:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 130 registros de tipo: Clasificacion
+06:05:47 DEBUG resumenbajas.php:55[main.main]: Array
+(
+    [0] => Clasificacion Object
+        (
+            [id] => 16
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos alimenticios, agropecuarios y forestales adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [1] => Clasificacion Object
+        (
+            [id] => 17
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Insumos textiles adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [2] => Clasificacion Object
+        (
+            [id] => 18
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos de papel, cartón e impresos adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [3] => Clasificacion Object
+        (
+            [id] => 19
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Combustibles, lubricantes, aditivos, carbón y sus derivados adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [4] => Clasificacion Object
+        (
+            [id] => 20
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos químicos, farmacéuticos y de laboratorio adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.5
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [5] => Clasificacion Object
+        (
+            [id] => 21
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos metálicos y a base de minerales no metálicos adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [6] => Clasificacion Object
+        (
+            [id] => 22
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos de cuero, piel, plástico y hule adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.7
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [7] => Clasificacion Object
+        (
+            [id] => 23
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 8
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Mercancías adquiridas para su comercialización
+            [cuentaContable] => 1.1.4.4.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [8] => Clasificacion Object
+        (
+            [id] => 24
+            [grupo] => 2
+            [subgrupo] => 3
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros productos adquiridos como materia prima
+            [cuentaContable] => 1.1.4.4.9
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [9] => Clasificacion Object
+        (
+            [id] => 2
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales de administración, emisión de documentos y artículos oficiales
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [10] => Clasificacion Object
+        (
+            [id] => 3
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales, útiles y equipos menores de oficina
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [11] => Clasificacion Object
+        (
+            [id] => 4
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales y útiles de impresión y reproducción
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [12] => Clasificacion Object
+        (
+            [id] => 5
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Material estadístico y geográfico
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [13] => Clasificacion Object
+        (
+            [id] => 6
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales, útiles y equipos menores de tecnologías de la información y comunicaciones
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [14] => Clasificacion Object
+        (
+            [id] => 7
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Material impreso e información digital
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [15] => Clasificacion Object
+        (
+            [id] => 8
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Material de limpieza
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [16] => Clasificacion Object
+        (
+            [id] => 9
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales y útiles de enseñanza
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [17] => Clasificacion Object
+        (
+            [id] => 10
+            [grupo] => 2
+            [subgrupo] => 1
+            [clase] => 8
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales para el registro e identificación de bienes y personas
+            [cuentaContable] => 1.1.5.1.1
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [18] => Clasificacion Object
+        (
+            [id] => 11
+            [grupo] => 2
+            [subgrupo] => 2
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Alimentos y utensilios
+            [cuentaContable] => 1.1.5.1.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [19] => Clasificacion Object
+        (
+            [id] => 12
+            [grupo] => 2
+            [subgrupo] => 2
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos alimenticios para personas
+            [cuentaContable] => 1.1.5.1.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [20] => Clasificacion Object
+        (
+            [id] => 13
+            [grupo] => 2
+            [subgrupo] => 2
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos alimenticios para animales
+            [cuentaContable] => 1.1.5.1.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [21] => Clasificacion Object
+        (
+            [id] => 14
+            [grupo] => 2
+            [subgrupo] => 2
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Utensilios para el servicio de alimentación
+            [cuentaContable] => 1.1.5.1.2
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [22] => Clasificacion Object
+        (
+            [id] => 25
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales y artículos de construcción y de reparación
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [23] => Clasificacion Object
+        (
+            [id] => 26
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos minerales no metálicos
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [24] => Clasificacion Object
+        (
+            [id] => 27
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Cemento y productos de concreto
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [25] => Clasificacion Object
+        (
+            [id] => 28
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Cal, yeso y productos de yeso
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [26] => Clasificacion Object
+        (
+            [id] => 29
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Madera y productos de madera
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [27] => Clasificacion Object
+        (
+            [id] => 30
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vidrio y productos de vidrio
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [28] => Clasificacion Object
+        (
+            [id] => 31
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Material eléctrico y electrónico
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [29] => Clasificacion Object
+        (
+            [id] => 32
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Artículos metálicos para la construcción
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [30] => Clasificacion Object
+        (
+            [id] => 33
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 8
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales complementarios
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [31] => Clasificacion Object
+        (
+            [id] => 34
+            [grupo] => 2
+            [subgrupo] => 4
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros materiales y artículos de construcción y reparación
+            [cuentaContable] => 1.1.5.1.3
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [32] => Clasificacion Object
+        (
+            [id] => 35
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos químicos, farmacéuticos y de laboratorio
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [33] => Clasificacion Object
+        (
+            [id] => 36
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos químicos básicos
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [34] => Clasificacion Object
+        (
+            [id] => 37
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Fertilizantes, pesticidas y otros agroquímicos
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [35] => Clasificacion Object
+        (
+            [id] => 38
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Medicinas y productos farmacéuticos
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [36] => Clasificacion Object
+        (
+            [id] => 39
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales, accesorios y suministros médicos
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [37] => Clasificacion Object
+        (
+            [id] => 40
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales, accesorios y suministros de laboratorio
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [38] => Clasificacion Object
+        (
+            [id] => 41
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Fibras sintéticas, hules, plásticos y derivados
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [39] => Clasificacion Object
+        (
+            [id] => 42
+            [grupo] => 2
+            [subgrupo] => 5
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros productos químicos
+            [cuentaContable] => 1.1.5.1.4
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [40] => Clasificacion Object
+        (
+            [id] => 43
+            [grupo] => 2
+            [subgrupo] => 6
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Combustibles, lubricantes y aditivos
+            [cuentaContable] => 1.1.5.1.5
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [41] => Clasificacion Object
+        (
+            [id] => 44
+            [grupo] => 2
+            [subgrupo] => 6
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Combustibles, lubricantes y aditivos
+            [cuentaContable] => 1.1.5.1.5
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [42] => Clasificacion Object
+        (
+            [id] => 45
+            [grupo] => 2
+            [subgrupo] => 6
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Carbón y sus derivados
+            [cuentaContable] => 1.1.5.1.5
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [43] => Clasificacion Object
+        (
+            [id] => 46
+            [grupo] => 2
+            [subgrupo] => 7
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vestuario, blancos, prendas de protección y artículos deportivos
+            [cuentaContable] => 1.1.5.1.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [44] => Clasificacion Object
+        (
+            [id] => 47
+            [grupo] => 2
+            [subgrupo] => 7
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vestuario y uniformes
+            [cuentaContable] => 1.1.5.1.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [45] => Clasificacion Object
+        (
+            [id] => 48
+            [grupo] => 2
+            [subgrupo] => 7
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Prendas de seguridad y protección personal
+            [cuentaContable] => 1.1.5.1.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [46] => Clasificacion Object
+        (
+            [id] => 49
+            [grupo] => 2
+            [subgrupo] => 7
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Artículos deportivos
+            [cuentaContable] => 1.1.5.1.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [47] => Clasificacion Object
+        (
+            [id] => 50
+            [grupo] => 2
+            [subgrupo] => 7
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Productos textiles
+            [cuentaContable] => 1.1.5.1.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [48] => Clasificacion Object
+        (
+            [id] => 51
+            [grupo] => 2
+            [subgrupo] => 7
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Blancos y otros productos textiles, excepto prendas de vestir
+            [cuentaContable] => 1.1.5.1.6
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [49] => Clasificacion Object
+        (
+            [id] => 52
+            [grupo] => 2
+            [subgrupo] => 8
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales y suministros para seguridad
+            [cuentaContable] => 1.1.5.1.7
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [50] => Clasificacion Object
+        (
+            [id] => 53
+            [grupo] => 2
+            [subgrupo] => 8
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Sustancias y materiales explosivos
+            [cuentaContable] => 1.1.5.1.7
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [51] => Clasificacion Object
+        (
+            [id] => 54
+            [grupo] => 2
+            [subgrupo] => 8
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Materiales de seguridad publica
+            [cuentaContable] => 1.1.5.1.7
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [52] => Clasificacion Object
+        (
+            [id] => 55
+            [grupo] => 2
+            [subgrupo] => 8
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Prendas de protección para seguridad pública y nacional
+            [cuentaContable] => 1.1.5.1.7
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [53] => Clasificacion Object
+        (
+            [id] => 56
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 0
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Herramientas, refacciones y accesorios menores
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [54] => Clasificacion Object
+        (
+            [id] => 57
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Herramientas menores
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [55] => Clasificacion Object
+        (
+            [id] => 58
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de edificios
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [56] => Clasificacion Object
+        (
+            [id] => 59
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de mobiliario y equipo de administración, educacional y recreativo
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [57] => Clasificacion Object
+        (
+            [id] => 60
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de equipo de cómputo y tecnologías de la información
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [58] => Clasificacion Object
+        (
+            [id] => 61
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de equipo e instrumental médico y de laboratorio
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [59] => Clasificacion Object
+        (
+            [id] => 62
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de equipo de transporte
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [60] => Clasificacion Object
+        (
+            [id] => 63
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de equipo de defensa y seguridad
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [61] => Clasificacion Object
+        (
+            [id] => 64
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 8
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores de maquinaria y otros equipos
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [62] => Clasificacion Object
+        (
+            [id] => 65
+            [grupo] => 2
+            [subgrupo] => 9
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones y accesorios menores otros bienes muebles
+            [cuentaContable] => 1.1.5.1.8
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [63] => Clasificacion Object
+        (
+            [id] => 68
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Muebles de oficina y estantería
+            [cuentaContable] => 1.2.4.1.01.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [64] => Clasificacion Object
+        (
+            [id] => 69
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros muebles (Excepto de oficina)
+            [cuentaContable] => 1.2.4.1.02.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [65] => Clasificacion Object
+        (
+            [id] => 72
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Bienes informaticos (Equipo de computo)
+            [cuentaContable] => 1.2.4.1.03.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [66] => Clasificacion Object
+        (
+            [id] => 73
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros mobiliarios y equipos de administración
+            [cuentaContable] => 1.2.4.1.09.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [67] => Clasificacion Object
+        (
+            [id] => 75
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipos y aparatos audiovisuales
+            [cuentaContable] => 1.2.4.2.01.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [68] => Clasificacion Object
+        (
+            [id] => 76
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Aparatos deportivos
+            [cuentaContable] => 1.2.4.2.02.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [69] => Clasificacion Object
+        (
+            [id] => 77
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo fotográfico y de vídeo
+            [cuentaContable] => 1.2.4.2.03.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [70] => Clasificacion Object
+        (
+            [id] => 78
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otro mobiliario y equipo educacional y recreativo
+            [cuentaContable] => 1.2.4.2.09
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [71] => Clasificacion Object
+        (
+            [id] => 126
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipos recreativos
+            [cuentaContable] => 1.2.4.2.09.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [72] => Clasificacion Object
+        (
+            [id] => 127
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Instrumentos musicales
+            [cuentaContable] => 1.2.4.2.09.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [73] => Clasificacion Object
+        (
+            [id] => 128
+            [grupo] => 5
+            [subgrupo] => 2
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Muebles escolares
+            [cuentaContable] => 1.2.4.2.09.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [74] => Clasificacion Object
+        (
+            [id] => 80
+            [grupo] => 5
+            [subgrupo] => 3
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo médico y de laboratorio
+            [cuentaContable] => 1.2.4.3.01.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [75] => Clasificacion Object
+        (
+            [id] => 81
+            [grupo] => 5
+            [subgrupo] => 3
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Instrumental médico y de laboratorio
+            [cuentaContable] => 1.2.4.3.02.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [76] => Clasificacion Object
+        (
+            [id] => 83
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vehículos y equipo terrestre
+            [cuentaContable] => 1.2.4.4.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [77] => Clasificacion Object
+        (
+            [id] => 84
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Carrocerías y remolques
+            [cuentaContable] => 1.2.4.4.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [78] => Clasificacion Object
+        (
+            [id] => 129
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Carrocerias y remolques, para la Ejecución de Programas de Seguridad Pública
+            [cuentaContable] => 1.2.4.4.02.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [79] => Clasificacion Object
+        (
+            [id] => 130
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Carrocerias y remolques, destinados a Servicios Públicos y la Operacion de Programas Públicos
+            [cuentaContable] => 1.2.4.4.02.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [80] => Clasificacion Object
+        (
+            [id] => 131
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Carrocerias y remolques, destinados a Servicios Administrativos
+            [cuentaContable] => 1.2.4.4.02.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [81] => Clasificacion Object
+        (
+            [id] => 85
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo aeroespacial
+            [cuentaContable] => 1.2.4.4.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [82] => Clasificacion Object
+        (
+            [id] => 86
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo ferroviario
+            [cuentaContable] => 1.2.4.4.04
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [83] => Clasificacion Object
+        (
+            [id] => 87
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Embarcaciones
+            [cuentaContable] => 1.2.4.4.05
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [84] => Clasificacion Object
+        (
+            [id] => 132
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maritimos, Lacustres y Fluviales, para la ejecución de programas de Seguridad Pública
+            [cuentaContable] => 1.2.4.4.05.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [85] => Clasificacion Object
+        (
+            [id] => 133
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maritimos, Lacustres y Fluviales, destinados a Servicios Públicos y la Operacion de Programas Públicos
+            [cuentaContable] => 1.2.4.4.05.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [86] => Clasificacion Object
+        (
+            [id] => 134
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maritimos, Lacustres y FLuviales, destinados a Servicios Administrativos
+            [cuentaContable] => 1.2.4.4.05.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [87] => Clasificacion Object
+        (
+            [id] => 88
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros equipos de transporte
+            [cuentaContable] => 1.2.4.4.09.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [88] => Clasificacion Object
+        (
+            [id] => 123
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vehiculos y Equipos Terrestres, para la Ejecución de Programas de Seguridad Pública
+            [cuentaContable] => 1.2.4.4.1.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [89] => Clasificacion Object
+        (
+            [id] => 124
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vehiculos y Equipos Terrestres, destinados a Servicios Públicos y la Operacion de Programas Públicos
+            [cuentaContable] => 1.2.4.4.1.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [90] => Clasificacion Object
+        (
+            [id] => 125
+            [grupo] => 5
+            [subgrupo] => 4
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Vehiculos y Equipos Terrestres, destinados a Servicios Administrativos
+            [cuentaContable] => 1.2.4.4.1.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [91] => Clasificacion Object
+        (
+            [id] => 90
+            [grupo] => 5
+            [subgrupo] => 5
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo de Seguridad pública
+            [cuentaContable] => 1.2.4.5.01.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [92] => Clasificacion Object
+        (
+            [id] => 92
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y equipo agropecuario
+            [cuentaContable] => 1.2.4.6.01.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [93] => Clasificacion Object
+        (
+            [id] => 93
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y Equipo Industrial
+            [cuentaContable] => 1.2.4.6.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [94] => Clasificacion Object
+        (
+            [id] => 135
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y Equipo Industrial
+            [cuentaContable] => 1.2.4.6.02.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [95] => Clasificacion Object
+        (
+            [id] => 136
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y Equipo para suministro de agua
+            [cuentaContable] => 1.2.4.6.02.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [96] => Clasificacion Object
+        (
+            [id] => 94
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y equipo de construcción
+            [cuentaContable] => 1.2.4.6.03.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [97] => Clasificacion Object
+        (
+            [id] => 95
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Sistemas de aire acondicionado, calefacción y de refrigeración industrial y comercial
+            [cuentaContable] => 1.2.4.6.04.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [98] => Clasificacion Object
+        (
+            [id] => 96
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo de comunicación y telecomunicación
+            [cuentaContable] => 1.2.4.6.05.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [99] => Clasificacion Object
+        (
+            [id] => 97
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipos de generación eléctrica, aparatos y accesorios eléctricos
+            [cuentaContable] => 1.2.4.6.06.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [100] => Clasificacion Object
+        (
+            [id] => 98
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Herramientas y máquinas-herramienta
+            [cuentaContable] => 1.2.4.6.07
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [101] => Clasificacion Object
+        (
+            [id] => 137
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y Equipo para Talleres
+            [cuentaContable] => 1.2.4.6.07.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [102] => Clasificacion Object
+        (
+            [id] => 138
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Herramientas y Maquinas - Herramienta
+            [cuentaContable] => 1.2.4.6.07.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [103] => Clasificacion Object
+        (
+            [id] => 139
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Refacciones Mayores
+            [cuentaContable] => 1.2.4.6.07.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [104] => Clasificacion Object
+        (
+            [id] => 99
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros equipos
+            [cuentaContable] => 1.2.4.6.09
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [105] => Clasificacion Object
+        (
+            [id] => 140
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipos de medición
+            [cuentaContable] => 1.2.4.6.09.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [106] => Clasificacion Object
+        (
+            [id] => 141
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipos de señalamiento
+            [cuentaContable] => 1.2.4.6.09.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [107] => Clasificacion Object
+        (
+            [id] => 142
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equipo de Ingenieria y Dibujo
+            [cuentaContable] => 1.2.4.6.09.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [108] => Clasificacion Object
+        (
+            [id] => 143
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinas y Aparatos Cientificos
+            [cuentaContable] => 1.2.4.6.09.04
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [109] => Clasificacion Object
+        (
+            [id] => 144
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Maquinaria y Equipo de Imprenta
+            [cuentaContable] => 1.2.4.6.09.05
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [110] => Clasificacion Object
+        (
+            [id] => 145
+            [grupo] => 5
+            [subgrupo] => 6
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros bienes muebles
+            [cuentaContable] => 1.2.4.6.09.09
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [111] => Clasificacion Object
+        (
+            [id] => 70
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Bienes artísticos, culturales y científicos
+            [cuentaContable] => 1.2.4.7.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [112] => Clasificacion Object
+        (
+            [id] => 71
+            [grupo] => 5
+            [subgrupo] => 1
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Objetos de valor
+            [cuentaContable] => 1.2.4.7.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [113] => Clasificacion Object
+        (
+            [id] => 101
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 1
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Bovinos
+            [cuentaContable] => 1.2.4.8.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [114] => Clasificacion Object
+        (
+            [id] => 102
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Porcinos
+            [cuentaContable] => 1.2.4.8.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [115] => Clasificacion Object
+        (
+            [id] => 103
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Aves
+            [cuentaContable] => 1.2.4.8.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [116] => Clasificacion Object
+        (
+            [id] => 104
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Ovinos y caprinos
+            [cuentaContable] => 1.2.4.8.04
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [117] => Clasificacion Object
+        (
+            [id] => 105
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Peces y acuicultura
+            [cuentaContable] => 1.2.4.8.05
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [118] => Clasificacion Object
+        (
+            [id] => 106
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Equinos
+            [cuentaContable] => 1.2.4.8.06
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [119] => Clasificacion Object
+        (
+            [id] => 107
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Especies menores y de zoológico
+            [cuentaContable] => 1.2.4.8.07
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [120] => Clasificacion Object
+        (
+            [id] => 108
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 8
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Arboles y plantas
+            [cuentaContable] => 1.2.4.8.08
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [121] => Clasificacion Object
+        (
+            [id] => 109
+            [grupo] => 5
+            [subgrupo] => 7
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros activos biológicos
+            [cuentaContable] => 1.2.4.8.09
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [122] => Clasificacion Object
+        (
+            [id] => 111
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 2
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Patentes
+            [cuentaContable] => 1.2.5.2.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [123] => Clasificacion Object
+        (
+            [id] => 112
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 3
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Marcas
+            [cuentaContable] => 1.2.5.2.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [124] => Clasificacion Object
+        (
+            [id] => 113
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 4
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Derechos
+            [cuentaContable] => 1.2.5.2.03
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [125] => Clasificacion Object
+        (
+            [id] => 114
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 5
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Concesiones
+            [cuentaContable] => 1.2.5.3.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [126] => Clasificacion Object
+        (
+            [id] => 115
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 6
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Franquicias
+            [cuentaContable] => 1.2.5.3.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [127] => Clasificacion Object
+        (
+            [id] => 116
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 7
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Licencias Informáticas e Intelectuales
+            [cuentaContable] => 1.2.5.4.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [128] => Clasificacion Object
+        (
+            [id] => 117
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 8
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Licencias Industriales, Comerciales y Otras
+            [cuentaContable] => 1.2.5.4.02
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+    [129] => Clasificacion Object
+        (
+            [id] => 119
+            [grupo] => 5
+            [subgrupo] => 9
+            [clase] => 9
+            [subclase] => 
+            [consecutivo] => 
+            [descr] => Otros Activos Intangibles
+            [cuentaContable] => 1.2.5.9.01
+            [cuentaDepreciacion] => 
+            [tipo] => ItemCatalogo Object
+                (
+                    [id] => 
+                    [descr] => 
+                )
+
+            [enabled] => 
+        )
+
+)
+
+06:05:47 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 11
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 13
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 3
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:05:47 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+06:05:47 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: BienDao
+06:05:51 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:05:51 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:05:51 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:05:51 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:05:51 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 11
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 13
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => CONTABLE
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:05:51 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 81 registro(s)
+06:05:51 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 81 registros de tipo: BienDao
+06:06:12 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:06:12 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+06:06:16 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:06:16 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: Periodo
+06:06:16 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+06:06:18 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:06:18 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+06:06:19 DEBUG inventario.php:21[main.main]: misesion: 
+06:06:19 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:06:19 DEBUG inventario.php:45[main.main]: debugging
+06:06:19 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: ItemCatalogo
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:06:19 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:06:19 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:06:34 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:06:34 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 368
+06:06:34 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:06:34 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:06:34 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 11
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 8
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 368
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:06:34 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 8 registro(s)
+06:06:34 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 8 registros de tipo: BienDao
+06:06:39 DEBUG printlabel2.php:26[main.main]: Array
+(
+    [0] => Array
+        (
+            [id] => 5803
+            [folio] => 511-019-001
+        )
+
+    [1] => Array
+        (
+            [id] => 5805
+            [folio] => 511-019-003
+        )
+
+    [2] => Array
+        (
+            [id] => 5808
+            [folio] => 511-019-006
+        )
+
+    [3] => Array
+        (
+            [id] => 5810
+            [folio] => 511-019-008
+        )
+
+    [4] => Array
+        (
+            [id] => 5811
+            [folio] => 512-019-001
+        )
+
+    [5] => Array
+        (
+            [id] => 5812
+            [folio] => 512-019-002
+        )
+
+    [6] => Array
+        (
+            [id] => 5813
+            [folio] => 513-019-001
+        )
+
+    [7] => Array
+        (
+            [id] => 5814
+            [folio] => 513-019-002
+        )
+
+)
+
+06:06:39 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:06:39 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 368
+06:06:39 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:06:39 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:06:39 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 11
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 8
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 368
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:06:39 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 8 registro(s)
+06:06:39 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 8 registros de tipo: BienDao
+06:07:05 DEBUG inventario.php:21[main.main]: misesion: 
+06:07:05 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:07:05 DEBUG inventario.php:45[main.main]: debugging
+06:07:05 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: ItemCatalogo
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:07:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:07:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:07:09 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 11
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 8
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 226
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:07:09 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 16 registro(s)
+06:07:09 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 16 registros de tipo: BienDao
+06:07:09 DEBUG filtrado.php:62[main.main]: Cierra conexion a Base de datos
+06:07:17 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2019-11-21/2019112122305615.jpg
+06:07:17 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2019-11-21/2019112122305628.jpg
+06:07:17 DEBUG BienDao.php:545[BienDao.getImages]: 0: /files/2019-11-21/2019112122305623.jpg
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: Periodo
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: ItemCatalogo
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:07:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:07:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:07:54 DEBUG inventario.php:21[main.main]: misesion: 
+06:07:54 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:07:54 DEBUG inventario.php:45[main.main]: debugging
+06:07:54 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+06:07:54 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 11
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 8
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 226
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 16 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 16 registros de tipo: BienDao
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 14 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 14 registros de tipo: ItemCatalogo
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:07:54 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:07:54 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:07:58 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:07:58 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+06:08:02 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+06:08:02 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+06:08:02 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+06:08:05 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:08:05 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+06:08:05 DEBUG inventario.php:21[main.main]: misesion: 
+06:08:05 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:08:05 DEBUG inventario.php:45[main.main]: debugging
+06:08:05 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+06:08:05 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 7
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 4
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 226
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: BienDao
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:08:05 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:08:05 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:08:29 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:08:29 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 81
+06:08:29 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:08:29 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:08:29 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 7
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 4
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 81
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:08:29 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 9 registro(s)
+06:08:29 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 9 registros de tipo: BienDao
+06:08:33 DEBUG printlabel2.php:26[main.main]: Array
+(
+    [0] => Array
+        (
+            [id] => 1876
+            [folio] => 511-026-001
+        )
+
+    [1] => Array
+        (
+            [id] => 1879
+            [folio] => 511-026-002
+        )
+
+    [2] => Array
+        (
+            [id] => 1881
+            [folio] => 511-026-003
+        )
+
+    [3] => Array
+        (
+            [id] => 1877
+            [folio] => 512-026-001
+        )
+
+    [4] => Array
+        (
+            [id] => 1878
+            [folio] => 515-026-001
+        )
+
+    [5] => Array
+        (
+            [id] => 1880
+            [folio] => 515-026-001
+        )
+
+    [6] => Array
+        (
+            [id] => 7787
+            [folio] => 515-026-002
+        )
+
+    [7] => Array
+        (
+            [id] => 1968
+            [folio] => 566-026-001
+        )
+
+    [8] => Array
+        (
+            [id] => 1883
+            [folio] => 566-026-002
+        )
+
+)
+
+06:08:33 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:08:33 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 81
+06:08:33 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:08:33 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:08:33 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 7
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 4
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 81
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:08:33 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 9 registro(s)
+06:08:33 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 9 registros de tipo: BienDao
+06:09:01 DEBUG printlabel2.php:26[main.main]: Array
+(
+    [0] => Array
+        (
+            [id] => 1876
+            [folio] => 511-026-001
+        )
+
+)
+
+06:09:01 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:09:01 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 81
+06:09:01 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:09:01 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:09:01 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 7
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 4
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 81
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:09:01 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 9 registro(s)
+06:09:02 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 9 registros de tipo: BienDao
+06:12:30 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:12:30 DEBUG login.php:29[main.main]: result: SUCCESS
+06:12:30 DEBUG login.php:30[main.main]: session: ON
+06:12:30 DEBUG login.php:32[main.main]: crea session
+06:12:30 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+06:12:30 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:12:30 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+06:12:37 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+06:12:37 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+06:12:37 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+06:12:43 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:12:43 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+06:12:43 DEBUG inventario.php:21[main.main]: misesion: 
+06:12:43 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:12:43 DEBUG inventario.php:45[main.main]: debugging
+06:12:43 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+06:12:43 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 226
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: BienDao
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:12:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:12:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:12:57 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:12:57 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+06:12:57 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:12:57 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:12:57 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:12:57 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 12 registro(s)
+06:12:57 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 12 registros de tipo: BienDao
+06:13:04 DEBUG printlabel2.php:26[main.main]: Array
+(
+    [0] => Array
+        (
+            [id] => 16538
+            [folio] => 
+        )
+
+)
+
+06:13:04 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:13:04 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+06:13:04 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:13:04 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:13:04 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:13:04 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 12 registro(s)
+06:13:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 12 registros de tipo: BienDao
+06:13:42 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+06:13:42 DEBUG bien.php:53[main.main]: numero: 1002
+06:13:42 DEBUG bien.php:54[main.main]: folio unico: 001002
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:13:42 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:13:42 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:14:05 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 0
+06:14:05 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 001
+06:14:05 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+06:14:09 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 4
+06:14:09 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 005
+06:14:09 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+06:16:43 DEBUG altaarticulo.php:18[main.main]: Array
+(
+    [bien] => 
+    [empresa] => 14
+    [periodo] => 11
+    [imagenes] => 0
+    [folio] => 5110-001-005
+    [folioAnterior] => 
+    [consecutivo] => 005
+    [departamento] => 390
+    [tipoClasificacion] => 1
+    [clasificacion] => 68
+    [cuentaContable] => 1.2.4.1.01.01
+    [cuentaDepreciacion] => 1.2.6.3.01 - DEPRECIACIÓN ACUMULADA DE MOBILIARIO Y EQUIPO DE ADMÓN
+    [uma] => undefined
+    [valorUma] => NaN
+    [descripcion] => Mesa secretarial
+    [notas] => 
+    [tipoValuacion] => undefined
+    [valuacion] => 
+    [marca] => NO IDENTIFICADO
+    [modelo] => NO IDENTIFICADO
+    [serie] => NO IDENTIFICADO
+    [motor] => NO APLICA
+    [factura] => NO IDENTIFICADO
+    [fechaAdquisicion] => Invalid date
+    [estadoFisico] => undefined
+    [depreciacion] => undefined
+    [aniosUso] => undefined
+    [origen] => 0
+    [inventarioContable] => 0
+    [depreciacionPeriodo] => undefined
+    [depreciacionAcumulada] => undefined
+    [responsable] => 0
+    [color] => 
+    [valorAnterior] => undefined
+    [matricula] => NO APLICA
+    [tipoEtiqueta] => CODIGOQR
+    [v_id] => Array
+        (
+            [0] => 0
+        )
+
+    [v_index] => Array
+        (
+            [0] => 0
+        )
+
+    [v_periodo] => Array
+        (
+            [0] => 0
+        )
+
+    [v_tipoImporte] => Array
+        (
+            [0] => 1
+        )
+
+    [v_valor] => Array
+        (
+            [0] => 5000
+        )
+
+    [v_fechaAdquisicion] => Array
+        (
+            [0] => 04-06-2010
+        )
+
+    [v_edoFisico] => Array
+        (
+            [0] => 2
+        )
+
+    [v_fechaCierre] => Array
+        (
+            [0] => 31-12-2020
+        )
+
+    [v_uma] => Array
+        (
+            [0] => 5
+        )
+
+    [v_tipoDepreciacion] => Array
+        (
+            [0] => 0
+        )
+
+    [v_depPeriodo] => Array
+        (
+            [0] => 0
+        )
+
+    [v_depAcumulada] => Array
+        (
+            [0] => 0.00
+        )
+
+    [v_valorLibros] => Array
+        (
+            [0] => 5000.00
+        )
+
+    [v_valorActual] => Array
+        (
+            [0] => 5000
+        )
+
+    [v_cc] => Array
+        (
+            [0] => 0
+        )
+
+)
+
+06:16:43 DEBUG BienDao.php:358[BienDao.insertBase]: fk_id_empresa: 14
+06:16:43 DEBUG BienDao.php:359[BienDao.insertBase]: fk_id_cat_tipo_clasificacion_bien: 1
+06:16:43 DEBUG BienDao.php:360[BienDao.insertBase]: fk_id_clasificacion_bien: 68
+06:16:43 DEBUG BienDao.php:361[BienDao.insertBase]: fk_id_departamento: 390
+06:16:43 DEBUG BienDao.php:362[BienDao.insertBase]: fk_id_cat_depreciacion: undefined
+06:16:43 DEBUG BienDao.php:363[BienDao.insertBase]: fk_id_cat_origen_fondo_adquisicion: 0
+06:16:43 DEBUG BienDao.php:364[BienDao.insertBase]: imagen: 
+06:16:43 DEBUG BienDao.php:365[BienDao.insertBase]: archivoFactura: 
+06:16:43 DEBUG BienDao.php:366[BienDao.insertBase]: archivoPoliza: 
+06:16:43 DEBUG BienDao.php:367[BienDao.insertBase]: descripcion: Mesa secretarial
+06:16:43 DEBUG BienDao.php:368[BienDao.insertBase]: marca: NO IDENTIFICADO
+06:16:43 DEBUG BienDao.php:369[BienDao.insertBase]: modelo: NO IDENTIFICADO
+06:16:43 DEBUG BienDao.php:370[BienDao.insertBase]: serie: NO IDENTIFICADO
+06:16:43 DEBUG BienDao.php:371[BienDao.insertBase]: motor: NO APLICA
+06:16:43 DEBUG BienDao.php:372[BienDao.insertBase]: factura: NO IDENTIFICADO
+06:16:43 DEBUG BienDao.php:373[BienDao.insertBase]: fecha_adquisicion: Invalid date
+06:16:43 DEBUG BienDao.php:374[BienDao.insertBase]: fk_id_cat_tipo_valuacion: undefined
+06:16:43 DEBUG BienDao.php:375[BienDao.insertBase]: valuacion: 
+06:16:43 DEBUG BienDao.php:376[BienDao.insertBase]: numero: 1002
+06:16:43 DEBUG BienDao.php:377[BienDao.insertBase]: folio_unico: 001002
+06:16:43 DEBUG BienDao.php:380[BienDao.insertBase]: result: success
+06:16:43 DEBUG BienDao.php:422[BienDao.insertByPeriodo]: result: SUCCESS
+06:16:43 DEBUG BienDao.php:591[BienDao.insertValuaciones]: inicia
+06:16:43 DEBUG BienDao.php:597[BienDao.insertValuaciones]: fk_id_bien: 16555
+06:16:43 DEBUG BienDao.php:598[BienDao.insertValuaciones]: fk_id_periodo: 0
+06:16:43 DEBUG BienDao.php:599[BienDao.insertValuaciones]: valor: 5000
+06:16:43 DEBUG BienDao.php:600[BienDao.insertValuaciones]: fk_id_cat_tipo_valuacion: 1
+06:16:43 DEBUG BienDao.php:601[BienDao.insertValuaciones]: fecha: 04-06-2010
+06:16:43 DEBUG BienDao.php:602[BienDao.insertValuaciones]: fecha_cierre: 31-12-2020
+06:16:43 DEBUG BienDao.php:603[BienDao.insertValuaciones]: dep_acumulada: 0.00
+06:16:43 DEBUG BienDao.php:604[BienDao.insertValuaciones]: dep_periodo: 0
+06:16:43 DEBUG BienDao.php:605[BienDao.insertValuaciones]: anios_uso: 0
+06:16:43 DEBUG BienDao.php:606[BienDao.insertValuaciones]: fk_id_cat_depreciacion: 0
+06:16:43 DEBUG BienDao.php:607[BienDao.insertValuaciones]: fk_id_cat_uma: 5
+06:16:43 DEBUG BienDao.php:608[BienDao.insertValuaciones]: valor_libros: 5000.00
+06:16:43 DEBUG BienDao.php:609[BienDao.insertValuaciones]: valor_actual: 5000
+06:16:43 DEBUG BienDao.php:610[BienDao.insertValuaciones]: fk_id_cat_estado_fisico: 2
+06:16:43 DEBUG BienDao.php:611[BienDao.insertValuaciones]: orden: 0
+06:16:43 DEBUG BienDao.php:523[BienDao.deleteImgs]: Se eliminaron imagenes anteriores
+06:16:43 DEBUG BienDao.php:558[BienDao.insertImages]: antes de insertar
+06:16:43 DEBUG BienDao.php:559[BienDao.insertImages]: Array
+(
+)
+
+06:16:43 DEBUG BienDao.php:582[BienDao.insertImages]: el arreglo no contenia imagenes para insertar
+06:16:43 DEBUG altaarticulo.php:239[main.main]: Creando codigo de barras
+06:16:44 DEBUG altaarticulo.php:247[main.main]: Ocurrio un error al generar el código QR
+06:16:44 DEBUG altaarticulo.php:268[main.main]: Se almaceno satisfactoriamente su informacion
+06:16:44 DEBUG altaarticulo.php:312[main.main]: Cierra conexion a Base de datos
+06:16:44 DEBUG inventario.php:21[main.main]: misesion: 
+06:16:44 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+06:16:44 DEBUG inventario.php:45[main.main]: debugging
+06:16:44 DEBUG inventario.php:46[main.main]: Array
+(
+    [result] => SUCCESS
+    [message] => Se almaceno satisfactoriamente su informacion
+)
+
+06:16:44 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 226
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: BienDao
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+06:16:44 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+06:16:44 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+06:16:57 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:16:57 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+06:16:57 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:16:57 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:16:57 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:16:57 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 13 registro(s)
+06:16:57 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 13 registros de tipo: BienDao
+06:17:03 DEBUG printlabel2.php:26[main.main]: Array
+(
+    [0] => Array
+        (
+            [id] => 16538
+            [folio] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 16554
+            [folio] => 2120-001-001
+        )
+
+)
+
+06:17:03 DEBUG DepartamentoDao.php:7[DepartamentoDao.find]: departamento.find
+06:17:03 DEBUG DepartamentoDao.php:9[DepartamentoDao.find]: departamento: 390
+06:17:03 DEBUG DepartamentoDao.php:10[DepartamentoDao.find]: empresa: 
+06:17:03 DEBUG DepartamentoDao.php:11[DepartamentoDao.find]: periodo: 
+06:17:03 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 390
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+06:17:03 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 13 registro(s)
+06:17:04 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 13 registros de tipo: BienDao
+14:47:36 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+14:47:36 DEBUG login.php:29[main.main]: result: SUCCESS
+14:47:36 DEBUG login.php:30[main.main]: session: ON
+14:47:36 DEBUG login.php:32[main.main]: crea session
+14:47:36 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+14:47:37 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+14:47:37 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+14:47:41 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+14:47:41 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+14:47:41 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+14:47:42 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+14:47:42 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+14:47:43 DEBUG inventario.php:21[main.main]: misesion: 
+14:47:43 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+14:47:43 DEBUG inventario.php:45[main.main]: debugging
+14:47:43 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+14:47:43 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+14:47:43 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+14:48:20 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+14:48:20 DEBUG bien.php:53[main.main]: numero: 1003
+14:48:20 DEBUG bien.php:54[main.main]: folio unico: 001003
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+14:48:20 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+14:48:20 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+20:04:16 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+20:04:16 DEBUG login.php:29[main.main]: result: SUCCESS
+20:04:16 DEBUG login.php:30[main.main]: session: ON
+20:04:16 DEBUG login.php:32[main.main]: crea session
+20:04:16 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+20:04:17 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+20:04:17 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+20:04:22 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+20:04:22 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: EmpresaDao
+20:04:26 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+20:04:26 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+20:04:26 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+20:04:28 DEBUG selempresa.php:32[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+20:04:28 DEBUG selempresa.php:51[main.main]: Cierra conexion a Base de datos
+20:04:28 DEBUG inventario.php:21[main.main]: misesion: 
+20:04:28 DEBUG inventario.php:22[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+20:04:28 DEBUG inventario.php:45[main.main]: debugging
+20:04:28 DEBUG inventario.php:46[main.main]: Array
+(
+)
+
+20:04:28 DEBUG BienFactory.php:186[BienFactory.filtrado]: Array
+(
+    [0] => Array
+        (
+            [0] => :fk_id_empresa
+            [1] => 14
+            [2] => 1
+        )
+
+    [1] => Array
+        (
+            [0] => :fk_id_periodo
+            [1] => 11
+            [2] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => :tipo_inventario
+            [1] => 
+            [2] => 2
+        )
+
+    [3] => Array
+        (
+            [0] => :fecha_inicio
+            [1] => 
+            [2] => 2
+        )
+
+    [4] => Array
+        (
+            [0] => :fecha_fin
+            [1] => 
+            [2] => 2
+        )
+
+    [5] => Array
+        (
+            [0] => :clasificacion_bi
+            [1] => 
+            [2] => 1
+        )
+
+    [6] => Array
+        (
+            [0] => :clasificacion_bm
+            [1] => 
+            [2] => 1
+        )
+
+    [7] => Array
+        (
+            [0] => :fk_id_departamento
+            [1] => 568
+            [2] => 1
+        )
+
+    [8] => Array
+        (
+            [0] => :fk_id_cat_estado_fisico
+            [1] => 
+            [2] => 1
+        )
+
+    [9] => Array
+        (
+            [0] => :fk_id_cat_estatus_inventario
+            [1] => 1,2
+            [2] => 1
+        )
+
+    [10] => Array
+        (
+            [0] => :tipo_fecha
+            [1] => FECHA_INSERT
+            [2] => 2
+        )
+
+    [11] => Array
+        (
+            [0] => :bandera
+            [1] => 
+            [2] => 2
+        )
+
+)
+
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 0 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 0 registros de tipo: BienDao
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 2 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 2 registros de tipo: ItemCatalogo
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+20:04:28 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+20:04:28 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+20:04:31 DEBUG bien.php:51[main.main]: generando folio unico, empresa: 14
+20:04:31 DEBUG bien.php:53[main.main]: numero: 1003
+20:04:31 DEBUG bien.php:54[main.main]: folio unico: 001003
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: ItemCatalogo
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 67 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 67 registros de tipo: Clasificacion
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 145 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 145 registros de tipo: Clasificacion
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 5 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 5 registros de tipo: ItemCatalogo
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 7 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 7 registros de tipo: Uma
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 15 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 15 registros de tipo: ItemCatalogo
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 43 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 43 registros de tipo: DepreciacionDao
+20:04:31 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 10 registro(s)
+20:04:31 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 10 registros de tipo: ItemCatalogo
+20:04:34 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 0
+20:04:34 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 001
+20:04:34 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos
+20:04:41 DEBUG BienFactory.php:241[BienFactory.getIncrement]: ultimo: 0
+20:04:41 DEBUG getConsecutivo.php:19[main.main]: consecutivo: 001
+20:04:41 DEBUG getConsecutivo.php:30[main.main]: Cierra conexion a Base de datos

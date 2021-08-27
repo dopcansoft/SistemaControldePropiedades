@@ -1,0 +1,24 @@
+<?
+	class BienInmuebleFactory{
+		public function filtrado(Empresa $empresa, ClasificacionInmueble $tipo, ClasificacionInmueble $clasificacion, DBConnector $db, Properties $queries, Logger $log){
+			$list = array();
+			try{
+				$stmt = $db->prepare($queries->prop("inmueble.filtrado"));
+				$stmt->bindParam(":fk_id_empresa", $empresa->id, PDO::PARAM_INT);
+				$stmt->bindParam(":fk_id_cat_tipo_inmueble", $tipo->id, PDO::PARAM_INT);
+				$stmt->bindParam(":fk_id_clasificacion_inmueble", $clasificacion->id, PDO::PARAM_INT);
+				$stmt->execute();
+				$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				if(isset($rows) && count($rows)>0){
+					foreach($rows as $row){
+						$list[] = new BienInmuebleDao($row);
+					}
+				}
+			}catch(PDOException $e){
+				$log->error("PDOException: ".$e->getMessage());
+			}
+			$stmt = null;
+			return $list;
+		}
+	}
+?>

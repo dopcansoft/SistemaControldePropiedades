@@ -1,0 +1,34 @@
+DONE *Corregir el que se traba la interfaz de captura
+PENDIENTE *API no soportada
+DONE *agregar boton de nuevo desde las opciones de busqueda
+DONE *Si se selecciona clasificacion o departamento, que estos se elijan por default al agregar un nuevo bien
+DONE *despues de guardar NO debe quitar la etiqueta importe
+DONE *resguardos
+DONE *duplicado
+DONE *agregar cuenta contable y cuenta de depreciacion no los muestra cuando vienes de la busqueda
+DONE *modificar botones, poner boton agregar al inicio
+DONE *al guardar que te regrese a la busqueda pero que deje el clasificacion y el depto
+DONE *quitar boton buscar, la busqueda se acciona desde que se seleccionan las opciones
+DONE *mover select de estado fisico al final
+DONE *que filtro de búsqueda solo sea por descripción
+DONE *agregar opcion de habilitar/deshabilitar clasificacion (modulo y disponbilidad en el select)
+
+DONE *Agregar criterio de busqueda el folio ademas de la descripción
+*Bloquera campo de depreciacion del periodo y depreciacion acumulada
+DONE  *(URGENTE) crear modulo de impresion o etiquetado desde la vista de resguardos (agregar botón)
+PENDIENTE *agregar varios archivos a la factura
+DONE *agregar a edicion rapida, fondo y fecha de adquisicion
+PENDIENTE *agregar modulo de responsables
+DONE *Resumen contable (URGENTE)
+
+
+- Valor historico: es el valor de un bien cundo es adquirido
+- Lotes: varios bienes iguales, contemplan un rango de folios
+- Investigar que es mejor agregar: codigo de barras o código QR
+
+
+
+codigo de barras
+Departamento
+FOLIO 
+Breve descripción

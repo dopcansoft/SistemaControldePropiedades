@@ -1,0 +1,69 @@
+00:03:02 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+00:03:02 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+00:03:02 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos
+00:03:06 DEBUG selempresa.php:29[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ADMINISTRADOR
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+00:03:06 DEBUG selempresa.php:48[main.main]: Cierra conexion a Base de datos
+01:17:32 DEBUG login.php:27[main.main]: UsuarioDao Object
+(
+    [id] => 4
+    [nombre] => Irving
+    [apellidos] => Balan
+    [email] => admin01@mail.com
+    [password] => 
+    [avatar] => http://ibexpro.com.mx/v2/build/images/user.png
+    [tipo] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [perfil] => ItemCatalogo Object
+        (
+            [id] => 
+            [descr] => 
+        )
+
+    [estatus] => ItemCatalogo Object
+        (
+            [id] => 1
+            [descr] => ACTIVO
+        )
+
+    [fechaInsert] => 
+)
+
+01:17:32 DEBUG login.php:29[main.main]: result: SUCCESS
+01:17:32 DEBUG login.php:30[main.main]: session: ON
+01:17:32 DEBUG login.php:32[main.main]: crea session
+01:17:32 DEBUG login.php:60[main.main]: Cierra conexion a Base de datos
+01:17:37 DEBUG Factory.php:15[Factory.exec]: Se encontraron: 1 registro(s)
+01:17:37 DEBUG Factory.php:41[Factory.bind]: se obtuvieron: 1 registros de tipo: Periodo
+01:17:37 DEBUG getperiodos.php:30[main.main]: Cierra conexion a Base de datos

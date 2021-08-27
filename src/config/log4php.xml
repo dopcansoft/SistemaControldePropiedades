@@ -1,0 +1,19 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="myFileAppender" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date{H:i:s} %-5level %F:%L[%C.%M]: %message%newline" />
+        </layout>
+        <param name="file" value="/home/k0klpfhww8g0/public_html/v2/src/log/%s.log" />
+        <!-- <param name="file" value="c:/xampp/htdocs/inv/src/log/%s.log" /> -->
+        <!-- <param name="file" value="/home/bccpccom/public_html/inv/src/log/bitacora_%s.log" /> -->        
+    </appender> 
+    <logger name="root">
+        <appender_ref ref="myFileAppender" />
+    </logger>
+    <root>
+        <level value="TRACE" />
+        <!-- opcion para ambiente productivo -->
+        <!-- <level value="WARN" /> -->
+        <appender_ref ref="myFileAppender" />
+    </root>
+</configuration>
